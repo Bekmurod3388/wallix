@@ -1,0 +1,76 @@
+<header class="header">
+    <div class="container">
+        <div class="header__body">
+            <div class="header__logos">
+                <a href="#" class="header__logo">
+                    <img src="{{asset('assets/img/logo/logo.png')}}" alt="logo">
+                </a>
+                <a href="#" class="header__logo">
+                    <img src="{{asset('assets/img/logo/abris-logo.png')}}" alt="Abris logo">
+                </a>
+            </div>
+            <div class="header__gamburger">
+                <span></span>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a href="#" class="header__link">Главная</a>
+                        <ul class="header__drapdown">
+                            <li class="header__drapdown-item">
+                                <a href="#" class="header__drapdown-link">О компании Wallix</a>
+                            </li>
+                            <li class="header__drapdown-item">
+                                <a href="#" class="header__drapdown-link">Новости</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">Продукты</a>
+                        <ul class="header__drapdown">
+                            <li class="header__drapdown-item">
+                                <a href="#" class="header__drapdown-link">О компании Wallix</a>
+                            </li>
+                            <li class="header__drapdown-item">
+                                <a href="#" class="header__drapdown-link">Новости</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">Решения</a>
+                        <ul class="header__drapdown">
+                            <li class="header__drapdown-item">
+                                <a href="#" class="header__drapdown-link">О компании Wallix</a>
+                            </li>
+                            <li class="header__drapdown-item">
+                                <a href="#" class="header__drapdown-link">Новости</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">О нас</a>
+                        <ul class="header__drapdown">
+                            <li class="header__drapdown-item">
+                                <a href="#" class="header__drapdown-link">О компании Wallix</a>
+                            </li>
+                            <li class="header__drapdown-item">
+                                <a href="#" class="header__drapdown-link">Новости</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">Контакты</a>
+                        <ul class="header__drapdown">
+                            <li class="header__drapdown-item">
+                                <a href="#" class="header__drapdown-link">О компании Wallix</a>
+                            </li>
+                            <li class="header__drapdown-item">
+                                <a href="#" class="header__drapdown-link">Новости</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
