@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
+Route::view('/','index');
+Auth::routes([
+        'confirm' => false,
+        'login' => true,
+        'logout' => true,
+        'register' => false,
+        'reset' => false,
+        'verify' => false
+]);
+
+
+
+Route::prefix('admin')->name('admin.')->middleware(['web', 'auth'])->group(function () {
+    Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 });
+
+

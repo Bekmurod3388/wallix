@@ -8,7 +8,9 @@
     <title>Главная страница</title>
 </head>
 <body>
-@yield('content')
+@yield('header')
+{{$slot}}
+@yield('footer')
 <script src="{{asset('assets/js/script.min.js')}}"></script>
 </body>
 </html>
