@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::view('/','index')->name('index');
 Route::view('/office','office')->name('office');
 ROute::view('/about','about')->name('about');
-ROute::view('/news','news')->name('news');
+ROute::get('/news',[App\Http\Controllers\PostController::class,'news'])->name('news');
 Auth::routes([
         'confirm' => false,
         'login' => true,

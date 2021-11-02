@@ -19,24 +19,27 @@
         </section>
         <section class="zero">
             <div class="container">
+                @foreach($posts as $post)
                 <div class="zero__row row">
                     <img src="{{asset('assets/img/zero-37.jpg')}}" />
                     <div class="zero__desc">
                         <div class="zero__date">
-                            5.18.2021
+                            {{$post->created_at}}
                         </div>
                         <div class="zero__subtitle subtitle">
-                            Wallix & Abris сотрудничает с компанией
-                            Arrow Electronics
+                           {{$post->header_ru}}
                         </div>
                         <div class="zero__text text">
-                            Париж, 18 мая 2021 года – WALLIX(Euronext ALLIX), европейский издатель программного обеспечения для кибербезопасности и эксперт в области решений для обеспечения безопасности идентификации и доступа, объявляет о подписании соглашения с Arrow Electronics, дистрибьютором с добавленной стоимостью Fortune 110.
+                           {{$post->description_ru}}
                         </div>
                         <a href="#" class="zero__link">
                             Читать полностью
                         </a>
                     </div>
                 </div>
+                @endforeach
+
+
                 <div class="zero__row--resevre row">
                     <div class="zero__desc">
                         <div class="zero__date">

@@ -23,6 +23,7 @@
                             <th scope="col">#</th>
                             <th scope="col">Титул</th>
                             <th scope="col">Текст</th>
+                            <th scope="col">vaqt</th>
                             <th scope="col">Просмотрено</th>
                             <th scope="col">Действие</th>
                         </tr>
@@ -33,6 +34,7 @@
                             <th scope="row" class="col-1">{{$post->id}}</th>
                             <td>{{$post->header_ru}}</td>
                             <td>{{$post->description_ru}}</td>
+                            <td>{{$post->created_at}}</td>
                             <td>{{$post->viewed}}</td>
                             <td class="col-2">
                                 <form action="{{ route('admin.posts.destroy',$post->id) }}" method="POST">
