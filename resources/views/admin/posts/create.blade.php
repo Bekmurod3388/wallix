@@ -28,47 +28,17 @@
                             <label for="header_ru">Титул (Ру)</label>
                             <input type="text" name="header_ru" class="form-control" id="header_ru" placeholder="Титул">
                         </div>
-                        <div class="form-group">
-                            <label for="header2_ru">Титул 2 (Ру)</label>
-                            <input type="text" name="header2_ru" class="form-control" id="header2_ru"
-                                   placeholder="Титул 2">
-                        </div>
+
                         <div class="form-group">
                             <label for="description">Текст (Ру)</label>
                             <textarea class="form-control" name="description_ru" id="description" rows="10"></textarea>
                         </div>
-                        <div class="form-group">
-                            <label for="header">Титул (Уз)</label>
-                            <input type="text" name="header_uz" class="form-control" id="header" placeholder="Титул">
-                        </div>
-                        <div class="form-group">
-                            <label for="header2">Титул 2 (Уз)</label>
-                            <input type="text" name="header2_uz" class="form-control" id="header2"
-                                   placeholder="Титул 2">
-                        </div>
-                        <div class="form-group">
-                            <label for="description">Текст (Уз)</label>
-                            <textarea class="form-control" name="description_uz" id="description" rows="10"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="header">Титул (En)</label>
-                            <input type="text" name="header_en" class="form-control" id="header" placeholder="Титул">
-                        </div>
-                        <div class="form-group">
-                            <label for="header2">Титул 2 (En)</label>
-                            <input type="text" name="header2_en" class="form-control" id="header2" placeholder="Титул 2">
-                        </div>
-                        <div class="form-group">
-                            <label for="description">Текст (En)</label>
-                            <textarea  class="form-control" name="description_en" id="description" rows="10"></textarea>
-                        </div>
+
                         <div class="form-group">
                             <label for="img">Добавьте рисунок <b><i>РАЗМЕР РИСУНОК:(600x300)</i></b></label>
                             <input type="file" name="img" class="form-control" id="img">
                         </div>
-
-
-
+                        
                         <button type="submit" id="alert" class="btn btn-primary">Submit</button>
                         <input type="reset" class="btn btn-danger" value="Очистить">
                     </form>

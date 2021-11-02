@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Message;
+use App\Models\Messages;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Validator;
 use RealRashid\SweetAlert\Facades\Alert;
@@ -41,12 +41,23 @@ class MessageController extends Controller
     {
 
         $request->validate([
+
             'name' => 'required',
+            'surname' => 'required',
             'email' => 'required',
             'phone' => 'required',
+            'company' => 'required',
+            'country' => 'required',
+            'industry' => 'required',
+            'trustelem' => 'required',
+            'bastion' => 'required',
+            'bestsafe' => 'required',
+            'text' =>'required'
         ]);
 
-        Message::create($request->all());
+
+
+        Messages::create($request->all());
         return response()->json(['success'=>'Form is successfully submitted!']);
 
 

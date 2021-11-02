@@ -283,44 +283,88 @@
                     <div class="form__subdesc">
                         Пожалуйста, выберите хотя бы один вариант
                     </div>
-                    <form action="#">
+                    <form method="POST"  id="contactForm">
+                        @csrf
                         <div class="form__check">
                             <div class="form__checkbox">
-                                <input id="cb1" type="checkbox" checked>
+                                <input id="cb1" type="checkbox" value="1" name="Bastion" checked>
                                 <label for="cb1">Wallix Bastion</label>
                             </div>
                             <div class="form__checkbox">
-                                <input id="cb2" type="checkbox" >
+                                <input id="cb2" type="checkbox" value="1" name="Trustelem" >
                                 <label for="cb2">Wallix Trustelem</label>
                             </div>
                             <div class="form__checkbox">
-                                <input id="cb3" type="checkbox" >
+                                <input id="cb3" type="checkbox" value="1" name="Bestsafe">
                                 <label for="cb3">Wallix BestSafe</label>
                             </div>
                         </div>
                         <div class="form__row">
                             <div class="form__left">
-                                <input type="text" placeholder="Имя">
-                                <input type="text" placeholder="Фамилия">
-                                <input type="email" placeholder="Электронная почта">
-                                <input type="text" placeholder="Телефон">
-                                <input type="text" placeholder="Название компании">
-                                <select class="form__select">
+                                <input type="text" required id="name" name="name" placeholder="Имя">
+                                <input type="text" required id="surname" name="surname" placeholder="Фамилия">
+                                <input type="email" required id="email" name="email" placeholder="Электронная почта">
+                                <input type="text" required id="phone" name="phone" placeholder="Телефон">
+                                <input type="text" required id="company" name="company" placeholder="Название компании">
+                                <select class="form__select" id="country" name="Country" >
                                     <option>Страна</option>
                                 </select>
-                                <select class="form__select">
+                                <select class="form__select" id="industry" name="Industry">
                                     <option>Промышленность</option>
                                 </select>
                             </div>
                             <div class="form__right">
-                                <textarea placeholder="Сообщение"></textarea>
+                                <textarea placeholder="Сообщение" id="text" name="text"></textarea>
                                 <div class="form__agree">
                                     Ознакомьтесь с <span>Политикой конфиденциальности</span>
                                 </div>
-                                <div class="form__btn btn">Отправить</div>
+                                <input type="submit" value="Отправить" class="form__submit form__btn btn">
+
                             </div>
                         </div>
                     </form>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+                    <script type="text/javascript">
+                        $('#contactForm').on('submit',function(e){
+                            e.preventDefault();
+                            let name = $('#name').val();
+                            let phone = $('#phone').val();
+                            let email = $('#email').val();
+                            let text = $('#text').val();
+                            let surname = $('#surname').val();
+                            let company = $('#company').val();
+                            let country = $('#country').val();
+                            let industry =$('#industry').val();
+                            let bastion = $('#cb1').val();
+                            let trustelem = $('#cb2').val();
+                            let bestsafe = $('#cb3').val();
+                            $.ajax({
+                                url: "{{route('messages.store')}}",
+                                type:"POST",
+                                data:{
+                                    "_token": "{{ csrf_token() }}",
+                                    name:name,
+                                    surname:surname,
+                                    phone:phone,
+                                    email:email,
+                                    company:company,
+                                    country:country,
+                                    industry:industry,
+                                    text:text,
+                                    bestsafe:bestsafe,
+                                    trustelem:trustelem,
+                                    bastion:bastion,
+                                },
+                                success:function(response){
+                                    Swal.fire({
+                                        icon: 'success',
+                                        title: '{{__("about.success")}}',
+                                    })
+                                },
+                            });
+                        });
+                    </script>
+
                 </div>
             </div>
         </section>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MessageController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -15,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::view('/','index')->name('index');
-ROute::view('/office','office')->name('office');
+Route::view('/office','office')->name('office');
 ROute::view('/about','about')->name('about');
 Auth::routes([
         'confirm' => false,
@@ -37,3 +38,4 @@ Route::prefix('admin')->name('admin.')->middleware(['web', 'auth'])->group(funct
 });
 
 
+Route::post('/', [MessageController::class, 'store'])->name('messages.store');

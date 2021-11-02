@@ -48,7 +48,6 @@ class PostController extends Controller
     {
         $request->validate([
             'header_ru' => 'required',
-            'header2_ru' => 'required',
             'description_ru' => 'required',
             'img' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:16000',
         ]);
@@ -57,19 +56,12 @@ class PostController extends Controller
         $request->img->move(public_path('../storage/app/public/posts'), $fileName);
         Post::create([
             'header_ru' => $request->header_ru,
-            'header2_ru' => $request->header2_ru,
             'description_ru' => $request->description_ru,
-            'header_uz' => $request->header_uz,
-            'header2_uz' => $request->header2_uz,
-            'description_uz' => $request->description_uz,
-            'header_en' => $request->header_en,
-            'header2_en' => $request->header2_en,
-            'description_en' => $request->description_en,
             'img' => $fileName,
 
 
         ]);
-        addAlert('success');
+        //addalert('success');
         return redirect()->route('admin.posts.index')->with('success', 'Новости успешно созданы.');
     }
 
@@ -121,16 +113,8 @@ class PostController extends Controller
             $request->img->move(public_path('../storage/app/public/posts'), $fileName);
             $post->update([
                 'header_ru' => $request->header_ru,
-                'header2_ru' => $request->header2_ru,
                 'description_ru' => $request->description_ru,
-                'header_uz' => $request->header_uz,
-                'header2_uz' => $request->header2_uz,
-                'description_uz' => $request->description_uz,
-                'header_en' => $request->header_en,
-                'header2_en' => $request->header2_en,
-                'description_en' => $request->description_en,
                 'img' => $fileName,
-
             ]);
         } else {
             $post->update($request->all());
