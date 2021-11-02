@@ -14,7 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/','index');
+Route::view('/','index')->name('index');
+ROute::view('/office','office')->name('office');
+ROute::view('/about','about')->name('about');
 Auth::routes([
         'confirm' => false,
         'login' => true,
