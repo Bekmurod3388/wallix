@@ -9,6 +9,7 @@
 </head>
 <body>
 @yield('header')
+@yield('content')
 {{$slot}}
 @yield('footer')
 <script src="{{asset('assets/js/script.min.js')}}"></script>

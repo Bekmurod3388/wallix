@@ -18,6 +18,34 @@ use Illuminate\Support\Facades\Route;
 Route::view('/','index')->name('index');
 Route::view('/office','office')->name('office');
 ROute::view('/about','about')->name('about');
+Route::view('session','session')->name('session');
+Route::view('trustelem','trustelem')->name('trustelem ');
+Route::view('bastion','bastion')->name('bastion');
+Route::view('solution','solution')->name('solution');
+Route::view('solution4','solution4')->name('solution4');
+Route::view('solution3','solution3')->name('solution3');
+Route::view('solution2','solution2')->name('solution2');
+Route::view('solution1','solution2')->name('solution1');
+Route::view('trustelemdemo','trustelemdemo')->name('turestelemdemo');
+Route::view('health','health')->name('health');
+Route::view('devops','devops')->name('devops');
+Route::view('cyber','cyber')->name('cyber');
+Route::view('bestsafedemo','bestsafedemo')->name('bestsafedemo');
+Route::view('bestsafe','bestsafe')->name('bestsafe');
+Route::view('bastion6','bastion6')->name('bastion6');
+Route::view('bastion5','bastion5')->name('bastion5');
+Route::view('bastion4','bastion4')->name('bastion4');
+Route::view('bastion3','bastion3')->name('bastion3');
+Route::view('bastion2','bastion2')->name('bastion2');
+Route::view('bastion1','bastion1')->name('bastion1');
+Route::view('authdemo','authdemo')->name('authdemo');
+Route::view('auth','auth')->name('auth');
+Route::view('accessdemo','accessdemo')->name('accessdemo');
+
+
+
+
+
 ROute::get('/news',[App\Http\Controllers\PostController::class,'news'])->name('news');
 Auth::routes([
         'confirm' => false,
