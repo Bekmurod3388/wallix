@@ -4,8 +4,8 @@
     @endsection
         <section
             class="preview"
-            style="background: url('./assets/img/background/priview-bg.png') no-repeat"
-        >
+            style="background: url('./assets/img/background/priview-bg.png') no-repeat">
+
             <img src="{{asset('assets/img/background/preview-15.png')}}" alt="" />
             <div class="container">
                 <div class="preview__body">
@@ -37,7 +37,7 @@
                         </a>
                     </div>
                 </div>
-                @endforeach
+
 
 
                 <div class="zero__row--resevre row">
@@ -58,6 +58,7 @@
                     </div>
                     <img src="{{asset('assets/img/zero-38.jpg')}}" />
                 </div>
+                @endforeach
                 <div class="zero__row row">
                     <img src="{{asset('assets/img/zero-35.jpg')}}" />
                     <div class="zero__desc">

@@ -10,12 +10,6 @@
                 </li>
 
                 <li class="nav-item ">
-                    <a href="{{route('admin.contacts.index')}}">
-                        <i class="fas fa-layer-group"></i>
-                        <p>Контакты</p>
-                    </a>
-                </li>
-                <li class="nav-item ">
                     <a href="{{route('admin.posts.index')}}">
                         <i class="fas fa-pen-square"></i>
                         <p>Новости</p>

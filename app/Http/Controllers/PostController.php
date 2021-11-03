@@ -53,7 +53,7 @@ class PostController extends Controller
         ]);
         $uuid = Str::uuid()->toString();
         $fileName = $uuid . '-' . time() . '.' . $request->img->extension();
-        $request->img->move(public_path('../storage/app/public/posts'), $fileName);
+        $request->img->move(public_path('../storage/posts'), $fileName);
         Post::create([
             'header_ru' => $request->header_ru,
             'description_ru' => $request->description_ru,
@@ -110,7 +110,7 @@ class PostController extends Controller
         if ($request->hasFile('img')) {
             $uuid = Str::uuid()->toString();
             $fileName = $uuid . '-' . time() . '.' . $request->img->extension();
-            $request->img->move(public_path('../storage/app/public/posts'), $fileName);
+            $request->img->move(public_path('../storage/posts'), $fileName);
             $post->update([
                 'header_ru' => $request->header_ru,
                 'description_ru' => $request->description_ru,

@@ -67,12 +67,13 @@ class MessageController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Message  $message
-     * @return \Illuminate\Http\Response
+     * @param  \App\Models\Messages  $message
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
-    public function show(Message $message)
+    public function show(Messages $message)
     {
-        //
+        Messages::where('id', $message->id);
+        return view('admin.messages.show',compact('message'));
     }
 
     /**

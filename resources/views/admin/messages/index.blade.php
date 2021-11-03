@@ -1,5 +1,10 @@
 @extends('admin.master')
 @section('content')
+    <style>
+        td{
+            padding:0 5px !important;
+        }
+    </style>
     <div class="col-md-12">
         <div class="card">
             <div class="card-header">
@@ -16,10 +21,8 @@
                             <th scope="col">Имя</th>
                             <th scope="col">Фамилия</th>
                             <th scope="col">Телефонный номер</th>
-                            <th scope="col">Электронная почта
-                            <th scope="col">любопытство</th>
+                            <th scope="col">Электронная почта</th>
                             <th scope="col">время</th>
-                            <th scope="col">Когда</th>
                             <th scope="col">Действие</th>
                         </tr>
                         </thead>
@@ -31,25 +34,20 @@
                             <td>{{$message->surname}}</td>
                             <td>{{$message->phone}}</td>
                             <td>{{$message->email}}</td>
-                            <td>
-                                @if($message->bastion==1)
-                                    Wallix Bastion
-                                    @endif
-                                    @if($message->bestsafe==1)
-                                        Wallix Bestsafe
-                                    @endif
-                                    @if($message->bastion==1)
-                                        Wallix Trustelem
-                                    @endif
-                            </td>
+
                             <td>{{$message->created_at}}</td>
                             <td class="col-md-3">
+
                                 <form action="{{ route('admin.messages.destroy',$message->id) }}" method="POST">
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit" class="btn btn-danger"><span class="btn-label">
                                         <i class="fa fa-trash"></i>
-                                    </span>Удалить</button>
+                                    </button>
+                                    <a class="btn btn-primary" href="{{route('admin.message.show',$message->id)}}">
+                                        <i class="fas fa-eye"></i></i>
+                                    </a>
+
                                 </form>
                             </td>
                         </tr>
