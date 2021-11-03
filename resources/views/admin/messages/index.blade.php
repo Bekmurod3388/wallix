@@ -14,8 +14,11 @@
                         <tr>
                             <th scope="col">#</th>
                             <th scope="col">Имя</th>
+                            <th scope="col">Фамилия</th>
                             <th scope="col">Телефонный номер</th>
-                            <th scope="col">Email</th>
+                            <th scope="col">Электронная почта
+                            <th scope="col">любопытство</th>
+                            <th scope="col">время</th>
                             <th scope="col">Когда</th>
                             <th scope="col">Действие</th>
                         </tr>
@@ -25,8 +28,20 @@
                         <tr>
                             <th scope="row" class="col-md-1">{{ ($messages->total()) - (($messages->currentPage()-1) * $messages->perPage() + $counter)  }}</th>
                             <td>{{$message->name}}</td>
+                            <td>{{$message->surname}}</td>
                             <td>{{$message->phone}}</td>
                             <td>{{$message->email}}</td>
+                            <td>
+                                @if($message->bastion==1)
+                                    Wallix Bastion
+                                    @endif
+                                    @if($message->bestsafe==1)
+                                        Wallix Bestsafe
+                                    @endif
+                                    @if($message->bastion==1)
+                                        Wallix Trustelem
+                                    @endif
+                            </td>
                             <td>{{$message->created_at}}</td>
                             <td class="col-md-3">
                                 <form action="{{ route('admin.messages.destroy',$message->id) }}" method="POST">

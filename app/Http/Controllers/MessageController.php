@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Messages;
+use http\Message;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Validator;
 use RealRashid\SweetAlert\Facades\Alert;
@@ -17,7 +18,7 @@ class MessageController extends Controller
      */
     public function index()
     {
-        $messages = Message::orderBy('id','desc')->paginate(10);
+        $messages = Messages::orderBy('id','desc')->paginate(10);
         return view('admin.messages.index')->with('messages', $messages);;
     }
 
@@ -100,10 +101,10 @@ class MessageController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Message  $message
+     * @param  \App\Models\Messages $message
      * @return \Illuminate\Http\RedirectResponse
      */
-    public function destroy(Message $message)
+    public function destroy(Messages $message)
     {
         $message->delete();
 

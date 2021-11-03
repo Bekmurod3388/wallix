@@ -33,8 +33,8 @@ Auth::routes([
 Route::prefix('admin')->name('admin.')->middleware(['web', 'auth'])->group(function () {
     Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::get('messages/index', [MessageController::class, 'index'])->name('messages.index');
+    Route::delete('messages/delete/{message}', [MessageController::class, 'destroy'])->name('messages.destroy');
     Route::resource('users', \App\Http\Controllers\UserController::class);
-    Route::resource('contacts', \App\Http\Controllers\ContactController::class);
     Route::resource('posts',\App\Http\Controllers\PostController::class);
 });
 

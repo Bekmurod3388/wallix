@@ -287,15 +287,15 @@
                         @csrf
                         <div class="form__check">
                             <div class="form__checkbox">
-                                <input id="cb1" type="checkbox" value="1" name="Bastion" checked>
+                                <input id="cb1" type="checkbox" value="1" name="Bastion">
                                 <label for="cb1">Wallix Bastion</label>
                             </div>
                             <div class="form__checkbox">
-                                <input id="cb2" type="checkbox" value="1" name="Trustelem" >
+                                <input id="cb2" type="checkbox" value="1" name="trustelem" >
                                 <label for="cb2">Wallix Trustelem</label>
                             </div>
                             <div class="form__checkbox">
-                                <input id="cb3" type="checkbox" value="1" name="Bestsafe">
+                                <input id="cb3" type="checkbox" value="1" name="bestsafe">
                                 <label for="cb3">Wallix BestSafe</label>
                             </div>
                         </div>
