@@ -27,7 +27,7 @@
                         </tr>
                         </thead>
                         <tbody>
-                        @foreach($messages as $counter => $message)
+                        @foreach($messages as $counter=>$message)
                         <tr>
                             <th scope="row" class="col-md-1">{{ ($messages->total()) - (($messages->currentPage()-1) * $messages->perPage() + $counter)  }}</th>
                             <td>{{$message->name}}</td>

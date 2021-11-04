@@ -3,6 +3,7 @@
 use App\Http\Controllers\MessageController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\OfficeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,8 +17,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::view('/','index')->name('index');
-Route::view('/office','office')->name('office');
-ROute::view('/about','about')->name('about');
+
+Route::view('/about','about')->name('about');
 Route::view('session','session')->name('session');
 Route::view('trustelem','trustelem')->name('trustelem ');
 Route::view('bastion','bastion')->name('bastion');
@@ -65,6 +66,8 @@ Route::prefix('admin')->name('admin.')->middleware(['web', 'auth'])->group(funct
     Route::delete('messages/delete/{message}', [MessageController::class, 'destroy'])->name('messages.destroy');
     Route::resource('users', \App\Http\Controllers\UserController::class);
     Route::resource('posts',\App\Http\Controllers\PostController::class);
+    Route::resource('office',App\Http\Controllers\OfficeController::class);
+    Route::resource('solution',\App\Http\Controllers\SolutionController::class);
 });
 
 

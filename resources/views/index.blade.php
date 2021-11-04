@@ -345,6 +345,7 @@
                             let bastion = $('#cb1').val();
                             let trustelem = $('#cb2').val();
                             let bestsafe = $('#cb3').val();
+                            console.log(bastion,bestsafe,trustelem)
                             $.ajax({
                                 url: "{{route('messages.store')}}",
                                 type:"POST",

@@ -6,7 +6,7 @@ use App\Models\Messages;
 use http\Message;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Validator;
-use RealRashid\SweetAlert\Facades\Alert;
+
 
 
 class MessageController extends Controller
@@ -19,7 +19,7 @@ class MessageController extends Controller
     public function index()
     {
         $messages = Messages::orderBy('id','desc')->paginate(10);
-        return view('admin.messages.index')->with('messages', $messages);;
+        return view('admin.messages.index')->with('messages', $messages);
     }
 
     /**

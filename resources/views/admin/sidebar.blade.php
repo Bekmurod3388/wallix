@@ -21,6 +21,18 @@
                         <p>Сообщении</p>
                     </a>
                 </li>
+                <li class="nav-item ">
+                    <a href="{{route('admin.office.index')}}">
+                        <i class="fas fa-envelope"></i>
+                        <p>Офисы</p>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a href="{{route('admin.solution.index')}}">
+                        <i class="fas fa-envelope"></i>
+                        <p>solution</p>
+                    </a>
+                </li>
 
             </ul>
 
