@@ -23,7 +23,7 @@ Route::view('/about','about')->name('about');
 Route::view('session','session')->name('session');
 Route::view('trustelem','trustelem')->name('trustelem ');
 Route::view('bastion','bastion')->name('bastion');
-Route::view('solution','solution')->name('solution');
+
 Route::view('solution4','solution4')->name('solution4');
 Route::view('solution3','solution3')->name('solution3');
 Route::view('solution2','solution2')->name('solution2');
@@ -74,3 +74,4 @@ Route::prefix('admin')->name('admin.')->middleware(['web', 'auth'])->group(funct
 Route::get('news', [\App\Http\Controllers\PostController::class,'news'])->name('news');
 Route::post('/', [MessageController::class, 'store'])->name('messages.store');
 Route::view('office','office');
+Route::get('solution',[\App\Http\Controllers\SolutionController::class,'solution'])->name('solution');

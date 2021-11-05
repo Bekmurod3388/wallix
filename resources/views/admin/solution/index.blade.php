@@ -5,13 +5,13 @@
         <div class="card">
             <div class="card-header">
                 <div class="row">
-                    <div class="col-9"><h1 class="card-title">Новости</h1></div>
+                    <div class="col-9"><h1 class="card-title">Решения</h1></div>
                     <div class="col-md-1">
                         <a class="btn btn-primary" href="{{route('admin.solution.create')}}">
                             <span class="btn-label">
                                 <i class="fa fa-plus"></i>
                             </span>
-                            Добавить новости
+                            Добавить решение
                         </a>
                     </div>
                 </div>
@@ -23,7 +23,7 @@
                             <th scope="col">#</th>
                             <th scope="col">Титул</th>
                             <th scope="col">Текст</th>
-                            <th scope="col">vaqt</th>
+                            <th scope="col">Фото</th>
                             <th scope="col">Действие</th>
                         </tr>
                         </thead>

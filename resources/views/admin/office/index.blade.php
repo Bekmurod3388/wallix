@@ -5,13 +5,13 @@
         <div class="card">
             <div class="card-header">
                 <div class="row">
-                    <div class="col-9"><h1 class="card-title">Новости</h1></div>
+                    <div class="col-9"><h1 class="card-title">Офисы</h1></div>
                     <div class="col-md-1">
                         <a class="btn btn-primary" href="{{route('admin.office.create')}}">
                             <span class="btn-label">
                                 <i class="fa fa-plus"></i>
                             </span>
-                            Добавить новости
+                            Добавить офис
                         </a>
                     </div>
                 </div>
@@ -21,10 +21,10 @@
                         <thead>
                         <tr>
                             <th scope="col">#</th>
-                            <th scope="col">Титул</th>
-                            <th scope="col">Текст</th>
-                            <th scope="col">vaqt</th>
-                            <th scope="col">Просмотрено</th>
+                            <th scope="col">Страна</th>
+                            <th scope="col">Адрес</th>
+                            <th scope="col">Телефон</th>
+                            <th scope="col">Электронная почта</th>
                             <th scope="col">Действие</th>
                         </tr>
                         </thead>

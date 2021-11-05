@@ -55,7 +55,7 @@ class OfficeController extends Controller
 
         ]);
         //addalert('success');
-        return redirect()->route('admin.office.index')->with('success', 'Новости успешно созданы.');
+        return redirect()->route('admin.office.index')->with('success', 'Новости офис созданы.');
 
     }
 
@@ -100,7 +100,7 @@ class OfficeController extends Controller
 
         $office->update($request->all());
         //addalert('success');
-        return redirect()->route('admin.office.index')->with('success', 'Новости успешно созданы.');
+        return redirect()->route('admin.office.index')->with('success', 'офис успешно созданы.');
 
     }
 

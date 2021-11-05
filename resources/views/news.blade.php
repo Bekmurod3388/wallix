@@ -22,7 +22,7 @@
                 @foreach($posts as $post)
                     @if(($post->id)%2==0)
                     <div class="zero__row pb-3 row">
-                        <img src="{{asset('assets/img/zero-37.jpg')}}" />
+                        <img src="{{asset('storage/posts/'.$post->img)}}" />
                         <div class="zero__desc">
                             <div class="zero__date">
                                 {{$post->created_at}}
@@ -56,7 +56,7 @@
                                 Читать полностью
                             </a>
                         </div>
-                        <img src="{{asset('assets/img/zero-38.jpg')}}" />
+                        <img src="{{asset('storage/post/'.$post->img)}}" />
                     </div>
                     @endif
                 @endforeach

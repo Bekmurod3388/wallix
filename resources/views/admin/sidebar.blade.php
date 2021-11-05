@@ -30,7 +30,7 @@
                 <li class="nav-item ">
                     <a href="{{route('admin.solution.index')}}">
                         <i class="fas fa-cog"></i>
-                        <p>решения</p>
+                        <p>Решения</p>
                     </a>
                 </li>
 

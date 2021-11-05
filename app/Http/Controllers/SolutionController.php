@@ -22,6 +22,11 @@ class SolutionController extends Controller
         return view('admin.solution.index')->with('solution', $solution);
     }
 
+    public function solution(){
+        $solution = solution::orderBy('id','desc')->paginate(25);
+        return view('solution')->with('solution', $solution);
+    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -56,7 +61,7 @@ class SolutionController extends Controller
 
         ]);
         //addalert('success');
-        return redirect()->route('admin.solution.index')->with('success', 'Новости solution созданы.');
+        return redirect()->route('admin.solution.index')->with('success', 'Решение успешно созданы.');
     }
 
     /**
@@ -124,6 +129,6 @@ class SolutionController extends Controller
         $solution->delete();
 
         return redirect()->route('admin.solution.index')
-            ->with('success', 'Новости solutions удалено');
+            ->with('success', 'Новости solution удалено');
     }
 }

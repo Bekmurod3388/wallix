@@ -18,30 +18,38 @@
 </section>
 <section class="zero">
     <div class="container">
+
+        @foreach($solution as $solutions)
+
+            @if(($solutions->id)%2==1)
         <div class="zero__row row">
-            <img src="./img/zero-34.jpg" />
+            <img src="{{asset('storage/solutions/'.$solutions->img)}}" style="width: 80%" />
             <div class="zero__desc">
                 <div class="zero__subtitle subtitle">
-                    Вы защищаете наше здоровье, мы
-                    защищаем ваши данные о пациентах
+                   {{$solutions->title}}
                 </div>
                 <div class="zero__text text">
-                    Сектор здравоохранения является наиболее целевой отраслью для хакеров. С уязвимым оборудованием и очень ценной электронной личной медицинской информацией (ePHI) ИТ-безопасность имеет решающее значение для больниц и медицинских организаций на всех уровнях.
+                    {{$solutions->text}}
                 </div>
             </div>
         </div>
+
+
+            @else
         <div class="zero__row--resevre row">
             <div class="zero__desc">
                 <div class="zero__subtitle subtitle">
-                    Защита конвергенции IT-OT
-                    в промышленных сетях IoT
+                    {{$solutions->title}}
                 </div>
                 <div class="zero__text text">
-                    Предвидеть и решать новые проблемы кибербезопасности в промышленности. Безопасный доступ и облегчение эффективных и экономичных подключений даже к самым разнородным средам.
+                    {{$solutions->text}}
                 </div>
             </div>
-            <img src="./img/zero-35.jpg" />
+
+            <img src="{{asset('storage/solutions/'.$solutions->img)}}" style="width: 80%" />
         </div>
+            @endif
+        @endforeach
         <div class="zero__line line">
         </div>
     </div>
