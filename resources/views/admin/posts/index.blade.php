@@ -23,7 +23,7 @@
                             <th scope="col">#</th>
                             <th scope="col">Титул</th>
                             <th scope="col">Текст</th>
-                            <th scope="col">vaqt</th>
+                            <th scope="col">Время</th>
                             <th scope="col">Просмотрено</th>
                             <th scope="col">Действие</th>
                         </tr>

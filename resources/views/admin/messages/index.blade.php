@@ -22,7 +22,7 @@
                             <th scope="col">Фамилия</th>
                             <th scope="col">Телефонный номер</th>
                             <th scope="col">Электронная почта</th>
-                            <th scope="col">время</th>
+                            <th scope="col">Время</th>
                             <th scope="col">Действие</th>
                         </tr>
                         </thead>

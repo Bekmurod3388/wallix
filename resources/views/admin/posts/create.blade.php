@@ -25,20 +25,20 @@
                           enctype="multipart/form-data">
                         @csrf
                         <div class="form-group">
-                            <label for="header_ru">Титул (Ру)</label>
+                            <label for="header_ru">Титу</label>
                             <input type="text" name="header_ru" class="form-control" id="header_ru" placeholder="Титул">
                         </div>
 
                         <div class="form-group">
-                            <label for="description">Текст (Ру)</label>
+                            <label for="description">Текст</label>
                             <textarea class="form-control" name="description_ru" id="description" rows="10"></textarea>
                         </div>
 
                         <div class="form-group">
-                            <label for="img">Добавьте рисунок <b><i>РАЗМЕР РИСУНОК:(600x300)</i></b></label>
+                            <label for="img">Добавьте рисунок </label>
                             <input type="file" name="img" class="form-control" id="img">
                         </div>
-                        
+
                         <button type="submit" id="alert" class="btn btn-primary">Submit</button>
                         <input type="reset" class="btn btn-danger" value="Очистить">
                     </form>
