@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\MessageController;
+use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\OfficeController;
@@ -65,10 +66,10 @@ Route::prefix('admin')->name('admin.')->middleware(['web', 'auth'])->group(funct
     Route::get('messages/show/{message}',[MessageController::class,'show'])->name('message.show');
     Route::delete('messages/delete/{message}', [MessageController::class, 'destroy'])->name('messages.destroy');
     Route::resource('users', \App\Http\Controllers\UserController::class);
-    Route::resource('posts',\App\Http\Controllers\PostController::class);
+    Route::resource('posts', PostController::class);
     Route::resource('office',App\Http\Controllers\OfficeController::class);
     Route::resource('solution',\App\Http\Controllers\SolutionController::class);
 });
 
-
+Route::get('news', [\App\Http\Controllers\PostController::class,'news'])->name('news');
 Route::post('/', [MessageController::class, 'store'])->name('messages.store');

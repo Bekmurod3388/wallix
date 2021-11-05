@@ -23,14 +23,14 @@
                 </li>
                 <li class="nav-item ">
                     <a href="{{route('admin.office.index')}}">
-                        <i class="fas fa-envelope"></i>
+                        <i class="fas fa-building"></i>
                         <p>Офисы</p>
                     </a>
                 </li>
                 <li class="nav-item ">
                     <a href="{{route('admin.solution.index')}}">
-                        <i class="fas fa-envelope"></i>
-                        <p>solution</p>
+                        <i class="fas fa-cog"></i>
+                        <p>решения</p>
                     </a>
                 </li>
 
