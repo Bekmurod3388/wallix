@@ -43,59 +43,9 @@
         </div>
     </div>
 </section>
-<section class="form">
-    <div class="container">
-        <div class="form__body">
-            <div class="form__title title">Форма обратной связи</div>
-            <div class="form__desc">
-                Хотите испытать наши решения? Свяжитесь с нами. Мы не шлем спам,
-                и не передаём никому ваши данные.
-            </div>
-            <div class="form__subtitle">Меня интересует</div>
-            <div class="form__subdesc">
-                Пожалуйста, выберите хотя бы один вариант
-            </div>
-            <form action="#">
-                <div class="form__check">
-                    <div class="form__checkbox">
-                        <input id="cb1" type="checkbox" checked />
-                        <label for="cb1">Wallix Bastion</label>
-                    </div>
-                    <div class="form__checkbox">
-                        <input id="cb2" type="checkbox" />
-                        <label for="cb2">Wallix Trustelem</label>
-                    </div>
-                    <div class="form__checkbox">
-                        <input id="cb3" type="checkbox" />
-                        <label for="cb3">Wallix BestSafe</label>
-                    </div>
-                </div>
-                <div class="form__row">
-                    <div class="form__left">
-                        <input type="text" placeholder="Имя" />
-                        <input type="text" placeholder="Фамилия" />
-                        <input type="email" placeholder="Электронная почта" />
-                        <input type="text" placeholder="Телефон" />
-                        <input type="text" placeholder="Название компании" />
-                        <select class="form__select">
-                            <option>Страна</option>
-                        </select>
-                        <select class="form__select">
-                            <option>Промышленность</option>
-                        </select>
-                    </div>
-                    <div class="form__right">
-                        <textarea placeholder="Сообщение"></textarea>
-                        <div class="form__agree">
-                            Ознакомьтесь с <span>Политикой конфиденциальности</span>
-                        </div>
-                        <div class="form__btn btn">Отправить</div>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-</section>
+<x-message>
+
+</x-message>
 <x-footer>
 
 </x-footer>

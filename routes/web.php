@@ -73,5 +73,5 @@ Route::prefix('admin')->name('admin.')->middleware(['web', 'auth'])->group(funct
 
 Route::get('news', [\App\Http\Controllers\PostController::class,'news'])->name('news');
 Route::post('/', [MessageController::class, 'store'])->name('messages.store');
-Route::view('office','office');
+Route::get('office',[App\Http\Controllers\OfficeController::class,'office']);
 Route::get('solution',[\App\Http\Controllers\SolutionController::class,'solution'])->name('solution');

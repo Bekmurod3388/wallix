@@ -21,6 +21,12 @@ class OfficeController extends Controller
         return view('admin.office.index')->with('office', $office);
     }
 
+
+    public function office(){
+        $office = Office::orderBy('id','desc')->paginate(10);
+        return view('office')->with('office', $office);
+    }
+
     /**
      * Show the form for creating a new resource.
      *
