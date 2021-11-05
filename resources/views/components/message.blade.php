@@ -18,15 +18,15 @@
                 @csrf
                 <div class="form__check">
                     <div class="form__checkbox">
-                        <input id="cb1" type="checkbox" value="1" name="Bastion">
+                        <input id="cb1" type="checkbox" value="0" onchange="swapcheck(this)" name="Bastion">
                         <label for="cb1">Wallix Bastion</label>
                     </div>
                     <div class="form__checkbox">
-                        <input id="cb2" type="checkbox" value="1" name="trustelem" >
+                        <input id="cb2" type="checkbox" value="0" onchange="swapcheck(this)" name="trustelem" >
                         <label for="cb2">Wallix Trustelem</label>
                     </div>
                     <div class="form__checkbox">
-                        <input id="cb3" type="checkbox" value="1" name="bestsafe">
+                        <input id="cb3" type="checkbox" value="0" onchange="swapcheck(this)" name="bestsafe">
                         <label for="cb3">Wallix BestSafe</label>
                     </div>
                 </div>
@@ -99,6 +99,14 @@
                         },
                     });
                 });
+
+                function swapcheck(input) {
+                    if (input.checked){
+                        input.value=1
+                    }else{
+                        input.value=0
+                    }
+                }
             </script>
 
         </div>

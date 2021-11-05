@@ -73,3 +73,4 @@ Route::prefix('admin')->name('admin.')->middleware(['web', 'auth'])->group(funct
 
 Route::get('news', [\App\Http\Controllers\PostController::class,'news'])->name('news');
 Route::post('/', [MessageController::class, 'store'])->name('messages.store');
+Route::view('office','office');
