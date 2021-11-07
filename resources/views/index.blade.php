@@ -159,38 +159,52 @@
                     Наши решения
                 </div>
                 <div class="solution__list">
-                    <div class="solution__item" style="background: url('assets/img/solution-1.jpg') center center/cover no-repeat ;">
+
+                    @foreach($solution as $solutions)
+                    <div class="solution__item" style="background: url('{{asset('/storage/solutions/'.$solutions->img)}}') center center/cover no-repeat ;">
                         <div class="solution__text">
                             <div class="solution__subtitle">
-                                Digital transformation
+                                {{$solutions->title}}
                             </div>
                             <div class="solution__desc">
-                                Упрощение аудита и соблюдение требований безопасности с помощью сквозного управления доступом
+                                {{$solutions->text}}
                             </div>
                         </div>
                     </div>
-                    <div class="solution__item" style="background: url('assets/img/solution-2.jpg') center center/cover no-repeat ;">
-                        <div class="solution__text">
-                            <div class="solution__subtitle">
-                                Audit&Compliance
-                            </div>
-                            <div class="solution__desc">
-                                Упрощение аудита и соблюдение требований безопасности с помощью сквозного управления доступом
-                            </div>
-                        </div>
-                    </div>
-                    <div class="solution__item" style="background: url('assets/img/solution-2.jpg') center center/cover no-repeat ;">
-                        <div class="solution__text">
-                            <div class="solution__subtitle">
-                                Risk Management &Security
-                            </div>
-                            <div class="solution__desc">
-                                Упрощение аудита и соблюдение требований безопасности с помощью сквозного управления доступом
-                            </div>
-                        </div>
-                    </div>
+                        @endforeach
+{{--                        --}}
+{{--                        <div class="solution__item" style="background: url('assets/img/solution-1.jpg') center center/cover no-repeat ;">--}}
+{{--                        <div class="solution__text">--}}
+{{--                            <div class="solution__subtitle">--}}
+{{--                                Digital transformation--}}
+{{--                            </div>--}}
+{{--                            <div class="solution__desc">--}}
+{{--                                Упрощение аудита и соблюдение требований безопасности с помощью сквозного управления доступом--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="solution__item" style="background: url('assets/img/solution-2.jpg') center center/cover no-repeat ;">--}}
+{{--                        <div class="solution__text">--}}
+{{--                            <div class="solution__subtitle">--}}
+{{--                                Audit&Compliance--}}
+{{--                            </div>--}}
+{{--                            <div class="solution__desc">--}}
+{{--                                Упрощение аудита и соблюдение требований безопасности с помощью сквозного управления доступом--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="solution__item" style="background: url('assets/img/solution-2.jpg') center center/cover no-repeat ;">--}}
+{{--                        <div class="solution__text">--}}
+{{--                            <div class="solution__subtitle">--}}
+{{--                                Risk Management &Security--}}
+{{--                            </div>--}}
+{{--                            <div class="solution__desc">--}}
+{{--                                Упрощение аудита и соблюдение требований безопасности с помощью сквозного управления доступом--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
                 </div>
-                <div class="solution__btn btn">Все решения</div>
+                <a href="{{ route('solution') }}" class="solution__btn btn">Все решения</a>
             </div>
         </section>
         <section class="video">

@@ -8,8 +8,11 @@
     <img src="./img/background/preview-6.png" alt="" />
     <div class="container">
         <div class="preview__body">
-            <h1 class="preview__title">Обеспечьте цифровую
-                трансформацию</h1>
+            <h1 class="preview__title">
+                @foreach($category as $item)
+                {{$item->name}}
+                @endforeach
+            </h1>
             <div class="preview__desc">
                 Обеспечьте безопасность вашей трансформации
                 независимо от того, где она подключена
@@ -20,64 +23,61 @@
 <section class="desc">
     <div class="container">
         <div class="desc__row">
+
             <div class="desc__title">
-                Безопасное цифровое будущее
+                {{$solution->title}}
             </div>
             <div class="desc__text">
-                Бизнес движется быстро, а технологии-ещё быстрее. Возьмите под контроль своё цифровое будущее с помощью безопасных удалённых подключений для пользователей, подключающихся из любого места и в любое место, даже в облако.
-                <br><br>Ничто так быстро не развивается, как разработка. Автоматизируйте безопасность для быстрых, эффективных DevSecOps и роботизированной автоматизации процессов (RPA)
-            </div>
+                {{$solution->text}}
         </div>
+
         <div class="desc__line line"></div>
     </div>
-</section>
+
+
+
 <section class="zero">
     <div class="container">
+        @foreach($cat as $cats)
+            @if($cats->id != $solution->id)
+@for($i=1; $i<=$count; $i++)
+    @if($i%2==1)
+                        <a href="{{route('solution-item',$cats->id)}}">
         <div class="zero__row row">
-            <img src="./img/zero-23.jpg" />
+            <img src="{{asset('storage/solutions/'.$cats->img)}}" style="width: 80%" />
             <div class="zero__desc">
                 <div class="zero__subtitle subtitle">
-                    Удаленный доступ
+                    {{$cats->title}}
                 </div>
                 <div class="zero__text text">
-                    Безопасный доступ к ИТ-активам из любого места, не влияя на эффективность ваших команд. Контролируйте, кто имеет доступ к чему и когда, и включите удаленный доступ с полной уверенностью.
+                    {{$cats->text}}
                 </div>
             </div>
         </div>
+                        </a>
+                @else
+                        <a href="{{route('solution-item',$cats->id)}}">
         <div class="zero__row--resevre row">
             <div class="zero__desc">
                 <div class="zero__subtitle subtitle">
-                    Облачная безопасность
+                   {{$cats->title}}
                 </div>
                 <div class="zero__text text">
-                    Облачные вычисления произвели революцию в том, как компании хранят критически важные данные, сколько их можно хранить и как к ним можно получить доступ с помощью нового виртуального хостинга данных в частных, публичных и гибридных облачных средах. Организации должны защищать и управлять миграцией своих систем в облако, а также обеспечивать беспрепятственный и безопасный доступ к данным и критически важным приложениям. WALLIX проводит организации через сложности достижения облачной безопасности для безопасного цифрового будущего.
+                    {{$cats->text}}
                 </div>
             </div>
-            <img src="./img/zero-24.jpg" />
+            <img src="{{asset('storage/solutions/'.$cats->img)}}" style="width: 80%" />
         </div>
-        <div class="zero__row row">
-            <img src="./img/zero-25.jpg" />
-            <div class="zero__desc">
-                <div class="zero__subtitle subtitle">
-                    DevOps
-                </div>
-                <div class="zero__text text">
-                    Безопасность не может отойти на задний план в высокоскоростном мире DevOps. Устраните постоянные привилегии и обеспечьте безопасность процесса, не нарушая гибких рабочих процессов с помощью автоматизированного управления привилегированным доступом.
-                </div>
-            </div>
-        </div>
-        <div class="zero__row--resevre row">
-            <div class="zero__desc">
-                <div class="zero__subtitle subtitle">
-                    Роботизированная Автоматизация
-                    технологических процессов (RPA)
-                </div>
-                <div class="zero__text text">
-                    RPA оптимизирует производительность, обеспечивает соответствие требованиям и стандартам, а также повышает производительность. Обеспечьте свое цифровое будущее с помощью решений для защиты поверхности атаки, блокирования утечек данных и оптимизации системы безопасности.
-                </div>
-            </div>
-            <img src="./img/zero-26.jpg" />
-        </div>
+                        </a>
+                @endif
+        @endfor
+            @endif
+        @endforeach
+
+
+
+
+
         <div class="zero__line line">
         </div>
     </div>

@@ -38,6 +38,15 @@
                             <label for="img">Добавьте рисунок</label>
                             <input type="file" name="img" class="form-control" id="img">
                         </div>
+                        <div class="form-group">
+                            <label for="category">Выберите категория</label>
+                            <select class="form-control" name="category_id">
+                                <option></option>
+                                @foreach($categories as $category)
+                                    <option value="{{$category->id}}">{{$category->name}}</option>
+                                @endforeach
+                            </select>
+                        </div>
 
                         <button type="submit" id="alert" class="btn btn-primary">Submit</button>
                         <input type="reset" class="btn btn-danger" value="Очистить">

@@ -21,7 +21,7 @@
                                 <a href="#" class="header__drapdown-link">О компании Wallix</a>
                             </li>
                             <li class="header__drapdown-item">
-                                <a href="#" class="header__drapdown-link">Новости</a>
+                                <a href="{{ route('news') }}" class="header__drapdown-link">Новости</a>
                             </li>
                         </ul>
                     </li>
@@ -32,18 +32,18 @@
                                 <a href="#" class="header__drapdown-link">О компании Wallix</a>
                             </li>
                             <li class="header__drapdown-item">
-                                <a href="#" class="header__drapdown-link">Новости</a>
+                                <a href="{{ route('news') }}" class="header__drapdown-link">Новости</a>
                             </li>
                         </ul>
                     </li>
                     <li class="header__item">
-                        <a href="#" class="header__link">Решения</a>
+                        <a href="{{ route('solution') }}" class="header__link">Решения</a>
                         <ul class="header__drapdown">
                             <li class="header__drapdown-item">
                                 <a href="#" class="header__drapdown-link">О компании Wallix</a>
                             </li>
                             <li class="header__drapdown-item">
-                                <a href="#" class="header__drapdown-link">Новости</a>
+                                <a href="{{ route('news') }}" class="header__drapdown-link">Новости</a>
                             </li>
                         </ul>
                     </li>
@@ -54,7 +54,7 @@
                                 <a href="#" class="header__drapdown-link">О компании Wallix</a>
                             </li>
                             <li class="header__drapdown-item">
-                                <a href="#" class="header__drapdown-link">Новости</a>
+                                <a href="{{ route('news') }}" class="header__drapdown-link">Новости</a>
                             </li>
                         </ul>
                     </li>
@@ -65,7 +65,7 @@
                                 <a href="#" class="header__drapdown-link">О компании Wallix</a>
                             </li>
                             <li class="header__drapdown-item">
-                                <a href="#" class="header__drapdown-link">Новости</a>
+                                <a href="{{ route('news') }}" class="header__drapdown-link">Новости</a>
                             </li>
                         </ul>
                     </li>

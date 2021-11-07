@@ -24,10 +24,10 @@ Route::view('session','session')->name('session');
 Route::view('trustelem','trustelem')->name('trustelem ');
 Route::view('bastion','bastion')->name('bastion');
 
-Route::view('solution4','solution4')->name('solution4');
-Route::view('solution3','solution3')->name('solution3');
-Route::view('solution2','solution2')->name('solution2');
-Route::view('solution1','solution2')->name('solution1');
+//Route::view('solution4','solution4')->name('solution4');
+//Route::view('solution3','solution3')->name('solution3');
+//Route::view('solution2','solution2')->name('solution2');
+//Route::view('solution1','solution1')->name('solution1');
 Route::view('trustelemdemo','trustelemdemo')->name('turestelemdemo');
 Route::view('health','health')->name('health');
 Route::view('devops','devops')->name('devops');
@@ -69,9 +69,12 @@ Route::prefix('admin')->name('admin.')->middleware(['web', 'auth'])->group(funct
     Route::resource('posts', PostController::class);
     Route::resource('office',App\Http\Controllers\OfficeController::class);
     Route::resource('solution',\App\Http\Controllers\SolutionController::class);
+    Route::resource('category',\App\Http\Controllers\CategoreController::class);
 });
 
+Route::get('/',[App\Http\Controllers\BladeController::class,'index']);
 Route::get('news', [\App\Http\Controllers\PostController::class,'news'])->name('news');
 Route::post('/', [MessageController::class, 'store'])->name('messages.store');
 Route::get('office',[App\Http\Controllers\OfficeController::class,'office']);
-Route::get('solution',[\App\Http\Controllers\SolutionController::class,'solution'])->name('solution');
+Route::get('solution',[\App\Http\Controllers\BladeController::class,'solution'])->name('solution');
+Route::get('solution/{solution}',[App\Http\Controllers\BladeController::class,'show'])->name('solution-item');

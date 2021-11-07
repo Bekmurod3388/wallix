@@ -22,6 +22,7 @@
         @foreach($solution as $solutions)
 
             @if(($solutions->id)%2==1)
+                <a href="{{route('solution-item',$solutions->id)}}">
         <div class="zero__row row">
             <img src="{{asset('storage/solutions/'.$solutions->img)}}" style="width: 80%" />
             <div class="zero__desc">
@@ -32,11 +33,15 @@
                     {{$solutions->text}}
                 </div>
             </div>
+
         </div>
+                </a>
 
 
             @else
+                <a href="{{route('solution-item',$solutions->id)}}">
         <div class="zero__row--resevre row">
+
             <div class="zero__desc">
                 <div class="zero__subtitle subtitle">
                     {{$solutions->title}}
@@ -47,8 +52,10 @@
             </div>
 
             <img src="{{asset('storage/solutions/'.$solutions->img)}}" style="width: 80%" />
+
         </div>
-            @endif
+                </a>
+                    @endif
         @endforeach
         <div class="zero__line line">
         </div>
