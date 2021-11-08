@@ -4,9 +4,9 @@
 <x-header></x-header>
 <section
     class="preview"
-    style="background: url('./img/background/priview-bg.png') no-repeat"
+    style="background: url('{{asset('assets/img/background/priview-bg.png')}}') no-repeat"
 >
-    <img src="./img/background/preview-5.png" alt="" />
+    <img src="{{asset('img/background/preview-5.png')}}" alt="" />
     <div class="container">
         <div class="preview__body">
             <h1 class="preview__title">Wallix Trustelem
@@ -26,7 +26,7 @@
             правами конечных точек
         </div>
         <div class="pack__row row">
-            <img src="./img/pack-4.jpg" />
+            <img src="{{asset('img/pack-4.jpg')}}" />
             <div class="pack__item">
                 <div class="pack__text text">
                     <ul>

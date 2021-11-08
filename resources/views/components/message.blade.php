@@ -56,8 +56,9 @@
                         <div class="form__agree">
                             Ознакомьтесь с <span>Политикой конфиденциальности</span>
                         </div>
-                        <input type="submit" value="Отправить" class="form__submit form__btn btn">
-
+                        <button type="submit" value="Отправить" class="form__submit form__btn btn">
+                            Отправить
+                        </button>
                     </div>
                 </div>
             </form>

@@ -33,7 +33,7 @@
 <section class="zero">
     <div class="container">
         <div class="zero__row row">
-            <img src="./img/zero-40.jpg" />
+            <img src="{{asset('img/zero-40.jpg')}}" />
             <div class="zero__desc">
                 <div class="zero__subtitle subtitle">
                     Безопасность нулевого доверия
@@ -53,10 +53,10 @@
                     Завершите работу с решением WALLIX Bastion PAM и получите еще более высокую безопасность удаленного доступа через диспетчер доступа WALLIX. Интегрируйте MFA с платформой WALLIX Trustelem SSO, чтобы извлечь выгоду из контекстной и адаптивной аутентификации.
                 </div>
             </div>
-            <img src="./img/zero-41.jpg" />
+            <img src="{{asset('img/zero-41.jpg')}}" />
         </div>
         <div class="zero__row row">
-            <img src="./img/zero-42.jpg" />
+            <img src="{{asset('img/zero-42.jpg')}}" />
             <div class="zero__desc">
                 <div class="zero__subtitle subtitle">
                     Безопасный удаленный доступ
@@ -77,7 +77,7 @@
         <div class="management__title">Аутентификатор Wallix</div>
         <div class="management__list">
             <div class="management__item">
-                <img src="./img/management-4.jpg" alt="management" />
+                <img src="{{asset('img/management-4.jpg')}}" alt="management" />
                 <div class="management__subtitle">Упрощенный опыт работы
                     с клиентами</div>
                 <div class="management__desc">
@@ -87,7 +87,7 @@
                 <a href="#" class="management__link">Свзаться</a>
             </div>
             <div class="management__item">
-                <img src="./img/management-4.jpg" alt="management" />
+                <img src="{{asset('img/management-4.jpg')}}" alt="management" />
                 <div class="management__subtitle">Сквозные сертифицированные
                     решения</div>
                 <div class="management__desc">
@@ -97,7 +97,7 @@
                 <a href="#" class="management__link">Узнать больше</a>
             </div>
             <div class="management__item">
-                <img src="./img/management-4.jpg" alt="management" />
+                <img src="{{asset('img/management-4.jpg')}}" alt="management" />
                 <div class="management__subtitle">Питание от INWEBO</div>
                 <div class="management__desc">
                     Аутентификатор WALLIX работает от нашего партнера по технологическому альянсу InWebo.

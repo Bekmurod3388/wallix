@@ -6,7 +6,7 @@
     class="preview"
     style="background: url('./img/background/priview-bg.png') no-repeat"
 >
-    <img src="./img/background/preview-6.png" alt="" />
+    <img src="{{asset('img/background/preview-6.png')}}" alt="" />
     <div class="container">
         <div class="preview__body">
             <h1 class="preview__title">Безопасный

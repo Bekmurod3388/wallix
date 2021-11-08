@@ -2,7 +2,7 @@
 <x-layout>
 
 <x-header></x-header>
-<section class="auth" style="background: url('./img/background/auth-2.jpg') center center/cover no-repeat;">
+<section class="auth" style="background: url('{{asset('img/background/auth-2.jpg')}}') center center/cover no-repeat;">
     <div class="auth__bg">
     </div>
     <div class="auth__orange"></div>
@@ -36,7 +36,7 @@
             Надежно соединяя IT и OT
         </div>
         <div class="security__body row">
-            <img src="./img/bastion-1.jpg" />
+            <img src="{{asset('img/bastion-1.jpg')}}" />
             <div class="security__desc">
                 <div class="security__subtitle subtitle ">Безопасное удаленное обслуживание</div>
                 <div class="security__text text fs16">
@@ -64,7 +64,7 @@
                     Жизненный цикл промышленного оборудования вносит...
                 </div>
                 <div class="news__xz">
-                    <img src="./img/news-2.jpg">
+                    <img src="{{asset('img/news-2.jpg')}}">
                     <a href="#" class="news__link">
                         Читать
                     </a>
@@ -79,7 +79,7 @@
                     Убедитесь, что устаревшие системы OT и новое оборудование IoT...
                 </div>
                 <div class="news__xz">
-                    <img src="./img/news-3.jpg">
+                    <img src="{{asset('img/news-3.jpg')}}">
                     <a href="#" class="news__link">
                         Читать
                     </a>
@@ -94,7 +94,7 @@
                     Вы являетесь оператором основных услуг (ESO) или оператором...
                 </div>
                 <div class="news__xz">
-                    <img src="./img/news-3.jpg">
+                    <img src="{{asset('img/news-3.jpg')}}">
                     <a href="#" class="news__link">
                         Читать
                     </a>
@@ -107,7 +107,7 @@
 <section class="zero">
     <div class="container">
         <div class="zero__row row">
-            <img src="./img/zero-43.jpg" />
+            <img src="{{asset('img/zero-43.jpg')}}" />
             <div class="zero__desc">
                 <div class="zero__subtitle subtitle">
                     Универсальное туннелирование OT:
@@ -135,7 +135,7 @@
                 </div>
                 <a href="#" class="zero__link">Административная документация</a>
             </div>
-            <img src="./img/zero-44.jpg" />
+            <img src="{{asset('img/zero-44.jpg')}}" />
         </div>
         <div class="zero__line line">
         </div>
@@ -155,7 +155,7 @@
                 <div class="review__italic">
                     «Объединив наш совместный опыт и знания – Wallix в области управления привилегированными учетными записями и Schneider Electric в области технологий промышленных систем, – мы можем представить решение IPAM (Indestrial Praveleged Access Management), предназначенное для контроля доступа поставщиков и услуг к промышленным архитектурам. Мы с гордостью можем сказать, что стали ведущим интегратором, предлагающим это надежное решение в промышленных условиях»
                 </div>
-                <img src="./img/systech-international.jpg">
+                <img src="{{asset('img/systech-international.jpg')}}">
                 <a href="#" class="review__link">Ян Буржо, директор по кибербезопасности и автоматизации процессов</a>
             </div>
             <div class="review__dots">
@@ -174,7 +174,7 @@
             <div class="list__item">
                 <div class="list__icon">
                     <div class="list__border">
-                        <img src="./img/icon/list-10.svg">
+                        <img src="{{asset('img/icon/list-10.svg')}}">
                     </div>
                 </div>
                 <div class="list__desc">
@@ -192,7 +192,7 @@
             <div class="list__item">
                 <div class="list__icon">
                     <div class="list__border">
-                        <img src="./img/icon/list-12.svg">
+                        <img src="{{asset('img/icon/list-12.svg')}}">
                     </div>
                 </div>
                 <div class="list__desc">
@@ -210,7 +210,7 @@
             <div class="list__item">
                 <div class="list__icon">
                     <div class="list__border">
-                        <img src="./img/icon/list-11.svg">
+                        <img src="{{asset('img/icon/list-11.svg')}}">
                     </div>
                 </div>
                 <div class="list__desc">
@@ -228,7 +228,7 @@
             <div class="list__item">
                 <div class="list__icon">
                     <div class="list__border">
-                        <img src="./img/icon/list-17.svg">
+                        <img src="{{asset('img/icon/list-17.svg')}}">
                     </div>
                 </div>
                 <div class="list__desc">

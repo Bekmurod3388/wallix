@@ -44,7 +44,7 @@
                     Перейти на официальный сайт WALLIX
                 </a>
                 <div class="map__body">
-                    <img src="{{asset('/assets/img/map.jpg')}}" alt="map">
+                    <img src="{{asset('assets/img/map.jpg')}}" alt="map">
                 </div>
             </div>
         </section>

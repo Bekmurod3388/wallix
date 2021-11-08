@@ -7,7 +7,7 @@
     class="preview"
     style="background: url('./img/background/priview-bg.png') no-repeat"
 >
-    <img src="./img/background/preview-4.png" alt="" />
+    <img src="{{asset('img/background/preview-4.png')}}" alt="" />
     <div class="container">
         <div class="preview__body">
             <h1 class="preview__title">Wallix BestSafe</h1>
@@ -38,7 +38,7 @@
             Особенности BestSafe
         </div>
         <div class="security__body row">
-            <img src="./img/bastion-1.jpg" />
+            <img src="{{asset('img/bastion-1.jpg')}}" />
             <div class="security__desc">
                 <div class="security__subtitle subtitle">Белый / серый / черный список</div>
                 <div class="security__text text">
@@ -66,7 +66,7 @@
                     Используйте проактивный подход к endpoint security...
                 </div>
                 <div class="news__xz">
-                    <img src="./img/news-2.jpg">
+                    <img src="{{asset('img/news-2.jpg')}}">
                     <a href="#" class="news__link">
                         Читать
                     </a>
@@ -81,7 +81,7 @@
                     Положите конец общим паролям, используемым на бесчисленных...
                 </div>
                 <div class="news__xz">
-                    <img src="./img/news-3.jpg">
+                    <img src="{{asset('img/news-3.jpg')}}">
                     <a href="#" class="news__link">
                         Читать
                     </a>
@@ -96,7 +96,7 @@
                     Обнаружение попыток шифрования в режиме...
                 </div>
                 <div class="news__xz">
-                    <img src="./img/news-3.jpg">
+                    <img src="{{asset('img/news-3.jpg')}}">
                     <a href="#" class="news__link">
                         Читать
                     </a>
@@ -110,7 +110,7 @@
                     Управляйте и контролируйте все ключевые бизнес-приложения...
                 </div>
                 <div class="news__xz">
-                    <img src="./img/news-3.jpg">
+                    <img src="{{asset('img/news-3.jpg')}}">
                     <a href="#" class="news__link">
                         Читать
                     </a>
@@ -123,7 +123,7 @@
 <section class="zero">
     <div class="container">
         <div class="zero__row row">
-            <img src="./img/zero-18.jpg" />
+            <img src="{{asset('img/zero-18.jpg')}}" />
             <div class="zero__desc">
                 <div class="zero__subtitle subtitle">
                     Применение наименьших привилегий
@@ -142,7 +142,7 @@
                     Блокировать вымогателей, вредоносных программ и криптовирусов от входа в вашу сеть, даже если пользователи имеют повышенные привилегии. Управление привилегиями на уровне приложений и процессов и остановка операций шифрования с помощью инновационной технологии endpoint protection
                 </div>
             </div>
-            <img src="./img/zero-19.jpg" />
+            <img src="{{asset('img/zero-19.jpg')}}" />
         </div>
         <div class="zero__line line">
         </div>
@@ -155,7 +155,7 @@
             <div class="list__item">
                 <div class="list__icon">
                     <div class="list__border">
-                        <img src="./img/icon/list-5.svg">
+                        <img src="{{asset('img/icon/list-5.svg')}}">
                     </div>
                 </div>
                 <div class="list__desc">
@@ -185,7 +185,7 @@
             <div class="list__item">
                 <div class="list__icon">
                     <div class="list__border">
-                        <img src="./img/icon/list-2.svg">
+                        <img src="{{asset('img/icon/list-2.svg')}}">
                     </div>
                 </div>
                 <div class="list__desc">
@@ -200,7 +200,7 @@
             <div class="list__item">
                 <div class="list__icon">
                     <div class="list__border">
-                        <img src="./img/icon/list-5.svg">
+                        <img src="{{asset('img/icon/list-5.svg')}}">
                     </div>
                 </div>
                 <div class="list__desc">

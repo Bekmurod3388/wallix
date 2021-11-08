@@ -6,7 +6,7 @@
     class="preview"
     style="background: url('./img/background/priview-bg.png') no-repeat"
 >
-    <img src="./img/background/preview-2.png" alt="" />
+    <img src="{{asset('img/background/preview-2.png')}}" alt="" />
     <div class="container">
         <div class="preview__body">
             <h1 class="preview__title">Wallix Bastion
@@ -40,7 +40,7 @@
         <div class="management__title">Безопасный удалённый и внешний доступ к ИТ-ресурсам</div>
         <div class="management__list">
             <div class="management__item">
-                <img src="./img/management-4.jpg" alt="management" />
+                <img src="{{asset('img/management-4.jpg')}}" alt="management" />
                 <div class="management__subtitle">Централизованное управление
                     внешним доступом</div>
                 <div class="management__desc">
@@ -50,7 +50,7 @@
                 </div>
             </div>
             <div class="management__item">
-                <img src="./img/management-4.jpg" alt="management" />
+                <img src="{{asset('img/management-4.jpg')}}" alt="management" />
                 <div class="management__subtitle">Простая и легкая альтернатива
                     сложным решениям</div>
                 <div class="management__desc">
@@ -60,7 +60,7 @@
                 </div>
             </div>
             <div class="management__item">
-                <img src="./img/management-4.jpg" alt="management" />
+                <img src="{{asset('img/management-4.jpg')}}" alt="management" />
                 <div class="management__subtitle">Повышенная безопасность
                     с помощью решений для
                     идентификации пользователей</div>
@@ -83,7 +83,7 @@
             платформы управления
         </div>
         <div class="pack__row row">
-            <img src="./img/pack-1.jpg" />
+            <img src="{{asset('img/pack-1.jpg')}}" />
             <div class="pack__item">
                 <div class="pack__subtitle subtitle">
                     WALLIX Bastion Access Manager предлагает
