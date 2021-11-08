@@ -2,7 +2,7 @@
 <x-layout>
 
 <x-header></x-header>
-<section class="auth" style="background: url('{{asset('assets/img/background/auth-2.jpg')}}') center center/cover no-repeat;">
+    <section class="preview" style="background: url('{{asset('assets/img/background/priview-bg.png')}}') no-repeat">
     <div class="auth__bg">
     </div>
     <div class="auth__orange"></div>

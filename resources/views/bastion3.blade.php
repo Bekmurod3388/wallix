@@ -3,10 +3,7 @@
 <x-header>
 
 </x-header>
-<section
-    class="preview"
-    style="background: url('{{asset(assets/img/background/priview-bg.png')}}'') no-repeat"
->
+    <section class="preview" style="background: url('{{asset('assets/img/background/priview-bg.png')}}') no-repeat">
     <img src="{{asset('assets/img/background/preview-2.png')}}" alt="" />
     <div class="container">
         <div class="preview__body">

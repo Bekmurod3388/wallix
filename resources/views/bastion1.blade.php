@@ -3,7 +3,7 @@
 
 
 <x-header></x-header>
-<section
+    <section class="preview" style="background: url('{{asset('assets/img/background/priview-bg.png')}}') no-repeat"><section
     class="preview"
     style="background: url('{{asset('assets/img/background/priview-bg.png')}}') no-repeat"
 >

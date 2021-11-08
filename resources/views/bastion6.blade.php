@@ -1,11 +1,8 @@
 <x-layout>
 
 <x-header></x-header>
-<section
-    class="preview"
-    style="background: url('{{asset('assets/img/background/priview-bg.png')}}) no-repeat"
->
-    <img src="{{asset('assets/img/background/preview-3.png')}}" alt="" />
+    <section class="preview" style="background: url('{{asset('assets/img/background/priview-bg.png')}}') no-repeat">
+        <img src="{{asset('assets/img/background/preview-3.png')}}" alt="" />
     <div class="container">
         <div class="preview__body">
             <h1 class="preview__title">Schneider Electric
