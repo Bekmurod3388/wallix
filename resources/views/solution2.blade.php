@@ -2,7 +2,7 @@
 <x-header></x-header>
 <section
     class="preview"
-    style="background: url('./img/background/priview-bg.png') no-repeat"
+    style="background: url('{{asset('assets/img/background/priview-bg.png')}}'') no-repeat"
 >
     <img src="{{asset('assets/img/background/preview-11.png')}}" alt="" />
     <div class="container">
@@ -32,7 +32,7 @@
 <section class="zero">
     <div class="container">
         <div class="zero__row row">
-            <img src="./img/zero-27.jpg" />
+            <img src="{{asset('assets/img/zero-27.jpg')}}" />
             <div class="zero__desc">
                 <div class="zero__subtitle subtitle">
                     Многие нормативные акты,
@@ -51,7 +51,7 @@
                 <div class="zero__text text">
                     Докажите соответствие неизменяемому журналу аудита всех привилегированных сеансов и установите систему нулевого доверия для контроля и мониторинга того, кто что, когда и как делал с вашими наиболее важными активами.            </div>
             </div>
-            <img src="./img/zero-28.jpg" />
+            <img src="{{asset('assets/img/zero-28.jpg')}}" />
         </div>
         <div class="zero__line line">
         </div>
@@ -64,7 +64,7 @@
             Упрощенный аудит и соответствие
         </div>
         <div class="security__body row">
-            <img src="./img/bastion-1.jpg" />
+            <img src="{{asset('assets/img/bastion-1.jpg')}}" />
             <div class="security__desc">
                 <div class="security__subtitle subtitle">GDPR</div>
                 <div class="security__text text">
@@ -91,7 +91,7 @@
                     Достижение международно признанных уровней...
                 </div>
                 <div class="news__xz">
-                    <img src="./img/news-2.jpg">
+                    <img src="{{asset('assets/img/news-2.jpg')}}">
                     <a href="#" class="news__link">
                         Читать
                     </a>
@@ -105,7 +105,7 @@
                     Операторы основных услуг (OESs) и поставщики цифровых услуг...
                 </div>
                 <div class="news__xz">
-                    <img src="./img/news-3.jpg">
+                    <img src="{{asset('assets/img/news-3.jpg')}}">
                     <a href="#" class="news__link">
                         Читать
                     </a>
@@ -119,7 +119,7 @@
                     Контролируйте весь доступ к конфиденциальным данным...
                 </div>
                 <div class="news__xz">
-                    <img src="./img/news-3.jpg">
+                    <img src="{{asset('assets/img/news-3.jpg')}}">
                     <a href="#" class="news__link">
                         Читать
                     </a>
@@ -133,7 +133,7 @@
                     Главный приоритет медицинской организации-безопасность...
                 </div>
                 <div class="news__xz">
-                    <img src="./img/news-3.jpg">
+                    <img src="{{asset('assets/img/news-3.jpg')}}">
                     <a href="#" class="news__link">
                         Читать
                     </a>
@@ -151,7 +151,7 @@
             <div class="list__item">
                 <div class="list__icon">
                     <div class="list__border">
-                        <img src="./img/icon/list-10.svg">
+                        <img src="{{asset('assets/img/icon/list-10.svg')}}">
                     </div>
                 </div>
                 <div class="list__desc">
@@ -169,7 +169,7 @@
             <div class="list__item">
                 <div class="list__icon">
                     <div class="list__border">
-                        <img src="./img/icon/list-11.svg">
+                        <img src="{{asset('assets/img/icon/list-11.svg')}}">
                     </div>
                 </div>
                 <div class="list__desc">
@@ -187,7 +187,7 @@
             <div class="list__item">
                 <div class="list__icon">
                     <div class="list__border">
-                        <img src="./img/icon/list-12.svg">
+                        <img src="{{asset('assets/img/icon/list-12.svg')}}">
                     </div>
                 </div>
                 <div class="list__desc">

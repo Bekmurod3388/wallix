@@ -4,9 +4,9 @@
 <x-header></x-header>
 <section
     class="preview"
-    style="background: url('./img/background/priview-bg.png') no-repeat"
+    style="background: url('{{asset('assets/img/background/priview-bg.png')}}') no-repeat"
 >
-    <img src="{{asset('img/background/preview-6.png')}}" alt="" />
+    <img src="{{asset('assets/img/background/preview-6.png')}}" alt="" />
     <div class="container">
         <div class="preview__body">
             <h1 class="preview__title">Безопасный
@@ -25,7 +25,7 @@
             Безопасность часто является запоздалой мыслью или даже жертвой скорости и инструментов среды DevOps. Хотя DevOps может добиться сокращения циклов разработки за счет автоматизации и повышения масштабируемости облака, он также может “автоматизировать незащищенность”, создавая критические пробелы в безопасности.
         </div>
         <div class="zero__row row mt">
-            <img src="./img/zero-9.jpg" />
+            <img src="{{asset('assets/img/zero-9.jpg')}}" />
             <div class="zero__desc">
                 <div class="zero__text text m0">
                     Привилегированные учетные записи, используемые для процессов DevOps, снабжены неоправданно высоким уровнем постоянных привилегий, нарушая Принцип наименьших привилегий и открывая значительную уязвимость. Это особенно верно в мире DevOps из-за:
@@ -58,7 +58,7 @@
                     </ul>
                 </div>
             </div>
-            <img src="./img/zero-10.jpg" />
+            <img src="{{asset('assets/img/zero-10.jpg')}}" />
         </div>
         <div class="pack__title pack__title--p title">Преимущества PAM
             для DevOps</div>
@@ -66,7 +66,7 @@
             Контролируйте и отслеживайте привилегированный доступ, чтобы гарантировать, что только правильный человек или правильный процесс может получить доступ к системе для выполнения авторизованного действия, без ущерба для скорости и гибкости в DevSecOps.
         </div>
         <div class="zero__row row mt">
-            <img src="./img/zero-11.jpg" />
+            <img src="{{asset('assets/img/zero-11.jpg')}}" />
             <div class="zero__desc">
                 <div class="zero__text text m0">
                     <ul>

@@ -3,9 +3,9 @@
 <x-header></x-header>
 <section
     class="preview"
-    style="background: url('./img/background/priview-bg.png') no-repeat"
+    style="background: url('{{asset('assets/img/background/priview-bg.png')}}) no-repeat"
 >
-    <img src="{{asset('img/background/preview-3.png')}}" alt="" />
+    <img src="{{asset('assets/img/background/preview-3.png')}}" alt="" />
     <div class="container">
         <div class="preview__body">
             <h1 class="preview__title">Schneider Electric
@@ -43,7 +43,7 @@
             <div class="list__item">
                 <div class="list__icon">
                     <div class="list__border">
-                        <img src="{{asset('img/icon/list.svg')}}">
+                        <img src="{{asset('assets/img/icon/list.svg')}}">
                     </div>
                 </div>
                 <div class="list__desc">
@@ -59,7 +59,7 @@
             <div class="list__item">
                 <div class="list__icon">
                     <div class="list__border">
-                        <img src="{{asset('img/icon/list.svg')}}">
+                        <img src="{{asset('assets/img/icon/list.svg')}}">
                     </div>
                 </div>
                 <div class="list__desc">
@@ -77,7 +77,7 @@
             <div class="list__item">
                 <div class="list__icon">
                     <div class="list__border">
-                        <img src="{{asset('img/icon/list.svg')}}">
+                        <img src="{{asset('assets/img/icon/list.svg')}}">
                     </div>
                 </div>
                 <div class="list__desc">
@@ -93,7 +93,7 @@
             <div class="list__item">
                 <div class="list__icon">
                     <div class="list__border">
-                        <img src="{{asset('img/icon/list.svg')}}">
+                        <img src="{{asset('assets/img/icon/list.svg')}}">
                     </div>
                 </div>
                 <div class="list__desc">
@@ -117,7 +117,7 @@
 <section class="zero">
     <div class="container">
         <div class="zero__row row">
-            <img src="{{asset('img/zero-8.jpg')}}" />
+            <img src="{{asset('assets/img/zero-8.jpg')}}" />
             <div class="zero__desc">
                 <div class="zero__subtitle subtitle">Управление промышленным
                     привилегированным доступом</div>

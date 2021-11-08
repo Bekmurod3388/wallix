@@ -5,7 +5,7 @@
 </x-header>
 <section
     class="preview"
-    style="background: url('./img/background/priview-bg.png') no-repeat"
+    style="background: url('{{asset('assets/img/background/priview-bg.png')}}') no-repeat"
 >
     <img src="{{asset('assets/img/background/preview-8.png')}}" alt="" />
     <div class="container">
@@ -35,7 +35,7 @@
 <section class="zero">
     <div class="container">
         <div class="zero__row row">
-            <img src="./img/zero-29.jpg" />
+            <img src="{{asset('assets/img/zero-29.jpg')}}" />
             <div class="zero__desc">
                 <div class="zero__subtitle subtitle">
                     Кибербезопасность
@@ -55,10 +55,10 @@
                     Поскольку 74% всех нарушений связаны с инсайдерской угрозой, даже самые надежные сотрудники подвергаются риску. Ответственность пользователей и контроль привилегий и сеансов внутренних и внешних пользователей.
                 </div>
             </div>
-            <img src="./img/zero-30.jpg" />
+            <img src="{{asset('assets/img/zero-30.jpg')}}" />
         </div>
         <div class="zero__row row">
-            <img src="./img/zero-31.jpg" />
+            <img src="{{asset('assets/img/zero-31.jpg')}}" />
             <div class="zero__desc">
                 <div class="zero__subtitle subtitle">
                     Как раз вовремя
@@ -81,7 +81,7 @@
             <div class="list__item">
                 <div class="list__icon">
                     <div class="list__border">
-                        <img src="./img/icon/list-10.svg">
+                        <img src="{{asset('assets/img/icon/list-10.svg')}}">
                     </div>
                 </div>
                 <div class="list__desc">
@@ -99,7 +99,7 @@
             <div class="list__item">
                 <div class="list__icon">
                     <div class="list__border">
-                        <img src="./img/icon/list-11.svg">
+                        <img src="{{asset('assets/img/icon/list-11.svg')}}">
                     </div>
                 </div>
                 <div class="list__desc">
@@ -117,7 +117,7 @@
             <div class="list__item">
                 <div class="list__icon">
                     <div class="list__border">
-                        <img src="./img/icon/list-12.svg">
+                        <img src="{{asset('assets/img/icon/list-12.svg')}}">
                     </div>
                 </div>
                 <div class="list__desc">

@@ -20,7 +20,7 @@
 <section class="zero">
     <div class="container">
         <div class="zero__row row">
-            <img src="./img/zero-13.jpg" />
+            <img src="{{asset('assets/img/zero-13.jpg')}}" />
             <div class="zero__desc">
                 <div class="zero__subtitle subtitle">
                     Понимание основ строгой

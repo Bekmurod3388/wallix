@@ -6,9 +6,9 @@
 </x-header>
 <section
     class="preview"
-    style="background: url('./img/background/priview-bg.png') no-repeat"
+    style="background: url('{{asset('assets/img/background/priview-bg.png')}}) no-repeat"
 >
-    <img src="{{asset('img/background/preview-2.png')}}" alt="" />
+    <img src="{{asset('assets/img/background/preview-2.png')}}" alt="" />
     <div class="container">
         <div class="preview__body">
             <h1 class="preview__title">Служба управления Bastion</h1>
@@ -43,21 +43,21 @@
             Управляемые службы</div>
         <div class="management__list">
             <div class="management__item">
-                <img src="{{asset('img/management-4.jpg')}}" alt="management" />
+                <img src="{{asset('assets/img/management-4.jpg')}}" alt="management" />
                 <div class="management__subtitle">Экономия бюджетов и ресурсов</div>
                 <div class="management__desc">
                     Wallix берет на себя СБОРКУ и ЗАПУСК вашего управления привилегированным доступом. Резко сократите затраты благодаря модели OPEX.
                 </div>
             </div>
             <div class="management__item">
-                <img src="{{asset('img/management-4.jpg')}}" alt="management" />
+                <img src="{{asset('assets/img/management-4.jpg')}}" alt="management" />
                 <div class="management__subtitle">Повышение эффективности</div>
                 <div class="management__desc">
                     Удовлетворяйте конкретные потребности местных филиалов и получайте доступ к критически важным ресурсам безопасности, не откладывая другие ключевые проекты.
                 </div>
             </div>
             <div class="management__item">
-                <img src="{{asset('img/management-4.jpg')}}" alt="management" />
+                <img src="{{asset('assets/img/management-4.jpg')}}" alt="management" />
                 <div class="management__subtitle">Достижение соответствия</div>
                 <div class="management__desc">
                     Обеспечьте контроль доступа и подотчетность, а также гарантированный мониторинг и прослеживаемость для достижения соответствия нормативным требованиям с минимальным воздействием на внутренние рабочие нагрузки.
@@ -70,7 +70,7 @@
 <section class="zero">
     <div class="container">
         <div class="zero__row row">
-            <img src="{{asset('img/zero-5.jpg')}}" />
+            <img src="{{asset('assets/img/zero-5.jpg')}}" />
             <div class="zero__desc">
                 <div class="zero__subtitle subtitle">
                     Усиленная безопасность, упрощение
@@ -93,10 +93,10 @@
                     Получите новые уровни ясности с всесторонний надзор. Автоматически получать оповещения при начале привилегированных сеансов, отслеживать сеансы в режиме реального времени с помощью функций 4-Eyes, обмениваться сеансами с удаленными поставщиками технического обслуживания и извлекать метаданные из записанных сеансов для дальнейшего анализа и аудита активности сеансов.
                 </div>
             </div>
-            <img src="{{asset('img/zero-6.jpg')}}" />
+            <img src="{{asset('assets/img/zero-6.jpg')}}" />
         </div>
         <div class="zero__row row">
-            <img src="./img/zero-7.jpg" />
+            <img src="{{asset('assets/img/zero-7.jpg')}}" />
             <div class="zero__desc">
                 <div class="zero__subtitle subtitle">Откройте для себя управляемые
                     сервисы WALLIX Bastion</div>
@@ -134,7 +134,7 @@
                     или доступ к нескольким системам.
                 </div>
             </div>
-            <img src="{{asset('img/zero-4.jpg')}}" />
+            <img src="{{asset('assets/img/zero-4.jpg')}}" />
         </div>
     </div>
 </section>

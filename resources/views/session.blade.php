@@ -4,9 +4,9 @@
 </x-header>
 <section
     class="preview"
-    style="background: url('./img/background/priview-bg.png') no-repeat"
+    style="background: url('{{asset('assets/img/background/priview-bg.png')}}'') no-repeat"
 >
-    <img src="{{asset('img/background/preview-7.png')}}" alt="" />
+    <img src="{{asset('assets/img/background/preview-7.png')}}" alt="" />
     <div class="container">
         <div class="preview__body">
             <h1 class="preview__title">Wallix Bastion
@@ -40,7 +40,7 @@
         <div class="management__title">Полный мониторинг и управление сеансами</div>
         <div class="management__list">
             <div class="management__item">
-                <img src="{{asset('img/management-4.jpg')}}" alt="management" />
+                <img src="{{asset('assets/img/management-4.jpg')}}" alt="management" />
                 <div class="management__subtitle">Соответствие нормативным
                     требованиям</div>
                 <div class="management__desc">
@@ -50,7 +50,7 @@
                 </div>
             </div>
             <div class="management__item">
-                <img src="{{asset('img/management-4.jpg')}}" alt="management" />
+                <img src="{{asset('assets/img/management-4.jpg')}}" alt="management" />
                 <div class="management__subtitle">Мониторинг в режиме
                     реального времени</div>
                 <div class="management__desc">
@@ -60,7 +60,7 @@
                 </div>
             </div>
             <div class="management__item">
-                <img src="{{asset('img/management-4.jpg')}}" alt="management" />
+                <img src="{{asset('assets/img/management-4.jpg')}}" alt="management" />
                 <div class="management__subtitle">Инсайдерская угроза
                     и нулевое доверие</div>
                 <div class="management__desc">
@@ -83,7 +83,7 @@
                 <div class="pack__desc w-100">
                     Управление доступом и активностью привилегированных пользователей с помощью комплексного мониторинга и записи сеансов, включая оповещение в режиме реального времени и совместное использование сеансов для полного контроля привилегированных сеансов.
                 </div>
-                <img class="mt" src="{{asset('img/pack-1.jpg')}}" />
+                <img class="mt" src="{{asset('assets/img/pack-1.jpg')}}" />
             </div>
             <div class="pack__item">
                 <div class="pack__subtitle subtitle">

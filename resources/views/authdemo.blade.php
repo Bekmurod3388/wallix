@@ -2,7 +2,7 @@
 <x-message>
 
 <x-header></x-header>
-<section class="auth" style="background: url('./img/background/auth-bg.jpg') center center/cover no-repeat;">
+<section class="auth" style="background: url('{{asset('assets/img/background/auth-bg.jpg')}}') center center/cover no-repeat;">
     <div class="auth__bg">
     </div>
     <div class="auth__orange"></div>
@@ -23,7 +23,7 @@
             ни находились ваши пользователи
         </div>
         <div class="zero__row row mt">
-            <img src="{{asset('img/pack-4.jpg')}}" />
+            <img src="{{asset('assets/img/pack-4.jpg')}}" />
             <div class="zero__desc">
                 <div class="zero__text zero__text--arrow text m0">
                     <ul>

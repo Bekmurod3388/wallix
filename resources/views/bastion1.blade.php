@@ -5,9 +5,9 @@
 <x-header></x-header>
 <section
     class="preview"
-    style="background: url('./img/background/priview-bg.png') no-repeat"
+    style="background: url('{{asset('assets/img/background/priview-bg.png')}}') no-repeat"
 >
-    <img src="{{asset('img/background/preview-2.png')}}" alt="" />
+    <img src="{{asset('assets/img/background/preview-2.png')}}" alt="" />
     <div class="container">
         <div class="preview__body">
             <h1 class="preview__title">Wallix Bastion</h1>
@@ -42,7 +42,7 @@
             Комплексные функции безопасности доступа
         </div>
         <div class="security__body row">
-            <img src="{{asset('img/bastion-1.jpg')}}" />
+            <img src="{{asset('assets/img/bastion-1.jpg')}}" />
             <div class="security__desc">
                 <div class="security__subtitle subtitle">Менеджер сеансов</div>
                 <div class="security__text text">
@@ -66,7 +66,7 @@
 <section class="zero">
     <div class="container">
         <div class="zero__row row">
-            <img src="{{asset('img/zero-1.jpg')}}" />
+            <img src="{{asset('assets/img/zero-1.jpg')}}" />
             <div class="zero__desc">
                 <div class="zero__subtitle subtitle">
                     Безопасный удаленный доступ
@@ -106,10 +106,10 @@
                     и не меньше.
                 </div>
             </div>
-            <img src="{{asset('img/zero-2.jpg')}}" />
+            <img src="{{asset('assets/img/zero-2.jpg')}}" />
         </div>
         <div class="zero__row row">
-            <img src="{{asset('img/zero-3.jpg')}}" />
+            <img src="{{asset('assets/img/zero-3.jpg')}}" />
             <div class="zero__desc">
                 <div class="zero__subtitle subtitle">Масштабируемая PAM легко</div>
                 <div class="zero__text text">
@@ -152,7 +152,7 @@
                     или доступ к нескольким системам.
                 </div>
             </div>
-            <img src="{{asset('img/zero-4.jpg')}}" />
+            <img src="{{asset('assets/img/zero-4.jpg')}}" />
         </div>
     </div>
 </section>
@@ -162,7 +162,7 @@
         <div class="management__title">Wallix Bastion</div>
         <div class="management__list">
             <div class="management__item">
-                <img src="{{asset('img/management-4.jpg')}}" alt="management" />
+                <img src="{{asset('assets/img/management-4.jpg')}}" alt="management" />
                 <div class="management__subtitle">Гибкое лицензирование</div>
                 <div class="management__desc">
                     Годовая подписка с подпиской на обслуживание от 12 до 36 месяцев;
@@ -174,7 +174,7 @@
                 <a href="#" class="management__link"> Свзаться </a>
             </div>
             <div class="management__item">
-                <img src="{{asset('img/management-4.jpg')}}" alt="management" />
+                <img src="{{asset('assets/img/management-4.jpg')}}" alt="management" />
                 <div class="management__subtitle">Управляемые службы</div>
                 <div class="management__desc">
                     Экономьте время и ресурсы благодаря привилегированному доступу,
@@ -187,7 +187,7 @@
                 <a href="#" class="management__link"> Узнать больше </a>
             </div>
             <div class="management__item">
-                <img src="{{asset('img/management-4.jpg')}}" alt="management" />
+                <img src="{{asset('assets/img/management-4.jpg')}}" alt="management" />
                 <div class="management__subtitle">Облачный рынок</div>
                 <div class="management__desc">
                     WALLIX Bastion доступен на нескольких облачных маркетплейсах для
@@ -215,7 +215,7 @@
             малых и средних предприятий до крупных счетов
         </div>
         <div class="pack__row row">
-            <img src="{{asset('img/pack-1.jpg')}}" />
+            <img src="{{asset('assets/img/pack-1.jpg')}}" />
             <div class="pack__item">
                 <div class="pack__subtitle subtitle">
                     Платформа Bastion (Бастион) предлагает следующие функциональные
@@ -253,7 +253,7 @@
             <div class="list__item">
                 <div class="list__icon">
                     <div class="list__border">
-                        <img src="{{asset('img/icon/list.svg')}}" />
+                        <img src="{{asset('assets/img/icon/list.svg')}}" />
                     </div>
                 </div>
                 <div class="list__desc">
@@ -267,7 +267,7 @@
             <div class="list__item">
                 <div class="list__icon">
                     <div class="list__border">
-                        <img src="{{asset('img/icon/list.svg')}}" />
+                        <img src="{{asset('assets/img/icon/list.svg')}}" />
                     </div>
                 </div>
                 <div class="list__desc">
@@ -281,8 +281,8 @@
         </div>
         <div class="pack__line line"></div>
         <div class="pack__images">
-            <img src="{{asset('img/pack-2.png')}}" />
-            <img src="{{asset('img/pack-3.png')}}'" />
+            <img src="{{asset('aseets/img/pack-2.png')}}" />
+            <img src="{{asset('assets/img/pack-3.png')}}'" />
         </div>
     </div>
 </section>

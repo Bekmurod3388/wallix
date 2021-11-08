@@ -3,9 +3,9 @@
 <x-header></x-header>
 <section
     class="preview"
-    style="background: url('./img/background/priview-bg.png') no-repeat"
+    style="background: url('{{asset('img/background/priview-bg.png')}}') no-repeat"
 >
-    <img src="{{asset('img/background/preview-10.png')}}" alt="" />
+    <img src="{{asset('assets/img/background/preview-10.png')}}" alt="" />
     <div class="container">
         <div class="preview__body">
             <h1 class="preview__title">Кибербезопасность
@@ -32,7 +32,7 @@
         </div>
     </div>
 </section>
-<section class="banner" style="background: url('./img/background/banner-bg.jpg') center center/cover no-repeat;">
+<section class="banner" style="background: url('{{asset('assets/img/background/banner-bg.jpg')}}') center center/cover no-repeat;">
     <div class="container">
         <div class="banner__body">
             <div class="banner__text">
@@ -44,7 +44,7 @@
 <section class="zero">
     <div class="container">
         <div class="zero__row row">
-            <img src="./img/zero-14.jpg" />
+            <img src="{{asset('assets/img/zero-14.jpg')}}" />
             <div class="zero__desc">
                 <div class="zero__subtitle subtitle">
                     Защита доступа к разнородному
@@ -65,10 +65,10 @@
                     Получите точный контроль над подключенными медицинскими устройствами (IoMT), чтобы уменьшить поверхность атаки, предотвратить боковые перемещения и защитить доступ к серверам, на которых хранятся конфиденциальные данные.
                 </div>
             </div>
-            <img src="./img/zero-15.jpg" />
+            <img src="{{asset('assets/img/zero-15.jpg')}}" />
         </div>
         <div class="zero__row row">
-            <img src="./img/zero-16.jpg" />
+            <img src="{{asset('assets/img/zero-16.jpg')}}" />
             <div class="zero__desc">
                 <div class="zero__subtitle subtitle">Безопасное новое цифровое
                     использование</div>
@@ -87,7 +87,7 @@
                     Достигните соблюдения правил безопасности благодаря документированным, проверяемым доказательствам того, что доступ к медицинским данным контролируется и защищен. Соответствуйте стандартам мировых нормативных актов, включая GDPR, HDS, HITECH, HIPAA, DSPT и т. д.
                 </div>
             </div>
-            <img src="./img/zero-17.jpg" />
+            <img src="{{asset('assets/img/zero-17.jpg')}}" />
         </div>
     </div>
 </section>

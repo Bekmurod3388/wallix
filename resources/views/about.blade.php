@@ -4,7 +4,7 @@
     @endsection
     <section
         class="preview"
-        style="background: url('./assets/img/background/priview-bg.png') no-repeat"
+        style="background: url('{{asset('assets/img/background/priview-bg.png')}}) no-repeat"
     >
         <img src="{{asset('assets/img/background/preview-14.png')}}" alt=""/>
         <div class="container">
@@ -33,7 +33,7 @@
             </div>
         </div>
     </section>
-    <section class="banner" style="background: url('./assets/img/background/banner-bg.jpg') center center/cover no-repeat;">
+    <section class="banner" style="background: url('{{asset('assets/img/background/banner-bg.jpg')}}') center center/cover no-repeat;">
         <div class="container">
             <div class="banner__body">
                 <div class="banner__text">
