@@ -34,9 +34,9 @@
                                 <td class="col-2">
                                     <form action="{{ route('admin.category.destroy',$category->id) }}" method="POST">
                                     <a class="btn btn-warning" href="{{ route('admin.category.edit',$category->id) }}">
-                                    <span class="btn-label">
-                                        <i class="fa fa-pen"></i> Изменить
-                                    </span>
+
+                                        <i class="fa fa-pen"></i>
+
 
                                     </a>
                                      @csrf

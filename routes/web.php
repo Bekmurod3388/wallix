@@ -72,9 +72,10 @@ Route::prefix('admin')->name('admin.')->middleware(['web', 'auth'])->group(funct
     Route::resource('category',\App\Http\Controllers\CategoreController::class);
 });
 
-Route::get('/',[App\Http\Controllers\BladeController::class,'index']);
+Route::get('/',[App\Http\Controllers\BladeController::class,'index'])->name('index');
 Route::get('news', [\App\Http\Controllers\PostController::class,'news'])->name('news');
 Route::post('/', [MessageController::class, 'store'])->name('messages.store');
-Route::get('office',[App\Http\Controllers\OfficeController::class,'office']);
+Route::get('office',[App\Http\Controllers\OfficeController::class,'office'])->name('office');
 Route::get('solution',[\App\Http\Controllers\BladeController::class,'solution'])->name('solution');
 Route::get('solution/{solution}',[App\Http\Controllers\BladeController::class,'show'])->name('solution-item');
+Route::get('mews/{post}',[App\Http\Controllers\BladeController::class,'news'])->name('news-item');

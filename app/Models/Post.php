@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * @method static create(array $array)
  * @method static orderby(string $string, string $string1)
+ * @method static where(string $string, $id)
  */
 class Post extends Model
 {

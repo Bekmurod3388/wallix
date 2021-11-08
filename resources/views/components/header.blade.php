@@ -15,7 +15,7 @@
             <nav class="header__nav">
                 <ul class="header__list">
                     <li class="header__item">
-                        <a href="#" class="header__link">Главная</a>
+                        <a href="{{route('index')}}" class="header__link">Главная</a>
                         <ul class="header__drapdown">
                             <li class="header__drapdown-item">
                                 <a href="#" class="header__drapdown-link">О компании Wallix</a>
@@ -59,7 +59,7 @@
                         </ul>
                     </li>
                     <li class="header__item">
-                        <a href="#" class="header__link">Контакты</a>
+                        <a href="{{route('office')}}" class="header__link">Контакты</a>
                         <ul class="header__drapdown">
                             <li class="header__drapdown-item">
                                 <a href="#" class="header__drapdown-link">О компании Wallix</a>

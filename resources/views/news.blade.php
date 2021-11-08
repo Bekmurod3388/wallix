@@ -22,6 +22,7 @@
                 @foreach($posts as $post)
                     @if(($post->id)%2==0)
                     <div class="zero__row pb-3 row">
+
                         <img src="{{asset('storage/posts/'.$post->img)}}" />
                         <div class="zero__desc">
                             <div class="zero__date">
@@ -31,9 +32,9 @@
                                {{$post->header_ru}}
                             </div>
                             <div class="zero__text text">
-                               {{$post->description_ru}}
-                            </div>
-                            <a href="#" class="zero__link">
+                                {{ \Illuminate\Support\Str::limit($post->description_ru, 150, '...') }}
+                                                            </div>
+                            <a href="{{route('news-item',$post->id)}}" class="zero__link">
                                 Читать полностью
                             </a>
 
@@ -50,13 +51,14 @@
                                 {{$post->header_ru}}
                             </div>
                             <div class="zero__text text">
-                                {{$post->description_ru}}
+                                {{ \Illuminate\Support\Str::limit($post->description_ru, 150, '...') }}
+
                             </div>
-                            <a href="#" class="zero__link">
+                            <a href="{{route('news-item',$post->id)}}" class="zero__link">
                                 Читать полностью
                             </a>
                         </div>
-                        <img src="{{asset('storage/post/'.$post->img)}}" />
+                        <img src="{{asset('storage/posts/'.$post->img)}}" />
                     </div>
                     @endif
                 @endforeach
