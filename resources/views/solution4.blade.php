@@ -7,7 +7,7 @@
         <div class="header__body">
             <div class="header__logos">
                 <a href="#" class="header__logo">
-                    <img src="{{asset('assets/img/logo/logo.')}}" alt="logo" />
+                    <img src="{{asset('assets/img/logo/logo.png')}}" alt="logo" />
                 </a>
                 <a href="#" class="header__logo">
                     <img src="{{asset('assets/img/logo/abris-logo.png')}}" alt="Abris logo" />

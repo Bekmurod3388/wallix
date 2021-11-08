@@ -1,7 +1,7 @@
 <x-layout>
 
 <x-header></x-header>
-    <section class="preview" style="background: url('{{asset('assets/img/background/priview-bg.png')}}') no-repeat">
+    <section class="preview" style="background: url('{{asset('assets/img/background/auth-bg.jpg')}}') no-repeat">
     <div class="container">
         <div class="auth__content">
             <div class="auth__body">

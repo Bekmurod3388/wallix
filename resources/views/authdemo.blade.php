@@ -1,8 +1,8 @@
 
-<x-message>
+<x-layout>
 
 <x-header></x-header>
-    <section class="preview" style="background: url('{{asset('assets/img/background/priview-bg.png')}}') no-repeat">
+    <section class="preview" style="background: url('{{asset('assets/img/background/auth-bg.jpg')}}') no-repeat">
     <div class="auth__bg">
     </div>
     <div class="auth__orange"></div>
