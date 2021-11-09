@@ -56,9 +56,8 @@
                         <div class="form__agree">
                             Ознакомьтесь с <span>Политикой конфиденциальности</span>
                         </div>
-                        <button type="submit" value="Отправить" class="form__submit form__btn btn">
-                            Отправить
-                        </button>
+                        <input type="submit" value="Отправить" class="form__submit form__btn btn">
+
                     </div>
                 </div>
             </form>
@@ -96,8 +95,10 @@
                             bastion:bastion,
                         },
                         success:function(response){
-                            alert("Спасибо за заполнение формы!");
-                        },
+                            Swal.fire({
+                                icon: 'success',
+                                title: '{{__("about.success")}}',
+                            })
                     });
                 });
 

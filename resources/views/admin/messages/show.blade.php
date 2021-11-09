@@ -11,7 +11,7 @@
                     <span class="">{{$message->surname}}</span>
                 </h2>
                 <h2 class="card__title news-item__card-title">
-                    <span>когда: </span>
+                    <span>компания: </span>
                     <span class=""> {{$message->company}}</span>
                 </h2>
                 <h2 class="card__title news-item__card-title">
