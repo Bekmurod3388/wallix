@@ -13,5 +13,6 @@
 {{$slot}}
 @yield('footer')
 <script src="{{asset('assets/js/script.min.js')}}"></script>
+<script src="{{asset('asset/js/plugin/sweetalert/sweetalert2.min.js')}}"></script>
 </body>
 </html>
