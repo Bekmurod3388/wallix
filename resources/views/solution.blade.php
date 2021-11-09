@@ -27,7 +27,7 @@
                    {{$solutions->title}}
                 </div>
                 <div class="zero__text text">
-                    {{$solutions->text}}
+                    {{ \Illuminate\Support\Str::limit($solutions->text, 150, '...') }}
                 </div>
             </div>
 
@@ -44,7 +44,7 @@
                     {{$solutions->title}}
                 </div>
                 <div class="zero__text text">
-                    {{$solutions->text}}
+                    {{ \Illuminate\Support\Str::limit($solutions->text, 150, '...') }}
                 </div>
             </div>
 

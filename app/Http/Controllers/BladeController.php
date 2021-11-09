@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Categories;
 use App\Models\Post;
+use App\Models\Produkt;
 use App\Models\solution;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -20,6 +21,10 @@ class BladeController extends Controller
         public function solution(){
             $solution = solution::orderBy('id','desc')->paginate(25);
             return view('solution')->with('solution', $solution);
+        }
+        public function product(){
+            $product = Produkt::orderBy('id','desc')->paginate(25);
+            return view('produkt')->with('product', $product);
         }
 
     /**

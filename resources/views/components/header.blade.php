@@ -26,7 +26,7 @@
                         </ul>
                     </li>
                     <li class="header__item">
-                        <a href="#" class="header__link">Продукты</a>
+                        <a href="{{route('product')}}" class="header__link">Продукты</a>
                         <ul class="header__drapdown">
                             <li class="header__drapdown-item">
                                 <a href="#" class="header__drapdown-link">О компании Wallix</a>
