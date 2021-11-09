@@ -60,4 +60,19 @@ class BladeController extends Controller
         $category=Categories::all()->where('id',$solution->category_id);
         return view('solution1',compact('solution','cat','count','category'));
     }
+    /**
+     * Display the specified resource.
+     *
+     * @param \App\Models\Produkt $product
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
+    public function produkt(Produkt $product)
+    {
+
+
+        $cat=Produkt::all()->where('category_id', $product->category_id );
+        $count=count($cat);
+        $category=Categories::all()->where('id',$product->category_id);
+        return view('product-item',compact('product','cat','count','category'));
+    }
 }

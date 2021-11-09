@@ -19,7 +19,7 @@
             @foreach($product as $products)
 
                 @if(($products->id)%2==1)
-                    <a href="{{route('solution-item',$products->id)}}">
+                    <a href="{{route('product-item',$products->id)}}">
                         <div class="zero__row row">
                             <img src="{{asset('storage/produkt/'.$products->img)}}" style="width: 80%" />
                             <div class="zero__desc">
