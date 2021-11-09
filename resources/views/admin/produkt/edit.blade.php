@@ -20,22 +20,17 @@
                     @endif
 
 
-                    <form action="{{route('admin.solution.update',$solution->id)}}" method="POST" accept-charset="UTF-8" enctype="multipart/form-data">
+                    <form action="{{route('admin.produkt.update',$produkt->id)}}" method="POST" accept-charset="UTF-8" enctype="multipart/form-data">
                         @csrf
                         @method('PUT')
                         <div class="form-group">
                             <label for="title">Титул(Ру)</label>
-                            <input type="text" name="title" class="form-control" id="title" placeholder="Титул" value="{{$solution->title}}">
+                            <input type="text" name="title" class="form-control" id="title" placeholder="Титул" value="{{$produkt->title}}">
                         </div>
 
                         <div class="form-group">
                             <label for="description_ru">Текст (Ру)</label>
-                            <textarea  class="form-control"  name="text" id="description_ru" rows="10">{{$solution->text}}</textarea>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="img">Добавьте рисунок <b><i>РАЗМЕР РИСУНОК:(600x300)</i></b></label>
-                            <input type="file" name="img" class="form-control" id="img">
+                            <textarea  class="form-control"  name="text" id="description_ru" rows="10">{{$produkt->text}}</textarea>
                         </div>
                         <div class="form-group">
                             <label for="category">Выберите категория</label>
@@ -45,6 +40,12 @@
                                     <option value="{{$category->id}}">{{$category->name}}</option>
                                 @endforeach
                             </select>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="img">Добавьте рисунок <b><i>РАЗМЕР РИСУНОК:(600x300)</i></b></label>
+                            <input type="file" name="img" class="form-control" id="img">
                         </div>
                         <button type="submit" class="btn btn-primary">Сохранить</button>
                         <input type="reset" class="btn btn-danger" value="Очистить">

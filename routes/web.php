@@ -70,6 +70,7 @@ Route::prefix('admin')->name('admin.')->middleware(['web', 'auth'])->group(funct
     Route::resource('office',App\Http\Controllers\OfficeController::class);
     Route::resource('solution',\App\Http\Controllers\SolutionController::class);
     Route::resource('category',\App\Http\Controllers\CategoreController::class);
+    Route::resource('produkt',\App\Http\Controllers\ProduktController::class);
 });
 
 Route::get('/',[App\Http\Controllers\BladeController::class,'index'])->name('index');

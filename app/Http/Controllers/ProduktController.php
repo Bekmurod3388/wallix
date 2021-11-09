@@ -7,12 +7,13 @@ use App\Models\Categories;
 use App\Models\Messages;
 use App\Models\Office;
 use App\Models\Post;
+use App\Models\Produkt;
 use App\Models\solution;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Str;
 
-class SolutionController extends Controller
+class ProduktController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -21,8 +22,8 @@ class SolutionController extends Controller
      */
     public function index()
     {
-        $solution = solution::orderBy('id','desc')->paginate(10);
-        return view('admin.solution.index')->with('solution', $solution);
+        $produkt = Produkt::orderBy('id','desc')->get();
+        return view('admin.produkt.index')->with('produkt', $produkt);
     }
 
 
@@ -35,7 +36,7 @@ class SolutionController extends Controller
      */
     public function create()
     {   $categories=Categories::all();
-        return view('admin.solution.create')->with('categories',$categories);
+        return view('admin.produkt.create')->with('categories',$categories);
     }
 
     /**
@@ -54,8 +55,8 @@ class SolutionController extends Controller
         ]);
         $uuid = Str::uuid()->toString();
         $fileName = $uuid . '-' . time() . '.' . $request->img->extension();
-        $request->img->move(public_path('public/storage/solutions'), $fileName);
-        solution::create([
+        $request->img->move(public_path('public/storage/produkt'), $fileName);
+        Produkt::create([
             'title' => $request->title,
             'text' => $request->text,
             'category_id'=>$request->category_id,
@@ -64,42 +65,42 @@ class SolutionController extends Controller
 
         ]);
         //addalert('success');
-        return redirect()->route('admin.solution.index')->with('success', 'Решение успешно созданы.');
+        return redirect()->route('admin.produkt.index')->with('success', 'Продукты успешно созданы.');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param \App\Models\solution $solution
+     * @param \App\Models\Produkt $produkt
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
-    public function show(solution $solution)
+    public function show(Produkt $produkt)
     {
-        $solutions=solution::where('id', $solution->id);
-        $cat=solution::where('category_id',$solutions->category_id);
-        return view('admin.messages.show',compact('solutions','cat'));
+        $produkt=Produkt::where('id', $produkt->id);
+        $cat=Produkt::where('category_id',$produkt->category_id);
+        return view('admin.messages.show',compact('produkt','cat'));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\solution $solution
+     * @param \App\Models\Produkt $produkt
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
-    public function edit(solution $solution)
+    public function edit(Produkt $produkt)
     {
         $cat=Categories::all();
-        return view('admin.solution.edit',compact('solution','cat'));
+        return view('admin.produkt.edit',compact('produkt','cat'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\solution $solution
+     * @param \App\Models\Produkt $produkt
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, solution $solution)
+    public function update(Request $request, Produkt $produkt)
     {
         $request->validate([
             'title' => 'required',
@@ -110,33 +111,33 @@ class SolutionController extends Controller
         if ($request->hasFile('img')) {
             $uuid = Str::uuid()->toString();
             $fileName = $uuid . '-' . time() . '.' . $request->img->extension();
-            $request->img->move(public_path('public/storage/solutions'), $fileName);
-            $solution->update([
+            $request->img->move(public_path('storage/produkt'), $fileName);
+            $produkt->update([
                 'title' => $request->title,
                 'text' => $request->text,
                 'category_id'=>$request->category_id,
                 'img' => $fileName,
             ]);
         } else {
-            $solution->update($request->all());
+            $produkt->update($request->all());
         }
 
 
-        return redirect()->route('admin.solution.index')
-            ->with('success', 'Решение solution обновлено');
+        return redirect()->route('admin.produkt.index')
+            ->with('success', 'Продукты solution обновлено');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\solution $solution
+     * @param \App\Models\Produkt $produkt
      * @return \Illuminate\Http\Response
      */
-    public function destroy(solution $solution)
+    public function destroy(Produkt $produkt)
     {
-        $solution->delete();
+        $produkt->delete();
 
-        return redirect()->route('admin.solution.index')
-            ->with('success', 'Решение solution удалено');
+        return redirect()->route('admin.produkt.index')
+            ->with('success', 'Продукты solution удалено');
     }
 }

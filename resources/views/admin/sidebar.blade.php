@@ -33,6 +33,12 @@
                         <p>Решения</p>
                     </a>
                 </li>
+                <li class="nav-item {{  request()->routeIs('admin.produkt.index') ? 'active' : '' }}">
+                    <a href="{{route('admin.produkt.index')}}">
+                        <i class="fas fa-project-diagram"></i>
+                        <p>Продукты</p>
+                    </a>
+                </li>
                 <li class="nav-item {{  request()->routeIs('admin.category.index') ? 'active' : '' }}">
                     <a href="{{route('admin.category.index')}}">
                         <i class="fas fa-folder-open"></i>

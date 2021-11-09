@@ -4,10 +4,11 @@
         <div class="card">
             <div class="card-header">
                 <div class="row">
-                    <div class="col-10"><h1 class="card-title">Обновлять решение</h1></div>
+                    <div class="col-10"><h1 class="card-title">Добавить Продукты</h1></div>
                 </div>
                 <hr>
                 <div class="card-body">
+
                     @if ($errors->any())
                         <div class="alert alert-danger">
                             <strong>Whoops!</strong> There were some problems with your input.<br><br>
@@ -20,38 +21,41 @@
                     @endif
 
 
-                    <form action="{{route('admin.solution.update',$solution->id)}}" method="POST" accept-charset="UTF-8" enctype="multipart/form-data">
+                    <form action="{{route('admin.produkt.store')}}" method="POST" accept-charset="UTF-8"
+                          enctype="multipart/form-data">
                         @csrf
-                        @method('PUT')
                         <div class="form-group">
-                            <label for="title">Титул(Ру)</label>
-                            <input type="text" name="title" class="form-control" id="title" placeholder="Титул" value="{{$solution->title}}">
+                            <label for="header_ru">Титул (Ру)</label>
+                            <input type="text" name="title" class="form-control" id="header_ru" placeholder="Титул">
                         </div>
 
                         <div class="form-group">
-                            <label for="description_ru">Текст (Ру)</label>
-                            <textarea  class="form-control"  name="text" id="description_ru" rows="10">{{$solution->text}}</textarea>
+                            <label for="description">Текст (Ру)</label>
+                            <textarea class="form-control" name="text" id="description" rows="10"></textarea>
                         </div>
 
                         <div class="form-group">
-                            <label for="img">Добавьте рисунок <b><i>РАЗМЕР РИСУНОК:(600x300)</i></b></label>
+                            <label for="img">Добавьте рисунок</label>
                             <input type="file" name="img" class="form-control" id="img">
                         </div>
                         <div class="form-group">
                             <label for="category">Выберите категория</label>
                             <select class="form-control" name="category_id">
                                 <option></option>
-                                @foreach($cat as $category)
+                                @foreach($categories as $category)
                                     <option value="{{$category->id}}">{{$category->name}}</option>
                                 @endforeach
                             </select>
                         </div>
-                        <button type="submit" class="btn btn-primary">Сохранить</button>
+
+                        <button type="submit" id="alert" class="btn btn-primary">Submit</button>
                         <input type="reset" class="btn btn-danger" value="Очистить">
                     </form>
                 </div>
             </div>
         </div>
     </div>
+
+
 
 @endsection
