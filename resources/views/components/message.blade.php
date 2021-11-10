@@ -100,7 +100,7 @@
             success: function (response) {
                 Swal.fire({
                     icon: 'success',
-                    title: '{{__("about.success")}}',
+                    title: 'Успешно отпарвлено!',
                 })
             }
         });
