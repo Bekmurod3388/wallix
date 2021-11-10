@@ -15,6 +15,7 @@
                 Пожалуйста, выберите хотя бы один вариант
             </div>
             <form method="POST"  id="contactForm">
+                <input type="hidden" value="u0VEEjo4hh0b0dNJrqnBT0Jw8Y8c7TMD5Kid0eIw" name="_token">
                 @csrf
                 <div class="form__check">
                     <div class="form__checkbox">
@@ -56,7 +57,10 @@
                         <div class="form__agree">
                             Ознакомьтесь с <span>Политикой конфиденциальности</span>
                         </div>
-                        <input type="submit" value="Отправить" class="form__submit form__btn btn">
+                        <button href="" type="submit" class="form__submit btn btn-primary btn-form display-4" value="{{__('index.contact.send')}}">
+                            <span class="mbri-letter mbr-iconfont mbr-iconfont-btn"></span>
+                            Отправить
+                        </button>
 
                     </div>
                 </div>
@@ -95,11 +99,10 @@
                             bastion:bastion,
                         },
                         success:function(response){
-                            Swal.fire({
-                                icon: 'success',
-                                title: '{{__("about.success")}}',
-                            })
-                    });
+                            swal({
+                                icon: "success",
+                            });
+                    };
                 });
 
                 function swapcheck(input) {
