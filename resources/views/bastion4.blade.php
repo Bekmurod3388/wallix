@@ -2,18 +2,18 @@
 <x-layout>
 
 <x-header></x-header>
-    <section class="preview" style="background: url('{{asset('assets/img/background/priview-bg.png')}}') no-repeat">
-    <div class="auth__bg">
-    </div>
-    <div class="auth__orange"></div>
-    <div class="container">
-        <div class="auth__block">
-            <div class="auth__label">Обеспечение
-                конвергенции IT-OT</div>
-            <div class="auth__text">Оптимизированная кибербезопасность для сетей IT-OT в промышленном IoT</div>
+    <section class="auth" style="background: url('{{asset('assets/img/background/auth-2.jpg')}}') center center/cover no-repeat;">
+        <div class="auth__bg">
         </div>
-    </div>
-</section>
+        <div class="auth__orange"></div>
+        <div class="container">
+            <div class="auth__block">
+                <div class="auth__label">Обеспечение
+                    конвергенции IT-OT</div>
+                <div class="auth__text">Оптимизированная кибербезопасность для сетей IT-OT в промышленном IoT</div>
+            </div>
+        </div>
+    </section>
 <section class="info">
     <div class="container">
         <div class="info__title title">

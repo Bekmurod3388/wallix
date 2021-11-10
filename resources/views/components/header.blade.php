@@ -16,58 +16,18 @@
                 <ul class="header__list">
                     <li class="header__item">
                         <a href="{{route('index')}}" class="header__link">Главная</a>
-                        <ul class="header__drapdown">
-                            <li class="header__drapdown-item">
-                                <a href="#" class="header__drapdown-link">О компании Wallix</a>
-                            </li>
-                            <li class="header__drapdown-item">
-                                <a href="{{ route('news') }}" class="header__drapdown-link">Новости</a>
-                            </li>
-                        </ul>
                     </li>
                     <li class="header__item">
                         <a href="{{route('product')}}" class="header__link">Продукты</a>
-                        <ul class="header__drapdown">
-                            <li class="header__drapdown-item">
-                                <a href="#" class="header__drapdown-link">О компании Wallix</a>
-                            </li>
-                            <li class="header__drapdown-item">
-                                <a href="{{ route('news') }}" class="header__drapdown-link">Новости</a>
-                            </li>
-                        </ul>
                     </li>
                     <li class="header__item">
                         <a href="{{ route('solution') }}" class="header__link">Решения</a>
-                        <ul class="header__drapdown">
-                            <li class="header__drapdown-item">
-                                <a href="#" class="header__drapdown-link">О компании Wallix</a>
-                            </li>
-                            <li class="header__drapdown-item">
-                                <a href="{{ route('news') }}" class="header__drapdown-link">Новости</a>
-                            </li>
-                        </ul>
                     </li>
                     <li class="header__item">
                         <a href="{{route('about')}}" class="header__link">О нас</a>
-                        <ul class="header__drapdown">
-                            <li class="header__drapdown-item">
-                                <a href="#" class="header__drapdown-link">О компании Wallix</a>
-                            </li>
-                            <li class="header__drapdown-item">
-                                <a href="{{ route('news') }}" class="header__drapdown-link">Новости</a>
-                            </li>
-                        </ul>
                     </li>
                     <li class="header__item">
                         <a href="{{route('office')}}" class="header__link">Контакты</a>
-                        <ul class="header__drapdown">
-                            <li class="header__drapdown-item">
-                                <a href="#" class="header__drapdown-link">О компании Wallix</a>
-                            </li>
-                            <li class="header__drapdown-item">
-                                <a href="{{ route('news') }}" class="header__drapdown-link">Новости</a>
-                            </li>
-                        </ul>
                     </li>
                 </ul>
             </nav>

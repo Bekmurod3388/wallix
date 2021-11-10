@@ -3,18 +3,29 @@
 <x-header>
 
 </x-header>
-    <section class="preview" style="background: url('{{asset('assets/img/background/priview-bg.png')}}') no-repeat">
-    <img src="{{asset('assets/img/background/preview-8.png')}}" alt="" />
-    <div class="container">
-        <div class="preview__body">
-            <h1 class="preview__title">Управление рисками
-                и безопасность</h1>
-            <div class="preview__desc">
-                Упрощение аудита и соблюдение требований безопасности с помощью сквозного управления доступом
+    <section class="preview">
+        <div class="preview__wrapper">
+            <div class="preview--left">
+                <img src="{{asset('assets/img/background/priview-bg.png')}}" alt="">
+            </div>
+            <div class="preview--center">
+                <div class="container">
+                    <div class="preview__body">
+                        <h1 class="preview__title">
+                            Управление рисками
+                            и безопасность
+                        </h1>
+                        <div class="preview__desc">
+                            Упрощение аудита и соблюдение требований безопасности с помощью сквозного управления доступом
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="preview--right">
+                <img src="{{asset('assets/img/background/preview-8.png')}}" alt="">
             </div>
         </div>
-    </div>
-</section>
+    </section>
 <section class="desc">
     <div class="container">
         <div class="desc__row">

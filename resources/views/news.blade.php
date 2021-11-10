@@ -2,16 +2,26 @@
     @section('header')
         <x-header></x-header>
     @endsection
-        <section class="preview" style="background: url('{{asset('assets/img/background/priview-bg.png')}}') no-repeat">
-
-            <img src="{{asset('assets/img/background/preview-15.png')}}" alt="" />
-            <div class="container">
-                <div class="preview__body">
-                    <h1 class="preview__title">Новости
-                        и пресс-релизы</h1>
-                    <div class="preview__desc">
-                        Будьте в курсе всех новостей в мире кибербезопасности, узнайте, чем живет компания
+        <section class="preview">
+            <div class="preview__wrapper">
+                <div class="preview--left">
+                    <img src="{{asset('assets/img/background/priview-bg.')}}" alt="">
+                </div>
+                <div class="preview--center">
+                    <div class="container">
+                        <div class="preview__body">
+                            <h1 class="preview__title">
+                                Новости
+                                и пресс-релизы
+                            </h1>
+                            <div class="preview__desc">
+                                Будьте в курсе всех новостей в мире кибербезопасности, узнайте, чем живет компания
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <div class="preview--right">
+                    <img src="{{asset('assets/img/background/preview-15.png')}}" alt="">
                 </div>
             </div>
         </section>

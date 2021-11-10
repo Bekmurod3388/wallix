@@ -4,19 +4,29 @@
     @endsection
 
 
-        <section class="preview" style="background: url('{{asset('assets/img/background/priview-bg.png')}}') no-repeat">
-            <img src="{{asset('assets/img/background/preview-1.png')}}" alt="">
-            <div class="container">
-                <div class="preview__body">
-                    <h1 class="preview__title">
-                        Обеспечьте свое цифровое будущее
-                    </h1>
-                    <div class="preview__desc">
-                        Wallix защищает идентификационные данные и доступ для ускорения цифровой трансформации
+
+        <section class="preview">
+            <div class="preview__wrapper">
+                <div class="preview--left">
+                    <img src="{{asset('assets/img/background/priview-bg.png')}}" alt="">
+                </div>
+                <div class="preview--center">
+                    <div class="container">
+                        <div class="preview__body">
+                            <h1 class="preview__title">
+                                Обеспечьте свое цифровое будущее
+                            </h1>
+                            <div class="preview__desc">
+                                Wallix защищает идентификационные данные и доступ для ускорения цифровой трансформации
+                            </div>
+                            <button class="preview__btn btn">
+                                Смотреть видео
+                            </button>
+                        </div>
                     </div>
-                    <button class="preview__btn btn">
-                        Смотреть видео
-                    </button>
+                </div>
+                <div class="preview--right">
+                    <img src="{{asset('assets/img/background/preview-1.png')}}" alt="">
                 </div>
             </div>
         </section>

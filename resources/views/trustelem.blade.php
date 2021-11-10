@@ -1,14 +1,27 @@
 <x-layout>
     <x-header></x-header>
-    <section class="preview" style="background: url('{{asset('assets/img/background/priview-bg.png')}}') no-repeat">
-        <img src="{{asset('assets/img/background/preview-5.png')}}" alt="" />
-        <div class="container">
-            <div class="preview__body">
-                <h1 class="preview__title">Wallix Trustelem
-                    Пробная версия</h1>
-                <div class="preview__desc">
-                    Опробуйте отмеченное наградами решение Wallix для управления привилегированным доступом совершенно бесплатно  </div>
-                <button class="preview__btn btn">Подробно</button>
+    <section class="preview">
+        <div class="preview__wrapper">
+            <div class="preview--left">
+                <img src="{{asset('assets/img/background/priview-bg.png')}}" alt="">
+            </div>
+            <div class="preview--center">
+                <div class="container">
+                    <div class="preview__body">
+                        <h1 class="preview__title">
+                            Wallix Trustelem
+                        </h1>
+                        <div class="preview__desc">
+                            Безопасное управление доступом для плавного подключения к бизнес приложениям
+                        </div>
+                        <button class="preview__btn btn">
+                            Подробно
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="preview--right">
+                <img src="{{asset('assets/img/background/preview-5.png')}}" alt="">
             </div>
         </div>
     </section>

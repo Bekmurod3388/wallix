@@ -2,6 +2,30 @@
     @section('header')
         <x-header></x-header>
 @endsection
+        <section class="preview">
+            <div class="preview__wrapper">
+                <div class="preview--left">
+                    <img src="{{asset('assets/img/background/priview-bg.png')}}" alt="">
+                </div>
+                <div class="preview--center">
+                    <div class="container">
+                        <div class="preview__body">
+                            <h1 class="preview__title">
+                                Свяжитесь
+                                с Wallix & Abris
+                            </h1>
+                            <div class="preview__desc">
+                                Свяжитесь с нами, чтобы узнать больше о нашем
+                                глобальном наборе решений для кибербезопасности
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="preview--right">
+                    <img src="{{asset('assets/img/background/preview-16.png')}}" alt="">
+                </div>
+            </div>
+        </section>
         <section class="ofice">
             <div class="ofice__bg"></div>
             <div class="container">
