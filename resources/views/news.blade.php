@@ -5,7 +5,7 @@
         <section class="preview">
             <div class="preview__wrapper">
                 <div class="preview--left">
-                    <img src="{{asset('assets/img/background/priview-bg.')}}" alt="">
+                    <img src="{{asset('assets/img/background/priview-bg.png')}}" alt="">
                 </div>
                 <div class="preview--center">
                     <div class="container">

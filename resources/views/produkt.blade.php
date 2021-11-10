@@ -1,15 +1,26 @@
 <x-layout>
     <x-header></x-header>
-    <section class="preview" style="background: url('{{asset('assets/img/background/priview-bg.png')}}') no-repeat">
-        <img src="{{asset('assets/img/background/preview-2.png')}}" alt="" />
-        <div class="container">
-            <div class="preview__body">
-                <h1 class="preview__title">Wallix Bastion</h1>
-                <div class="preview__desc">
-                    Упрощенное управление привилегированным доступом для обеспечения
-                    безопасности и мониторинга доступа из любого места
+    <section class="preview">
+        <div class="preview__wrapper">
+            <div class="preview--left">
+                <img src="{{asset('assets/img/background/priview-bg.png')}}" alt="">
+            </div>
+            <div class="preview--center">
+                <div class="container">
+                    <div class="preview__body">
+                        <h1 class="preview__title">
+                            Обеспечьте цифровую
+                            трансформацию
+                        </h1>
+                        <div class="preview__desc">
+                            Обеспечьте безопасность вашей трансформации
+                            независимо от того, где она подключена
+                        </div>
+                    </div>
                 </div>
-                <button class="preview__btn btn">Подробно</button>
+            </div>
+            <div class="preview--right">
+                <img src="{{asset('assets/img/background/preview-6.png')}}" alt="">
             </div>
         </div>
     </section>
