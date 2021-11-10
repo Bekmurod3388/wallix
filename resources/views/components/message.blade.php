@@ -14,7 +14,7 @@
             <div class="form__subdesc">
                 Пожалуйста, выберите хотя бы один вариант
             </div>
-            <form method="POST"  id="contactForm">
+            <form method="POST" id="contactForm">
                 @csrf
                 <div class="form__check">
                     <div class="form__checkbox">
@@ -61,56 +61,56 @@
                     </div>
                 </div>
             </form>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-            <script type="text/javascript">
-                $('#contactForm').on('submit',function(e){
-                    e.preventDefault();
-                    let name = $('#name').val();
-                    let phone = $('#phone').val();
-                    let email = $('#email').val();
-                    let text = $('#text').val();
-                    let surname = $('#surname').val();
-                    let company = $('#company').val();
-                    let country = $('#country').val();
-                    let industry =$('#industry').val();
-                    let bastion = $('#cb1').val();
-                    let trustelem = $('#cb2').val();
-                    let bestsafe = $('#cb3').val();
-
-                    $.ajax({
-                        url: "{{route('messages.store')}}",
-                        type:"POST",
-                        data:{
-                            "_token": "{{ csrf_token() }}",
-                            name:name,
-                            surname:surname,
-                            phone:phone,
-                            email:email,
-                            company:company,
-                            country:country,
-                            industry:industry,
-                            text:text,
-                            bestsafe:bestsafe,
-                            trustelem:trustelem,
-                            bastion:bastion,
-                        },
-                        success:function(response){
-                            Swal.fire({
-                                icon: 'success',
-                                title: '{{__("about.success")}}',
-                            })
-                    });
-                });
-
-                function swapcheck(input) {
-                    if (input.checked){
-                        input.value=1
-                    }else{
-                        input.value=0
-                    }
-                }
-            </script>
-
         </div>
     </div>
 </section>
+<script src="{{'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js'}}"></script>
+<script type="text/javascript">
+    $('#contactForm').on('submit', function(e) {
+        e.preventDefault();
+        let name = $('#name').val();
+        let phone = $('#phone').val();
+        let email = $('#email').val();
+        let text = $('#text').val();
+        let surname = $('#surname').val();
+        let company = $('#company').val();
+        let country = $('#country').val();
+        let industry = $('#industry').val();
+        let bastion = $('#cb1').val();
+        let trustelem = $('#cb2').val();
+        let bestsafe = $('#cb3').val();
+
+        $.ajax({
+            url: "{{route('messages.store')}}",
+            type: "POST",
+            data: {
+                "_token": "{{ csrf_token() }}",
+                name: name,
+                surname: surname,
+                phone: phone,
+                email: email,
+                company: company,
+                country: country,
+                industry: industry,
+                text: text,
+                bestsafe: bestsafe,
+                trustelem: trustelem,
+                bastion: bastion,
+            },
+            success: function (response) {
+                Swal.fire({
+                    icon: 'success',
+                    title: '{{__("about.success")}}',
+                })
+            }
+        });
+
+        function swapcheck(input) {
+            if (input.checked) {
+                input.value = 1
+            } else {
+                input.value = 0
+            }
+        }
+    });
+</script>
