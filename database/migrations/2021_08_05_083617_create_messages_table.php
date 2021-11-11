@@ -22,7 +22,7 @@ class CreateMessagesTable extends Migration
             $table->string("email");
             $table->string("text");
             $table->string("country");
-            $table->string("industry");
+            $table->string("industry")->nullable();
             $table->string("company");
             $table->tinyInteger("bastion")->default(0);
             $table->tinyInteger("trustelem")->default(0);

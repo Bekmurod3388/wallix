@@ -49,7 +49,6 @@ class MessageController extends Controller
             'phone' => 'required',
             'company' => 'required',
             'country' => 'required',
-            'industry' => 'required',
             'trustelem' => [],
             'bastion' => [],
             'bestsafe' => [],

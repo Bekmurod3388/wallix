@@ -14,7 +14,7 @@ class Messages extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name', 'surname', 'phone', 'email', 'company', 'country', 'industry', 'trustelem', 'bestsafe', 'bastion', 'text'];
+    protected $fillable = ['name', 'surname', 'phone', 'email', 'company', 'country','trustelem', 'bestsafe', 'bastion', 'text'];
 
 
 }

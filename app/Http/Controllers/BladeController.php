@@ -14,7 +14,7 @@ class BladeController extends Controller
         public function index()
         {
             $solution = solution::orderBy('id','desc')->take(3)->get();
-            $news=Post::orderby('id','desc')->take(3)->get();
+            $news=Post::orderby('id','desc')->take(4)->get();
             $count=count($news);
             return view('index',compact('solution','news','count'));
         }

@@ -47,9 +47,9 @@
                             }
                             ?>
                         </select>
-                        <select class="form__select" id="industry" name="Industry">
-                            <option>Промышленность</option>
-                        </select>
+{{--                        <select class="form__select" id="industry" name="Industry">--}}
+{{--                            <option>Промышленность</option>--}}
+{{--                        </select>--}}
                     </div>
                     <div class="form__right">
                         <textarea placeholder="Сообщение" id="text" name="text"></textarea>
@@ -79,7 +79,6 @@
         let bastion = $('#cb1').val();
         let trustelem = $('#cb2').val();
         let bestsafe = $('#cb3').val();
-
         $.ajax({
             url: "{{route('messages.store')}}",
             type: "POST",
@@ -104,7 +103,6 @@
                 })
             }
         });
-
         function swapcheck(input) {
             if (input.checked) {
                 input.value = 1
