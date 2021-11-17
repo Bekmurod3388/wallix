@@ -19,8 +19,7 @@
                         </div>
                     @endif
 
-
-                    <form action="{{route('admin.produkt.update',$produkt->id)}}" method="POST" accept-charset="UTF-8" enctype="multipart/form-data">
+                    <form action="{{route('admin.produkt.update', $produkt->id)}}" method="POST" accept-charset="UTF-8" enctype="multipart/form-data">
                         @csrf
                         @method('PUT')
                         <div class="form-group">
@@ -37,11 +36,11 @@
                             <select class="form-control" name="category_id">
                                 <option></option>
                                 @foreach($cat as $category)
-                                    <option value="{{$category->id}}">{{$category->name}}</option>
+                                    <option value="{{$category->id}}"
+                                        @if($category->id == $produkt->category_id){{'selected'}}@endif>{{$category->name}}</option>
                                 @endforeach
                             </select>
                         </div>
-
 
                         <div class="form-group">
                             <label for="img">Добавьте рисунок <b><i>РАЗМЕР РИСУНОК:(600x300)</i></b></label>

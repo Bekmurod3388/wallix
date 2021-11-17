@@ -104,8 +104,8 @@ class PostController extends Controller
     {
         $request->validate([
             'header_ru' => 'required',
-            'header2_ru' => 'required',
             'description_ru' => 'required',
+            'img' => '',
         ]);
         if ($request->hasFile('img')) {
             $uuid = Str::uuid()->toString();

@@ -101,10 +101,10 @@ class SolutionController extends Controller
      */
     public function update(Request $request, solution $solution)
     {
-        $request->validate([
+        $data = $request->validate([
             'title' => 'required',
             'text' => 'required',
-            'img' => 'required',
+            'img' => '',
             'category_id'=>'required',
         ]);
         if ($request->hasFile('img')) {

@@ -1,59 +1,39 @@
 @extends('admin.master')
-
 @section('content')
-
     <div class="col-md-12">
         <div class="card">
             <div class="card-header">
                 <div class="row">
-                    <div class="col-9"><h1 class="card-title">Категория</h1></div>
-                    <div class="col-md-1">
-                        <a class="btn btn-primary" href="{{route('admin.category.create')}}">
-                            <span class="btn-label">
-                                <i class="fa fa-plus"></i>
-                            </span>
-                            Добавить категория
-                        </a>
-                    </div>
+                    <div class="col-10"><h1 class="card-title">Добавить новости</h1></div>
                 </div>
                 <hr>
                 <div class="card-body">
-                    <table class="table table-bordered">
-                        <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Наименование</th>
-                            <th scope="col">Действие</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        @foreach($categories as $category)
-                            <tr>
-                                <th scope="row" class="col-1">{{$category->id}}</th>
-                                <td>{{$category->name}}</td>
-                                <td class="col-2">
-                                    <form action="{{ route('admin.category.destroy',$category->id) }}" method="POST">
-                                    <a class="btn btn-warning" href="{{ route('admin.category.edit',$category->id) }}">
-                                    <span class="btn-label">
-                                        <i class="fa fa-pen"></i> Изменить
-                                    </span>
 
-                                    </a>
-                                     @csrf
-                                     @method('DELETE')
-                                     <button type="submit" class="btn btn-danger btn-sm"><span class="btn-label">
-                                         <i class="fa fa-trash"></i>
-                                     </span></button>--}}
-                                    </form>
-                                </td>
-                            </tr>
-                        @endforeach
-                        </tbody>
-                    </table>
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <strong>ОЙ!</strong> С вашим вводом возникли некоторые проблемы.<br><br>
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+
+                    <form action="{{route('admin.category.update', ['category' => $category])}}" method="POST" accept-charset="UTF-8">
+                        @csrf
+                        @method('PUT')
+                        <div class="form-group">
+                            <label for="name">Наименование</label>
+                            <input type="text" name="name" id="name" class="form-control"
+                                   value="{{$category->name}}" placeholder="Наименование">
+                        </div>
+
+                        <button type="submit" id="alert" class="btn btn-primary">Сохранить</button>
+                        <input type="reset" class="btn btn-danger" value="Очистить">
+                    </form>
                 </div>
             </div>
         </div>
     </div>
-
-
 @endsection

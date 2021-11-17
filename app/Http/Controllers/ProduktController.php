@@ -105,7 +105,7 @@ class ProduktController extends Controller
         $request->validate([
             'title' => 'required',
             'text' => 'required',
-            'img' => 'required',
+            'img' => '',
             'category_id'=>'required',
         ]);
         if ($request->hasFile('img')) {
