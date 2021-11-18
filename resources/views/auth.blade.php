@@ -1,6 +1,5 @@
-<x-layout>
-
-<x-header></x-header>
+@extends('layout')
+@section('content')
     <section class="preview" style="background: url('{{asset('assets/img/background/auth-bg.jpg')}}') no-repeat">
     <div class="container">
         <div class="auth__content">
@@ -122,8 +121,4 @@
         </div>
     </div>
 </section>
-<x-footer>
-
-</x-footer>
-<script src="js/script.min.js"></script>
-</x-layout>
+@endsection

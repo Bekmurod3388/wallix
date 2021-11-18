@@ -1,7 +1,5 @@
-<x-layout>
-    @section('header')
-        <x-header></x-header>
-    @endsection
+@extends('layout')
+@section('content')
         <section class="preview">
             <div class="preview__wrapper">
                 <div class="preview--left">
@@ -86,7 +84,4 @@
             </div>
         </div>
     </section>
-    @section('footer')
-        <x-footer></x-footer>
-    @endsection
-</x-layout>
+@endsection
