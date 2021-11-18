@@ -79,6 +79,6 @@ Route::post('/', [MessageController::class, 'store'])->name('messages.store');
 Route::get('office',[App\Http\Controllers\OfficeController::class,'office'])->name('office');
 Route::get('solution',[\App\Http\Controllers\BladeController::class,'solution'])->name('solution');
 Route::get('solution/{solution}',[App\Http\Controllers\BladeController::class,'show'])->name('solution-item');
-Route::get('mews/{post}',[App\Http\Controllers\BladeController::class,'news'])->name('news-item');
+Route::get('news/{post}',[App\Http\Controllers\BladeController::class,'news'])->name('news-item');
 Route::get('product',[\App\Http\Controllers\BladeController::class,'product'])->name('product');
 Route::get('product/{product}',[\App\Http\Controllers\BladeController::class,'produkt'])->name('product-item');
