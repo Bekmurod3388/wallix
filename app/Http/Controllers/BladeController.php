@@ -17,15 +17,18 @@ class BladeController extends Controller {
         return view('index', compact('solution','news', 'count'));
     }
 
+
     public function solution() {
         $solution = solution::orderBy('id','desc')->paginate(25);
         return view('solutions.solution')->with('solution', $solution);
     }
 
+
     public function product() {
-        $product = Product::orderBy('id','desc')->paginate(25);
-        return view('products.product')->with('product', $product);
+        $products = Product::orderBy('id','desc')->paginate(25);
+        return view('products.product')->with('products', $products);
     }
+
 
     public function news(Post $post) {
         Post::where('id', $post->id)
@@ -45,10 +48,10 @@ class BladeController extends Controller {
     }
 
 
-    public function produkt(Product $product) {
-        $cat=Product::all()->where('category_id', $product->category_id);
-        $count=count($cat);
-        $category=Categories::all()->where('id',$product->category_id);
-        return view('product-item',compact('product','cat', 'count', 'category'));
-    }
+//    public function product(Product $product) {
+//        $cat=Product::all()->where('category_id', $product->category_id);
+//        $count=count($cat);
+//        $category=Categories::all()->where('id',$product->category_id);
+//        return view('product-item',compact('product','cat', 'count', 'category'));
+//    }
 }

@@ -22,9 +22,9 @@ class OfficeController extends Controller
     }
 
 
-    public function office(){
+    public function about() {
         $office = Office::orderBy('id','desc')->paginate(10);
-        return view('office')->with('office', $office);
+        return view('about')->with('office', $office);
     }
 
     /**

@@ -36,7 +36,7 @@ Route::view('accessdemo','accessdemo')->name('accessdemo');
 Route::get('/', [App\Http\Controllers\BladeController::class, 'index'])->name('index');
 Route::get('news', [App\Http\Controllers\PostController::class, 'news'])->name('news');
 Route::post('/', [MessageController::class, 'store'])->name('messages.store');
-Route::get('office', [App\Http\Controllers\OfficeController::class, 'office'])->name('office');
+Route::get('about-us', [App\Http\Controllers\OfficeController::class, 'about'])->name('about');
 Route::get('solution', [BladeController::class, 'solution'])->name('solution');
 Route::get('solution/{solution}', [App\Http\Controllers\BladeController::class, 'show'])->name('solution-item');
 Route::get('mews/{post}', [App\Http\Controllers\BladeController::class, 'news'])->name('news-item');
