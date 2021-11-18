@@ -1,10 +1,10 @@
 <?php
 
+use App\Http\Controllers\BladeController;
 use App\Http\Controllers\MessageController;
 use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\OfficeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,9 +24,9 @@ Route::view('session','session')->name('session');
 Route::view('trustelem','trustelem')->name('trustelem ');
 Route::view('bastion','bastion')->name('bastion');
 
-Route::view('solution4','solution4')->name('solution4');
-Route::view('solution3','solution3')->name('solution3');
-Route::view('solution2','solution2')->name('solution2');
+Route::view('solution4','solutions.solution4')->name('solution4');
+Route::view('solution3','solutions.solution3')->name('solution3');
+Route::view('solution2','solutions.solution2')->name('solution2');
 //Route::view('solution1','solution1')->name('solution1');
 Route::view('trustelemdemo','trustelemdemo')->name('turestelemdemo');
 Route::view('health','health')->name('health');
@@ -70,15 +70,15 @@ Route::prefix('admin')->name('admin.')->middleware(['web', 'auth'])->group(funct
     Route::resource('office',App\Http\Controllers\OfficeController::class);
     Route::resource('solution',\App\Http\Controllers\SolutionController::class);
     Route::resource('category',\App\Http\Controllers\CategoreController::class);
-    Route::resource('produkt',\App\Http\Controllers\ProduktController::class);
+    Route::resource('product',\App\Http\Controllers\ProductController::class);
 });
 
 Route::get('/',[App\Http\Controllers\BladeController::class,'index'])->name('index');
 Route::get('news', [\App\Http\Controllers\PostController::class,'news'])->name('news');
 Route::post('/', [MessageController::class, 'store'])->name('messages.store');
 Route::get('office',[App\Http\Controllers\OfficeController::class,'office'])->name('office');
-Route::get('solution',[\App\Http\Controllers\BladeController::class,'solution'])->name('solution');
+Route::get('solution',[BladeController::class, 'solution'])->name('solution');
 Route::get('solution/{solution}',[App\Http\Controllers\BladeController::class,'show'])->name('solution-item');
 Route::get('mews/{post}',[App\Http\Controllers\BladeController::class,'news'])->name('news-item');
-Route::get('product',[\App\Http\Controllers\BladeController::class,'product'])->name('product');
-Route::get('product/{product}',[\App\Http\Controllers\BladeController::class,'produkt'])->name('product-item');
+Route::get('product',[BladeController::class,'product'])->name('product');
+Route::get('product/{product}',[BladeController::class,'produkt'])->name('product-item');

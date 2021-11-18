@@ -4,17 +4,11 @@ namespace App\Http\Controllers;
 
 
 use App\Models\Categories;
-use App\Models\Messages;
-use App\Models\Office;
-use App\Models\Post;
-use App\Models\Produkt;
-use App\Models\solution;
+use App\Models\Product;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\App;
 use Illuminate\Support\Str;
 
-class ProduktController extends Controller
-{
+class ProductController extends Controller {
     /**
      * Display a listing of the resource.
      *
@@ -22,11 +16,9 @@ class ProduktController extends Controller
      */
     public function index()
     {
-        $produkt = Produkt::orderBy('id','desc')->get();
+        $produkt = Product::orderBy('id','desc')->get();
         return view('admin.produkt.index')->with('produkt', $produkt);
     }
-
-
 
 
     /**
@@ -56,7 +48,7 @@ class ProduktController extends Controller
         $uuid = Str::uuid()->toString();
         $fileName = $uuid . '-' . time() . '.' . $request->img->extension();
         $request->img->move(public_path('../public/storage/produkt'), $fileName);
-        Produkt::create([
+        Product::create([
             'title' => $request->title,
             'text' => $request->text,
             'category_id'=>$request->category_id,
@@ -71,23 +63,23 @@ class ProduktController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param \App\Models\Produkt $produkt
+     * @param \App\Models\Product $produkt
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
-    public function show(Produkt $produkt)
+    public function show(Product $produkt)
     {
-        $produkt=Produkt::where('id', $produkt->id);
-        $cat=Produkt::where('category_id',$produkt->category_id);
+        $produkt=Product::where('id', $produkt->id);
+        $cat=Product::where('category_id',$produkt->category_id);
         return view('admin.messages.show',compact('produkt','cat'));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param \App\Models\Produkt $produkt
+     * @param \App\Models\Product $produkt
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
-    public function edit(Produkt $produkt)
+    public function edit(Product $produkt)
     {
         $cat=Categories::all();
         return view('admin.produkt.edit',compact('produkt','cat'));
@@ -97,10 +89,10 @@ class ProduktController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param \App\Models\Produkt $produkt
+     * @param \App\Models\Product $produkt
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Produkt $produkt)
+    public function update(Request $request, Product $produkt)
     {
         $request->validate([
             'title' => 'required',
@@ -130,10 +122,10 @@ class ProduktController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param \App\Models\Produkt $produkt
+     * @param \App\Models\Product $produkt
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Produkt $produkt)
+    public function destroy(Product $produkt)
     {
         $produkt->delete();
 

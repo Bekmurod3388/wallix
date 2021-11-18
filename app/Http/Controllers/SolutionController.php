@@ -12,20 +12,12 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Str;
 
-class SolutionController extends Controller
-{
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
-     */
-    public function index()
-    {
+class SolutionController extends Controller {
+
+    public function index() {
         $solution = solution::orderBy('id','desc')->paginate(10);
         return view('admin.solution.index')->with('solution', $solution);
     }
-
-
 
 
     /**

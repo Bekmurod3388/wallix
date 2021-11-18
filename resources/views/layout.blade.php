@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,11 +8,12 @@
     <title>Главная страница</title>
 </head>
 <body>
-@yield('header')
-@yield('content')
-{{$slot}}
-@yield('footer')
-<script src="{{asset('asset/js/script.min.js')}}"></script>
-<script src="{{asset('asset/js/plugin/sweetalert/sweetalert2.min.js')}}"></script>
+    @include('components.header')
+    @yield('content')
+    @include('components.footer')
+
+    <script src="{{asset('asset/js/script.min.js')}}"></script>
+    <script src="{{asset('asset/js/plugin/sweetalert/sweetalert2.min.js')}}"></script>
+@yield('script')
 </body>
 </html>
