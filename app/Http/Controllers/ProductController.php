@@ -2,134 +2,92 @@
 
 namespace App\Http\Controllers;
 
-
-use App\Models\Categories;
-use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
+use App\Models\Categories;
+use App\Models\Product;
+
 
 class ProductController extends Controller {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
-     */
-    public function index()
-    {
-        $produkt = Product::orderBy('id','desc')->get();
-        return view('admin.produkt.index')->with('produkt', $produkt);
+
+    public function index() {
+        $products = Product::orderBy('id','desc')->get();
+
+        return view('admin.product.index')->with('products', $products);
     }
 
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
-     */
-    public function create()
-    {   $categories=Categories::all();
-        return view('admin.produkt.create')->with('categories',$categories);
+    public function create() {
+        $categories=Categories::all();
+        return view('admin.product.create')->with('categories',$categories);
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\RedirectResponse
-     */
-    public function store(Request $request)
-    {
+
+    public function store(Request $request) {
         $request->validate([
             'title' => 'required',
             'text' => 'required',
-            'category_id'=>'required',
+            'category_id' => 'required',
             'img' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:16000',
         ]);
         $uuid = Str::uuid()->toString();
         $fileName = $uuid . '-' . time() . '.' . $request->img->extension();
-        $request->img->move(public_path('../public/storage/produkt'), $fileName);
+        $request->img->move(public_path('../public/storage/product'), $fileName);
         Product::create([
             'title' => $request->title,
             'text' => $request->text,
             'category_id'=>$request->category_id,
             'img' => $fileName,
-
-
         ]);
-        //addalert('success');
-        return redirect()->route('admin.produkt.index')->with('success', 'Продукты успешно созданы.');
+
+        return redirect()->route('admin.product.index')->with('success', 'Продукты успешно созданы.');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param \App\Models\Product $produkt
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
-     */
-    public function show(Product $produkt)
-    {
-        $produkt=Product::where('id', $produkt->id);
-        $cat=Product::where('category_id',$produkt->category_id);
-        return view('admin.messages.show',compact('produkt','cat'));
+
+    public function show(Product $product) {
+        $cat = Product::where('category_id', $product->category_id);
+        return view('admin.messages.show', compact('product','cat'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param \App\Models\Product $produkt
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
-     */
-    public function edit(Product $produkt)
-    {
-        $cat=Categories::all();
-        return view('admin.produkt.edit',compact('produkt','cat'));
+
+    public function edit(Product $product) {
+        $cat = Categories::all();
+        return view('admin.product.edit', compact('product','cat'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param \App\Models\Product $produkt
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Product $produkt)
-    {
+
+    public function update(Request $request, Product $product) {
         $request->validate([
             'title' => 'required',
             'text' => 'required',
             'img' => '',
-            'category_id'=>'required',
+            'category_id' => 'required',
         ]);
+
         if ($request->hasFile('img')) {
             $uuid = Str::uuid()->toString();
             $fileName = $uuid . '-' . time() . '.' . $request->img->extension();
-            $request->img->move(public_path('../public/storage/produkt'), $fileName);
-            $produkt->update([
+            $request->img->move(public_path('../public/storage/product'), $fileName);
+            $product->update([
                 'title' => $request->title,
                 'text' => $request->text,
                 'category_id'=>$request->category_id,
                 'img' => $fileName,
             ]);
         } else {
-            $produkt->update($request->all());
+            $product->update($request->all());
         }
 
 
-        return redirect()->route('admin.produkt.index')
+        return redirect()->route('admin.product.index')
             ->with('success', 'Продукты solution обновлено');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param \App\Models\Product $produkt
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Product $produkt)
-    {
-        $produkt->delete();
 
-        return redirect()->route('admin.produkt.index')
+    public function destroy(Product $product) {
+        $product->delete();
+
+        return redirect()->route('admin.product.index')
             ->with('success', 'Продукты solution удалено');
     }
 }

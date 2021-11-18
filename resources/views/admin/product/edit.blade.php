@@ -19,17 +19,17 @@
                         </div>
                     @endif
 
-                    <form action="{{route('admin.produkt.update', $produkt->id)}}" method="POST" accept-charset="UTF-8" enctype="multipart/form-data">
+                    <form action="{{route('admin.product.update', $product->id)}}" method="POST" accept-charset="UTF-8" enctype="multipart/form-data">
                         @csrf
                         @method('PUT')
                         <div class="form-group">
                             <label for="title">Титул(Ру)</label>
-                            <input type="text" name="title" class="form-control" id="title" placeholder="Титул" value="{{$produkt->title}}">
+                            <input type="text" name="title" class="form-control" id="title" placeholder="Титул" value="{{$product->title}}">
                         </div>
 
                         <div class="form-group">
                             <label for="description_ru">Текст (Ру)</label>
-                            <textarea  class="form-control"  name="text" id="description_ru" rows="10">{{$produkt->text}}</textarea>
+                            <textarea  class="form-control" name="text" id="description_ru" rows="10">{{$product->text}}</textarea>
                         </div>
                         <div class="form-group">
                             <label for="category">Выберите категория</label>
@@ -37,7 +37,7 @@
                                 <option></option>
                                 @foreach($cat as $category)
                                     <option value="{{$category->id}}"
-                                        @if($category->id == $produkt->category_id){{'selected'}}@endif>{{$category->name}}</option>
+                                        @if($category->id == $product->category_id){{'selected'}}@endif>{{$category->name}}</option>
                                 @endforeach
                             </select>
                         </div>

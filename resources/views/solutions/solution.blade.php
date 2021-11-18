@@ -27,7 +27,7 @@
     <section class="zero">
         <div class="container">
             @foreach($solution as $solutions)
-                @if(($solutions->id)%2==1)
+                @if(($solutions->id) % 2 == 1)
                     <a href="{{route('solution-item',$solutions->id)}}">
                         <div class="zero__row row">
                             <img src="{{asset('storage/solutions/'.$solutions->img)}}" style="width: 80%" />
@@ -64,4 +64,3 @@
         </div>
     </section>
 @endsection
-{{--<script src="js/script.min.js"></script>--}}
