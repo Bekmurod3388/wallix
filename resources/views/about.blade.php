@@ -1,11 +1,9 @@
-<x-layout>
-    @section('header')
-        <x-header></x-header>
-    @endsection
+@extends('layout')
+@section('content')
         <section class="preview">
             <div class="preview__wrapper">
                 <div class="preview--left">
-                    <img src="{{asset('assets/img/background/priview-bg.png')}}" alt="">
+                    <img src="{{asset('assets/img/background/preview-bg.png')}}" alt="">
                 </div>
                 <div class="preview--center">
                     <div class="container">
@@ -54,7 +52,7 @@
     <section class="zero">
         <div class="container">
             <div class="zero__row row">
-                <img src="{{asset('assets/img/zero-36.jpg')}}"/>
+                <img src="{{asset('assets/img/zero-36.jpg')}}" alt="img">
                 <div class="zero__desc">
                     <div class="zero__subtitle subtitle">
                         Европейский лидер в области управления
@@ -86,7 +84,4 @@
             </div>
         </div>
     </section>
-    @section('footer')
-        <x-footer></x-footer>
-    @endsection
-</x-layout>
+@endsection

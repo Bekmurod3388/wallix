@@ -5,7 +5,7 @@
                 <a href="/" class="header__logo">
                     <img src="{{asset('assets/img/logo/logo.png')}}" alt="logo">
                 </a>
-                <a href="#" class="header__logo">
+                <a href="/" class="header__logo">
                     <img src="{{asset('assets/img/logo/abris-logo.png')}}" alt="Abris logo">
                 </a>
             </div>
@@ -35,7 +35,7 @@
                         </ul>
                     </li>
                     <li class="header__item">
-                        <a href="{{route('office')}}" class="header__link">Контакты</a>
+                        <a href="{{route('about')}}" class="header__link">Контакты</a>
                     </li>
                 </ul>
             </nav>

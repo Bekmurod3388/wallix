@@ -3,7 +3,7 @@
     <section class="preview">
         <div class="preview__wrapper">
             <div class="preview--left">
-                <img src="{{asset('assets/img/background/priview-bg.png')}}" alt="">
+                <img src="{{asset('assets/img/background/preview-bg.png')}}" alt="">
             </div>
             <div class="preview--center">
                 <div class="container">
@@ -43,7 +43,7 @@
                 <div class="list__item">
                     <div class="list__icon">
                         <div class="list__border">
-                            <img src="{{asset('assets/img/icon/list.svg')}}">
+                            <img src="{{asset('assets/img/icon/list.svg')}}" alt="img">
                         </div>
                     </div>
                     <div class="list__desc">
@@ -58,7 +58,7 @@
                 <div class="list__item">
                     <div class="list__icon">
                         <div class="list__border">
-                            <img src="{{asset('assets/img/icon/list.svg')}}">
+                            <img src="{{asset('assets/img/icon/list.svg')}}" alt="img">
                         </div>
                     </div>
                     <div class="list__desc">
@@ -73,7 +73,7 @@
                 <div class="list__item">
                     <div class="list__icon">
                         <div class="list__border">
-                            <img src="{{asset('assets/img/icon/list.svg')}}">
+                            <img src="{{asset('assets/img/icon/list.svg')}}" alt="img">
                         </div>
                     </div>
                     <div class="list__desc">
@@ -90,7 +90,7 @@
                 <div class="list__item">
                     <div class="list__icon">
                         <div class="list__border">
-                            <img src="{{asset('assets/img/icon/list.svg')}}">
+                            <img src="{{asset('assets/img/icon/list.svg')}}" alt="img">
                         </div>
                     </div>
                     <div class="list__desc">
@@ -240,7 +240,7 @@
 
                         @if($count==3)
                 <div class="news__seminar">
-                    <img src="{{asset('storage/posts/'.$new->img)}}">
+                    <img src="{{asset('storage/posts/'.$new->img)}}" alt="img">
                     <div class="news__desc">
                         <div class="news__date">
                             {{$new->created_at}}
@@ -266,18 +266,79 @@
                             {{ \Illuminate\Support\Str::limit($new->description_ru, 50, '...') }}
                         </div>
                         <div class="news__xz">
-                            <img src="{{asset('storage/posts/'.$new->img)}}">
+                            <img src="{{asset('storage/posts/'.$new->img)}}" alt="img">
                             <div class="news__subdate">
                                 {{$new->created_at}}
                             </div>
                         </div>
                     </div>
                     @endif
-                    <?php $count=$count-1 ?>
+                    <?php $count -= 1 ?>
                     @endforeach
                 </div>
 
                 </div>
             </div>
+    </section>
+    <section class="form">
+        <div class="container">
+            <div class="form__body">
+                <div class="form__title title">
+                    Форма обратной связи
+                </div>
+                <div class="form__desc">
+                    Хотите испытать наши решения? Свяжитесь с нами. Мы не шлем спам, и не передаём никому ваши данные.
+                </div>
+                <div class="form__subtitle">
+                    Меня интересует
+                </div>
+                <div class="form__subdesc">
+                    Пожалуйста, выберите хотя бы один вариант
+                </div>
+                <form action="#">
+                    <div class="form__check">
+                        <div class="form__checkbox">
+                            <input id="cb1" type="checkbox" checked>
+                            <label for="cb1">Wallix Bastion</label>
+                        </div>
+                        <div class="form__checkbox">
+                            <input id="cb2" type="checkbox" >
+                            <label for="cb2">Wallix Trustelem</label>
+                        </div>
+                        <div class="form__checkbox">
+                            <input id="cb3" type="checkbox" >
+                            <label for="cb3">Wallix BestSafe</label>
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <div class="form__left">
+                            <input type="text" placeholder="Имя">
+                            <input type="text" placeholder="Фамилия">
+                            <input type="email" placeholder="Электронная почта">
+                            <input type="text" placeholder="Телефон">
+                            <input type="text" placeholder="Название компании">
+                            <select class="form__select">
+                                <option>Страна</option>
+                            </select>
+                            <select class="form__select">
+                                <option>Промышленность</option>
+                            </select>
+                        </div>
+                        <div class="form__right">
+                            <div>
+                <textarea placeholder="Сообщение">
+                </textarea>
+                                <div class="form__agree">
+                                    Ознакомьтесь с <a href="#">Политикой конфиденциальности</a>
+                                </div>
+                            </div>
+                            <div class="flex--right">
+                                <button class="form__btn btn">Отправить</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </section>
 @endsection

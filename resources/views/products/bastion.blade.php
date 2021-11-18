@@ -3,7 +3,7 @@
     <section class="preview">
         <div class="preview__wrapper">
             <div class="preview--left">
-                <img src="{{asset('assets/img/background/priview-bg.png')}}" alt="">
+                <img src="{{asset('assets/img/background/preview-bg.png')}}" alt="">
             </div>
             <div class="preview--center">
                 <div class="container">
@@ -49,7 +49,7 @@
             Комплексные функции безопасности доступа
         </div>
         <div class="security__body row">
-            <img src="{{asset('assets/img/bastion-1.jpg')}}" />
+            <img src="{{asset('assets/img/bastion-1.jpg')}}" alt="img">
             <div class="security__desc">
                 <div class="security__subtitle subtitle">Менеджер сеансов</div>
                 <div class="security__text text">
@@ -73,7 +73,7 @@
 <section class="zero">
     <div class="container">
         <div class="zero__row row">
-            <img src="{{asset('assets/img/zero-1.jpg')}}" />
+            <img src="{{asset('assets/img/zero-1.jpg')}}" alt="title">
             <div class="zero__desc">
                 <div class="zero__subtitle subtitle">
                     Безопасный удаленный доступ
@@ -113,10 +113,10 @@
                     и не меньше.
                 </div>
             </div>
-            <img src="{{asset('assets/img/zero-2.jpg')}}" />
+            <img src="{{asset('assets/img/zero-2.jpg')}}" alt="img">
         </div>
         <div class="zero__row row">
-            <img src="{{asset('assets/img/zero-3.jpg')}}" />
+            <img src="{{asset('assets/img/zero-3.jpg')}}" alt="img">
             <div class="zero__desc">
                 <div class="zero__subtitle subtitle">Масштабируемая PAM легко</div>
                 <div class="zero__text text">
@@ -159,7 +159,7 @@
                     или доступ к нескольким системам.
                 </div>
             </div>
-            <img src="{{asset('assets/img/zero-4.jpg')}}" />
+            <img src="{{asset('assets/img/zero-4.jpg')}}" alt="img">
         </div>
     </div>
 </section>
@@ -222,7 +222,7 @@
             малых и средних предприятий до крупных счетов
         </div>
         <div class="pack__row row">
-            <img src="{{asset('assets/img/pack-1.jpg')}}" />
+            <img src="{{asset('assets/img/pack-1.jpg')}}" alt="img">
             <div class="pack__item">
                 <div class="pack__subtitle subtitle">
                     Платформа Bastion (Бастион) предлагает следующие функциональные
@@ -260,7 +260,7 @@
             <div class="list__item">
                 <div class="list__icon">
                     <div class="list__border">
-                        <img src="{{asset('assets/img/icon/list.svg')}}" />
+                        <img src="{{asset('assets/img/icon/list.svg')}}" alt="img">
                     </div>
                 </div>
                 <div class="list__desc">
@@ -274,7 +274,7 @@
             <div class="list__item">
                 <div class="list__icon">
                     <div class="list__border">
-                        <img src="{{asset('assets/img/icon/list.svg')}}" />
+                        <img src="{{asset('assets/img/icon/list.svg')}}" alt="img">
                     </div>
                 </div>
                 <div class="list__desc">
@@ -288,11 +288,12 @@
         </div>
         <div class="pack__line line"></div>
         <div class="pack__images">
-            <img src="{{asset('assets/img/pack-2.png')}}" />
-            <img src="{{ asset('assets/img/pack-3.png')}}" />
+            <img src="{{asset('assets/img/pack-2.png')}}" alt="img">
+            <img src="{{ asset('assets/img/pack-3.png')}}" alt="img">
         </div>
     </div>
 </section>
+@endsection
 {{--<script src="js/script.min.js"></script>--}}
 {{--    <section class="preview">--}}
 {{--        <div class="preview__wrapper">--}}
