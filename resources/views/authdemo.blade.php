@@ -45,7 +45,7 @@
                         <input type="text" required id="name" name="name" placeholder="Имя" />
                         <input type="text" required id="surname" name="surname" placeholder="Фамилия" />
                         <input type="email" required id="email" name="email" placeholder="Ваш e-mail" />
-                        <input type="text"required id="phone" name="phone" placeholder="Телефон" />
+                        <input type="text" required id="phone" name="phone" placeholder="Телефон" />
                         <input type="text" required id="company" name="company" placeholder="Название компании" />
                         <select class="form__select">
                             <option>Промышленность</option>

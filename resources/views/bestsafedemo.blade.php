@@ -1,6 +1,5 @@
-<x-layout>
-
-<x-header></x-header>
+@extends('layout')
+@section('content')
     <section class="preview">
         <div class="preview__wrapper">
             <div class="preview--left">
@@ -56,6 +55,4 @@
     <x-message>
 
     </x-message>
-<x-footer></x-footer>
-<script src="js/script.min.js"></script>
-</x-layout>
+@endsection
