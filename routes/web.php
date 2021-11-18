@@ -27,7 +27,7 @@ Route::view('bastion','bastion')->name('bastion');
 Route::view('solution4','solution4')->name('solution4');
 Route::view('solution3','solution3')->name('solution3');
 Route::view('solution2','solution2')->name('solution2');
-//Route::view('solution1','solution1')->name('solution1');
+Route::view('solution5','1solution')->name('solution5');
 Route::view('trustelemdemo','trustelemdemo')->name('turestelemdemo');
 Route::view('health','health')->name('health');
 Route::view('devops','devops')->name('devops');
