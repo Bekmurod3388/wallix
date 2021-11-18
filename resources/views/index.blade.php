@@ -124,7 +124,7 @@
                     <div class="management__desc">
                         Защита от угрозы со стороны привилегированных пользователей
                     </div>
-                    <a href="{{route('bastion3')}}" class="management__link">
+                    <a href="{{route('bastion')}}" class="management__link">
                         Wallix Bastion
                     </a>
                 </div>
@@ -137,8 +137,8 @@
                     <div class="management__desc">
                         Установите права локального администратора и остановите вымогателей
                     </div>
-                    <a href="{{route('bastion1')}}" class="management__link">
-                        Wallix Bastion
+                    <a href="{{route('bestsafe')}}" class="management__link">
+                        Wallix BestSafe
                     </a>
                 </div>
                 <div class="management__item">
@@ -164,7 +164,7 @@
                 Наши решения
             </div>
             <div class="solution__list">
-                @foreach($solution as $solutions)
+            @foreach($solution as $solutions)
                 <div class="solution__item" style="background: url('{{asset('/storage/solutions/'.$solutions->img)}}') center center/cover no-repeat ;">
                     <div class="solution__text">
                         <div class="solution__subtitle">
@@ -175,44 +175,13 @@
                         </div>
                     </div>
                 </div>
-                    @endforeach
-{{--                        --}}
-{{--                        <div class="solution__item" style="background: url('assets/img/solution-1.jpg') center center/cover no-repeat ;">--}}
-{{--                        <div class="solution__text">--}}
-{{--                            <div class="solution__subtitle">--}}
-{{--                                Digital transformation--}}
-{{--                            </div>--}}
-{{--                            <div class="solution__desc">--}}
-{{--                                Упрощение аудита и соблюдение требований безопасности с помощью сквозного управления доступом--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="solution__item" style="background: url('assets/img/solution-2.jpg') center center/cover no-repeat ;">--}}
-{{--                        <div class="solution__text">--}}
-{{--                            <div class="solution__subtitle">--}}
-{{--                                Audit&Compliance--}}
-{{--                            </div>--}}
-{{--                            <div class="solution__desc">--}}
-{{--                                Упрощение аудита и соблюдение требований безопасности с помощью сквозного управления доступом--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="solution__item" style="background: url('assets/img/solution-2.jpg') center center/cover no-repeat ;">--}}
-{{--                        <div class="solution__text">--}}
-{{--                            <div class="solution__subtitle">--}}
-{{--                                Risk Management &Security--}}
-{{--                            </div>--}}
-{{--                            <div class="solution__desc">--}}
-{{--                                Упрощение аудита и соблюдение требований безопасности с помощью сквозного управления доступом--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
+            @endforeach
             </div>
             <a href="{{ route('solution') }}" class="solution__btn btn">Все решения</a>
         </div>
     </section>
     <section class="video">
-        <div class="video__bg" style="background: url('assets/img/background/video-bg.jpg');">
+        <div class="video__bg" style="background: url('/assets/img/background/video-bg.jpg');">
         </div>
         <div class="container">
             <div class="video__title title">
@@ -222,10 +191,11 @@
                 Видео о нашей работе
             </div>
             <div class="video__block">
-                <video src="{{asset('assets/img/2.mp4')}}"></video>
+                <video controls>
+                    <source src="#" type="video/mp4">
+                </video>
             </div>
             <div class="video__line line">
-
             </div>
         </div>
     </section>
@@ -326,8 +296,7 @@
                         </div>
                         <div class="form__right">
                             <div>
-                <textarea placeholder="Сообщение">
-                </textarea>
+                        <textarea placeholder="Сообщение"></textarea>
                                 <div class="form__agree">
                                     Ознакомьтесь с <a href="#">Политикой конфиденциальности</a>
                                 </div>

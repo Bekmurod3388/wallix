@@ -44,7 +44,7 @@
                 </div>
                 <ul class="footer__list">
                     <li><a href="#" class="footer__link">О компании Wallix</a></li>
-                    <li><a href="#" class="footer__link">Новости</a></li>
+                    <li><a href="{{route('news')}}" class="footer__link">Новости</a></li>
                 </ul>
             </div>
         </div>
