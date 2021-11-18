@@ -2,7 +2,7 @@
     <div class="container">
         <div class="header__body">
             <div class="header__logos">
-                <a href="#" class="header__logo">
+                <a href="/" class="header__logo">
                     <img src="{{asset('assets/img/logo/logo.png')}}" alt="logo">
                 </a>
                 <a href="#" class="header__logo">
