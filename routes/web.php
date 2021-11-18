@@ -22,9 +22,9 @@ Route::view('cyber','cyber')->name('cyber');
 //Route::view('bestsafedemo','bestsafedemo')->name('bestsafedemo');
 
 # Products
+Route::view('products/bastion', 'products.bastion')->name('bastion');
 Route::view('products/bestsafe','products.bestsafe')->name('bestsafe');
 Route::view('products/trustelem','products.trust-elem')->name('trustelem');
-Route::view('products/bastion', 'products.bastion')->name('bastion');
 //Route::view('bastion6','bastion6')->name('bastion6');
 //Route::view('bastion5','bastion5')->name('bastion5');
 //Route::view('bastion4','bastion4')->name('bastion4');
