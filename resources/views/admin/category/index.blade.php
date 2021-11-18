@@ -33,11 +33,8 @@
                                 <td>{{$category->name}}</td>
                                 <td class="col-2">
                                     <form action="{{ route('admin.category.destroy',$category->id) }}" method="POST">
-                                    <a class="btn btn-warning" href="{{ route('admin.category.edit',$category->id) }}">
-
+                                    <a class="btn btn-warning btn-sm" href="{{ route('admin.category.edit',$category->id) }}">
                                         <i class="fa fa-pen"></i>
-
-
                                     </a>
                                      @csrf
                                      @method('DELETE')
