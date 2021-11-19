@@ -38,7 +38,7 @@
                                 <a href="{{route('solution1')}}" class="header__drapdown-link">Обеспеченный цифровой трансформации</a>
                             </li>
                             <li class="header__drapdown-item">
-                                <a href="{{route('solution2')}}" class="header__drapdown-link">Аудит И соответствие</a>
+                                <a href="{{route('solution2')}}" class="header__drapdown-link">Аудит и соответствие</a>
                             </li>
                             <li class="header__drapdown-item">
                                 <a href="{{route('solution3')}}" class="header__drapdown-link">Управление рисками и безопасностью</a>

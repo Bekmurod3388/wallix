@@ -178,7 +178,7 @@
                     использование накладных расходов для минимального 12-месячного
                     контракта, обслуживание от 12 до 36 месяцев
                 </div>
-                <a href="#" class="management__link"> Свзаться </a>
+                <a href="{{route('contact')}}" class="management__link"> Свзаться </a>
             </div>
             <div class="management__item">
                 <img src="{{asset('assets/img/management-4.jpg')}}" alt="management" />

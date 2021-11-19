@@ -9,14 +9,16 @@
                 <div class="container">
                     <div class="preview__body">
                         <h1 class="preview__title">
-                            Аудит
-                            и cоответствие
+                            Аудит и cоответствие
                         </h1>
                         <div class="preview__desc">
                             Упрощение аудита и соблюдение требований безопасности с помощью сквозного управления доступом
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="preview--right">
+                <img src="{{asset('assets/img/background/preview-11.jpg')}}" alt="img">
             </div>
         </div>
     </section>
