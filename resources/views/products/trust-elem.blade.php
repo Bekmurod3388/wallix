@@ -229,8 +229,8 @@
 
             </div>
             <div class="video__block">
-                <video controls>
-                    <source src="{{asset('assets/video/2.mp4')}}" type="video/mp4">
+                <video controls  style="width: 970px; height:430px">
+                    <source src="{{asset('storage/trustelem/Trustelem-Slideshow_EN_FINAL.mp4')}}" type="video/mp4">
                 </video>
             </div>
         </div>
