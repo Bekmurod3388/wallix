@@ -209,9 +209,7 @@
                 Видео о нашей работе
             </div>
             <div class="video__block">
-                <video controls>
-                    <source src="#" type="video/mp4">
-                </video>
+                <iframe width="970" height="430" src="https://www.youtube.com/embed/NMiL_aCg9Mc" title="Wallix" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="video__line line">
             </div>
