@@ -12,8 +12,8 @@
     @yield('content')
     @include('components.footer')
 
-    <script src="{{asset('asset/js/script.min.js')}}"></script>
-    <script src="{{asset('asset/js/plugin/sweetalert/sweetalert2.min.js')}}"></script>
+    <script src="{{asset('js/script.min.js')}}"></script>
+    <script src="{{asset('js/sweetalert2.min.js')}}"></script>
     @yield('script')
 </body>
 </html>

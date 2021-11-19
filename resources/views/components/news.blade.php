@@ -2,7 +2,7 @@
     <div class="container">
         <div class="news__header">
             <div class="news__title">Новости</div>
-            <div class="news__btn btn">Все новости</div>
+            <a href="{{route('news')}}" class="news__btn btn">Все новости</a>
         </div>
         <div class="news__row">
         @foreach($news as $post)

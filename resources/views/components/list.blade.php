@@ -1,7 +1,6 @@
 <section class="list">
     <div class="container">
-        <div class="list__label title">Решения для обеспечения безопасности
-            цифровой трансформации</div>
+        <div class="list__label title">Решения для обеспечения безопасности цифровой трансформации</div>
         <div class="list__body">
             <div class="list__item">
                 <div class="list__icon">
