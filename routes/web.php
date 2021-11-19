@@ -40,9 +40,9 @@ Route::view('/solutions/4','solutions.solution4')->name('solution4');
 Route::view('/solutions/5','solutions.solution5')->name('solution5');
 
 # Auth
-Route::view('/authdemo','authdemo')->name('authdemo');
-Route::view('/auth','auth')->name('auth');
-Route::view('/accessdemo','accessdemo')->name('accessdemo');
+Route::view('/authdemo','products.authdemo')->name('authdemo');
+Route::view('/auth','products.auth')->name('auth');
+Route::view('/accessdemo','products.accessdemo')->name('accessdemo');
 
 # News
 Route::get('/', [App\Http\Controllers\BladeController::class, 'index'])->name('index');
