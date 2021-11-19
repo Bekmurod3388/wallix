@@ -21,7 +21,24 @@
                         <a href="{{route('product')}}" class="header__link">Продукты</a>
                     </li>
                     <li class="header__item">
-                        <a href="{{ route('solution') }}" class="header__link">Решения</a>
+                        <a href="#" class="header__link">Решения</a>
+                        <ul class="header__drapdown">
+                            <li class="header__drapdown-item">
+                                <a href="{{route('solution1')}}" class="header__drapdown-link">Обеспеченный цифровой трансформации</a>
+                            </li>
+                            <li class="header__drapdown-item">
+                                <a href="{{route('solution2')}}" class="header__drapdown-link">Аудит И соответствие</a>
+                            </li>
+                            <li class="header__drapdown-item">
+                                <a href="{{route('solution3')}}" class="header__drapdown-link">Управление рисками и безопасностью</a>
+                            </li>
+                            <li class="header__drapdown-item">
+                                <a href="{{route('solution4')}}" class="header__drapdown-link">Wallix inside</a>
+                            </li>
+                            <li class="header__drapdown-item">
+                                <a href="{{route('solution5')}}" class="header__drapdown-link">Решения по отраслям</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="header__item">
                         <a href="#" class="header__link">О нас</a>
