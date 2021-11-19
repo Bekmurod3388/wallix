@@ -32,7 +32,7 @@ class ProductController extends Controller {
         ]);
         $uuid = Str::uuid()->toString();
         $fileName = $uuid . '-' . time() . '.' . $request->img->extension();
-        $request->img->move(public_path('../public/storage/product'), $fileName);
+        $request->img->move(public_path('../storage/app/public/product'), $fileName);
         Product::create([
             'title' => $request->title,
             'text' => $request->text,
@@ -67,7 +67,7 @@ class ProductController extends Controller {
         if ($request->hasFile('img')) {
             $uuid = Str::uuid()->toString();
             $fileName = $uuid . '-' . time() . '.' . $request->img->extension();
-            $request->img->move(public_path('../public/storage/product'), $fileName);
+            $request->img->move(public_path('../storage/app/public/product'), $fileName);
             $product->update([
                 'title' => $request->title,
                 'text' => $request->text,

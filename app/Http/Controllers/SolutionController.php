@@ -46,7 +46,7 @@ class SolutionController extends Controller {
         ]);
         $uuid = Str::uuid()->toString();
         $fileName = $uuid . '-' . time() . '.' . $request->img->extension();
-        $request->img->move(public_path('../public/storage/solutions'), $fileName);
+        $request->img->move(public_path('../storage/app/public/solutions'), $fileName);
         solution::create([
             'title' => $request->title,
             'text' => $request->text,
@@ -102,7 +102,7 @@ class SolutionController extends Controller {
         if ($request->hasFile('img')) {
             $uuid = Str::uuid()->toString();
             $fileName = $uuid . '-' . time() . '.' . $request->img->extension();
-            $request->img->move(public_path('../public/storage/solutions'), $fileName);
+            $request->img->move(public_path('../storage/app/public/solutions'), $fileName);
             $solution->update([
                 'title' => $request->title,
                 'text' => $request->text,
