@@ -8,43 +8,29 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Str;
 
-class OfficeController extends Controller
-{
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
-     */
-    public function index()
-    {
+class OfficeController extends Controller {
+
+    public function index() {
         $office = Office::orderBy('id','desc')->paginate(10);
         return view('admin.office.index')->with('office', $office);
     }
 
 
-    public function about() {
+    public function contact() {
         $office = Office::orderBy('id','desc')->paginate(10);
-        return view('about')->with('office', $office);
+        return view('contact')->with('office', $office);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
+    public function about() {
+        return view('about');
+    }
+
+    public function create() {
         return view('admin.office.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
+
+    public function store(Request $request) {
         $request->validate([
             'country' => 'required',
             'adress' => 'required',

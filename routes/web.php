@@ -1,30 +1,28 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BladeController;
 use App\Http\Controllers\MessageController;
 use App\Http\Controllers\PostController;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Route;
 
 
 Route::view('/','index')->name('index');
 Route::view('/about','about')->name('about');
-Route::view('session','session')->name('session');
+Route::view('/session','session')->name('session');
 
-Route::view('solution4','solutions.solution4')->name('solution4');
-Route::view('solution3','solutions.solution3')->name('solution3');
-Route::view('solution2','solutions.solution2')->name('solution2');
-//Route::view('solution1','solution1')->name('solution1');
-Route::view('trustelemdemo','trustelemdemo')->name('turestelemdemo');
-Route::view('health','health')->name('health');
-Route::view('devops','devops')->name('devops');
-Route::view('cyber','cyber')->name('cyber');
+Route::view('/trustelemdemo','trustelemdemo')->name('turestelemdemo');
+Route::view('/health','health')->name('health');
+Route::view('/devops','devops')->name('devops');
+Route::view('/cyber','cyber')->name('cyber');
 //Route::view('bestsafedemo','bestsafedemo')->name('bestsafedemo');
 
 # Products
-Route::view('products/bastion', 'products.bastion')->name('bastion');
-Route::view('products/bestsafe','products.bestsafe')->name('bestsafe');
-Route::view('products/trustelem','products.trust-elem')->name('trustelem');
+Route::get('/product', [BladeController::class, 'product'])->name('product');
+Route::get('/product/{product}', [BladeController::class, 'product'])->name('product-item');
+Route::view('/products/bastion', 'products.bastion')->name('bastion');
+Route::view('/products/bestsafe','products.bestsafe')->name('bestsafe');
+Route::view('/products/trustelem','products.trust-elem')->name('trustelem');
 //Route::view('bastion6','bastion6')->name('bastion6');
 //Route::view('bastion5','bastion5')->name('bastion5');
 //Route::view('bastion4','bastion4')->name('bastion4');
@@ -32,22 +30,33 @@ Route::view('products/trustelem','products.trust-elem')->name('trustelem');
 Route::view('bastion2','bastion2')->name('bastion2');
 //Route::view('bastion1','bastion1')->name('bastion1');
 
-Route::view('authdemo','authdemo')->name('authdemo');
-Route::view('auth','auth')->name('auth');
-Route::view('accessdemo','accessdemo')->name('accessdemo');
 
+# Solutions
+//Route::get('/solution', [BladeController::class, 'solution'])->name('solution');
+//Route::get('/solution/{solution}', [App\Http\Controllers\BladeController::class, 'show'])->name('solution-item');
+Route::view('/solutions/1','solutions.solution1')->name('solution1');
+Route::view('/solutions/2','solutions.solution2')->name('solution2');
+Route::view('/solutions/3','solutions.solution3')->name('solution3');
+Route::view('/solutions/4','solutions.solution4')->name('solution4');
+Route::view('/solutions/5','solutions.solution5')->name('solution5');
+
+# Auth
+Route::view('/authdemo','authdemo')->name('authdemo');
+Route::view('/auth','auth')->name('auth');
+Route::view('/accessdemo','accessdemo')->name('accessdemo');
+
+# News
 Route::get('/', [App\Http\Controllers\BladeController::class, 'index'])->name('index');
-Route::get('news', [App\Http\Controllers\PostController::class, 'news'])->name('news');
-Route::post('/', [MessageController::class, 'store'])->name('messages.store');
-Route::get('about-us', [App\Http\Controllers\OfficeController::class, 'about'])->name('about');
-Route::get('solution', [BladeController::class, 'solution'])->name('solution');
-Route::get('solution/{solution}', [App\Http\Controllers\BladeController::class, 'show'])->name('solution-item');
-Route::get('mews/{post}', [App\Http\Controllers\BladeController::class, 'news'])->name('news-item');
-Route::get('product', [BladeController::class, 'product'])->name('product');
-Route::get('product/{product}', [BladeController::class, 'product'])->name('product-item');
-
-
 Route::get('/news',[App\Http\Controllers\PostController::class, 'news'])->name('news');
+Route::get('/news/{post}', [App\Http\Controllers\BladeController::class, 'news'])->name('news-item');
+
+# About & Contact
+Route::get('/about-us', [App\Http\Controllers\OfficeController::class, 'about'])->name('about');
+Route::get('/contact-us', [App\Http\Controllers\OfficeController::class, 'contact'])->name('contact');
+Route::post('/', [MessageController::class, 'store'])->name('messages.store');
+
+
+# Admin
 Auth::routes([
     'confirm' => false,
     'login' => true,
@@ -57,7 +66,6 @@ Auth::routes([
     'verify' => false
 ]);
 
-/* Admin */
 Route::prefix('admin')->name('admin.')->middleware(['web', 'auth'])->group(function () {
     Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::get('messages/index', [MessageController::class, 'index'])->name('messages.index');
