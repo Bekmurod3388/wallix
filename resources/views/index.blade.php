@@ -103,8 +103,7 @@
                     </div>
                 </div>
             </div>
-            <div class="list__line line">
-            </div>
+            <div class="list__line line"></div>
         </div>
     </section>
     <section class="management">
@@ -164,38 +163,63 @@
                 Наши решения
             </div>
             <div class="solution__list">
-                <div class="solution__item" style="background: url('/assets/img/solution-1.jpg') center center/cover no-repeat ;">
+                <a href="{{route('solution1')}}" class="solution__item" style="background: url('/assets/img/solution-1.jpg') center center/cover no-repeat ;">
                     <div class="solution__text">
                         <div class="solution__subtitle">
-                            Digital transformation
+                            Обеспеченный цифровой трансформации
+                        </div>
+                        <div class="solution__desc">
+                            Обеспечьте безопасность вашей трансформации
+                            независимо от того, где она подключена
+                        </div>
+                    </div>
+                </a>
+                <a href="{{route('solution2')}}" class="solution__item" style="background: url('/assets/img/solution-2.jpg') center center/cover no-repeat ;">
+                    <div class="solution__text">
+                        <div class="solution__subtitle">
+                            Аудит и соответствие
                         </div>
                         <div class="solution__desc">
                             Упрощение аудита и соблюдение требований безопасности с помощью сквозного управления доступом
                         </div>
                     </div>
-                </div>
-                <div class="solution__item" style="background: url('/assets/img/solution-2.jpg') center center/cover no-repeat ;">
+                </a>
+                <a href="{{route('solution3')}}" class="solution__item" style="background: url('/assets/img/solution-2.jpg') center center/cover no-repeat ;">
                     <div class="solution__text">
                         <div class="solution__subtitle">
-                            Audit&Compliance
+                            Управление рисками и безопасностью
                         </div>
                         <div class="solution__desc">
                             Упрощение аудита и соблюдение требований безопасности с помощью сквозного управления доступом
                         </div>
                     </div>
-                </div>
-                <div class="solution__item" style="background: url('/assets/img/solution-2.jpg') center center/cover no-repeat ;">
-                    <div class="solution__text">
-                        <div class="solution__subtitle">
-                            Risk Management &Security
-                        </div>
-                        <div class="solution__desc">
-                            Упрощение аудита и соблюдение требований безопасности с помощью сквозного управления доступом
-                        </div>
-                    </div>
-                </div>
+                </a>
             </div>
-            <div class="solution__btn btn">Все решения</div>
+
+            <div id="solution" class="solution__list" style="display: none;">
+                <a href="{{route('solution4')}}" class="solution__item" style="background: url('/assets/img/solution-2.jpg') center center/cover no-repeat ;">
+                    <div class="solution__text">
+                        <div class="solution__subtitle">
+                            Wallix inside
+                        </div>
+                        <div class="solution__desc">
+                            Встроенные технологии. Кибербезопасность по дизайну для ваших решений
+                        </div>
+                    </div>
+                </a>
+                <a href="{{route('solution5')}}" class="solution__item" style="background: url('/assets/img/solution-2.jpg') center center/cover no-repeat ;">
+                    <div class="solution__text">
+                        <div class="solution__subtitle">
+                            Решения по отраслям
+                        </div>
+                        <div class="solution__desc">
+                            Мы защищаем ваши данные и обеспечиваем
+                            непрерывность ведения бизнеса
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div onclick="show(this)" class="solution__btn btn">Все решения</div>
         </div>
     </section>
     <section class="video">
@@ -218,4 +242,12 @@
 
     <x-news></x-news>
     <x-message></x-message>
+@endsection
+@section('script')
+    <script>
+        function show(btn) {
+            $('#solution').show()
+            btn.remove()
+        }
+    </script>
 @endsection

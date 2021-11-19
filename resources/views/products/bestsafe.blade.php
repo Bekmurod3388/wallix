@@ -73,7 +73,7 @@
                         Используйте проактивный подход к endpoint security...
                     </div>
                     <div class="news__xz">
-                        <img src="{{asset('assets/img/news-2.jpg')}}">
+                        <img src="{{asset('upload/news/news-2.jpg')}}">
                         <a href="#" class="news__link">
                             Читать
                         </a>
@@ -88,7 +88,7 @@
                         Положите конец общим паролям, используемым на бесчисленных...
                     </div>
                     <div class="news__xz">
-                        <img src="{{asset('assets/img/news-3.jpg')}}">
+                        <img src="{{asset('upload/news/news-3.jpg')}}">
                         <a href="#" class="news__link">
                             Читать
                         </a>
@@ -103,7 +103,7 @@
                         Обнаружение попыток шифрования в режиме...
                     </div>
                     <div class="news__xz">
-                        <img src="{{asset('assets/img/news-3.jpg')}}">
+                        <img src="{{asset('upload/news/news-3.jpg')}}">
                         <a href="#" class="news__link">
                             Читать
                         </a>
@@ -117,7 +117,7 @@
                         Управляйте и контролируйте все ключевые бизнес-приложения...
                     </div>
                     <div class="news__xz">
-                        <img src="{{asset('assets/img/news-3.jpg')}}">
+                        <img src="{{asset('upload/news/news-3.jpg')}}">
                         <a href="#" class="news__link">
                             Читать
                         </a>
@@ -162,7 +162,7 @@
                 <div class="list__item">
                     <div class="list__icon">
                         <div class="list__border">
-                            <img src="{{asset('assets/img/icon/list-5.svg')}}">
+                            <img src="{{asset('/img/icon/list-5.svg')}}">
                         </div>
                     </div>
                     <div class="list__desc">
@@ -177,7 +177,7 @@
                 <div class="list__item">
                     <div class="list__icon">
                         <div class="list__border">
-                            <img src="{{asset('assets/img/icon/list-3.svg')}}">
+                            <img src="{{asset('/img/icon/list-3.svg')}}">
                         </div>
                     </div>
                     <div class="list__desc">
@@ -192,7 +192,7 @@
                 <div class="list__item">
                     <div class="list__icon">
                         <div class="list__border">
-                            <img src="{{asset('assets/img/icon/list-2.svg')}}">
+                            <img src="{{asset('/img/icon/list-2.svg')}}">
                         </div>
                     </div>
                     <div class="list__desc">
@@ -207,7 +207,7 @@
                 <div class="list__item">
                     <div class="list__icon">
                         <div class="list__border">
-                            <img src="{{asset('assets/img/icon/list-5.svg')}}">
+                            <img src="{{asset('/img/icon/list-5.svg')}}">
                         </div>
                     </div>
                     <div class="list__desc">

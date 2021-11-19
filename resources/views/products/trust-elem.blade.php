@@ -21,7 +21,7 @@
                 </div>
             </div>
             <div class="preview--right">
-                <img src="{{asset('assets/img/background/preview-5.png')}}" alt="">
+                <img src="{{asset('assets/img/background/preview-5.png')}}" alt="img">
             </div>
         </div>
     </section>
@@ -45,7 +45,7 @@
                 Функции управления идентификацией
             </div>
             <div class="security__body row">
-                <img src="{{asset('assets/img/bastion-1.jpg')}}" />
+                <img src="{{'/upload/news/news-1.jpg'}}" alt="img">
                 <div class="security__desc">
                     <div class="security__subtitle subtitle">Центральный каталог</div>
                     <div class="security__text text">
@@ -72,7 +72,7 @@
                         Предоставьте пользователям возможность единого входа...
                     </div>
                     <div class="news__xz">
-                        <img src="{{asset('assets/img/news-2.jpg')}}">
+                        <img src="{{'/upload/news/news-2.jpg'}}" alt="img">
                         <a href="#" class="news__link">
                             Читать
                         </a>
@@ -86,7 +86,7 @@
                         Выберите один из множества механизмов многофакторной...
                     </div>
                     <div class="news__xz">
-                        <img src="{{asset('assets/img/news-3.jpg')}}">
+                        <img src="{{'/upload/news/news-3.jpg'}}" alt="img">
                         <a href="#" class="news__link">
                             Читать
                         </a>
@@ -100,7 +100,7 @@
                         Предложите пользователям решение самообслуживания...
                     </div>
                     <div class="news__xz">
-                        <img src="{{asset('assets/img/news-3.jpg')}}">
+                        <img src="{{'/upload/news/news-3.jpg'}}" alt="img">
                         <a href="#" class="news__link">
                             Читать
                         </a>
@@ -113,7 +113,7 @@
     <section class="zero">
         <div class="container">
             <div class="zero__row row">
-                <img src="{{asset('assets/img/zero-20.jpg')}}" />
+                <img src="{{asset('assets/img/zero-20.jpg')}}" alt="img">
                 <div class="zero__desc">
                     <div class="zero__subtitle subtitle">
                         Простая интеграция приложений
@@ -132,10 +132,10 @@
                         WALLIX Trustelem разработан для того, чтобы сделать администрирование простым и интуитивно понятным. Веб-консоль администрирования позволяет ИТ-персоналу легко настраивать синхронизацию каталогов, управлять жизненными циклами внешних учетных записей пользователей и приложений, создавать и адаптировать правила доступа, контролировать активность и проверять безопасность доступа.
                     </div>
                 </div>
-                <img src="{{asset('assets/img/zero-21.jpg')}}" />
+                <img src="{{asset('assets/img/zero-21.jpg')}}" alt="">
             </div>
             <div class="zero__row row">
-                <img src="{{asset('assets/img/zero-22.jpg')}}" />
+                <img src="{{asset('assets/img/zero-22.jpg')}}" alt="">
                 <div class="zero__desc">
                     <div class="zero__subtitle subtitle">
                         Безопасность - ваша главная забота
@@ -156,7 +156,7 @@
                 <div class="list__item">
                     <div class="list__icon">
                         <div class="list__border">
-                            <img src="{{asset('assets/img/icon/list-6.svg')}}">
+                            <img src="{{'/img/icon/list-6.svg'}}" alt="Icon">
                         </div>
                     </div>
                     <div class="list__desc">
@@ -171,7 +171,7 @@
                 <div class="list__item">
                     <div class="list__icon">
                         <div class="list__border">
-                            <img src="{{asset('assets/img/icon/list-7.svg')}}">
+                            <img src="{{'/img/icon/list-7.svg'}}" alt="Icon">
                         </div>
                     </div>
                     <div class="list__desc">
@@ -186,7 +186,7 @@
                 <div class="list__item">
                     <div class="list__icon">
                         <div class="list__border">
-                            <img src="{{asset('assets/img/icon/list-8.svg')}}">
+                            <img src="{{'/img/icon/list-8.svg'}}" alt="Icon">
                         </div>
                     </div>
                     <div class="list__desc">
@@ -201,7 +201,7 @@
                 <div class="list__item">
                     <div class="list__icon">
                         <div class="list__border">
-                            <img src="{{asset('assets/img/icon/list-9.svg')}}">
+                            <img src="{{'/img/icon/list-9.svg'}}" alt="Icon">
                         </div>
                     </div>
                     <div class="list__desc">
@@ -235,7 +235,5 @@
             </div>
         </div>
     </section>
-    <x-message>
-
-    </x-message>
+    <x-message></x-message>
 @endsection

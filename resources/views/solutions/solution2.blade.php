@@ -96,7 +96,7 @@
                         Достижение международно признанных уровней...
                     </div>
                     <div class="news__xz">
-                        <img src="{{asset('assets/img/news-2.jpg')}}" alt="img">
+                        <img src="{{'/upload/news/news-2.jpg'}}" alt="img">
                         <a href="#" class="news__link">
                             Читать
                         </a>
@@ -110,7 +110,7 @@
                         Операторы основных услуг (OESs) и поставщики цифровых услуг...
                     </div>
                     <div class="news__xz">
-                        <img src="{{asset('assets/img/news-3.jpg')}}" alt="img">
+                        <img src="{{'/upload/news/news-3.jpg'}}" alt="img">
                         <a href="#" class="news__link">
                             Читать
                         </a>
@@ -124,7 +124,7 @@
                         Контролируйте весь доступ к конфиденциальным данным...
                     </div>
                     <div class="news__xz">
-                        <img src="{{asset('assets/img/news-3.jpg')}}" alt="img">
+                        <img src="{{'/upload/news/news-3.jpg'}}" alt="img">
                         <a href="#" class="news__link">
                             Читать
                         </a>
@@ -138,7 +138,7 @@
                         Главный приоритет медицинской организации-безопасность...
                     </div>
                     <div class="news__xz">
-                        <img src="{{asset('assets/img/news-3.jpg')}}" alt="img">
+                        <img src="{{'/upload/news/news-3.jpg'}}" alt="img">
                         <a href="#" class="news__link">
                             Читать
                         </a>
