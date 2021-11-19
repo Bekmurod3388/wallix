@@ -8,7 +8,6 @@ use App\Http\Controllers\PostController;
 
 
 Route::view('/','index')->name('index');
-Route::view('/about','about')->name('about');
 Route::view('/session','session')->name('session');
 
 Route::view('/trustelemdemo','trustelemdemo')->name('turestelemdemo');
@@ -48,7 +47,7 @@ Route::view('/accessdemo','accessdemo')->name('accessdemo');
 # News
 Route::get('/', [App\Http\Controllers\BladeController::class, 'index'])->name('index');
 Route::get('/news',[App\Http\Controllers\PostController::class, 'news'])->name('news');
-Route::get('/news/{post}', [App\Http\Controllers\BladeController::class, 'news'])->name('news-item');
+Route::get('/news/{post}', [App\Http\Controllers\BladeController::class, 'newsItem'])->name('news-item');
 
 # About & Contact
 Route::get('/about-us', [App\Http\Controllers\OfficeController::class, 'about'])->name('about');

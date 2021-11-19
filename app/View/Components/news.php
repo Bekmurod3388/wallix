@@ -23,6 +23,6 @@ class news extends Component
      */
     public function render()
     {
-        return view('components.news');
+        return view('components.news', $news = [1, 2]);
     }
 }

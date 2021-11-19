@@ -217,10 +217,7 @@
             </div>
         </div>
     </section>
-   <x-news>
 
-   </x-news>
-    <x-message>
-
-    </x-message>
+    <x-news></x-news>
+    <x-message></x-message>
 @endsection
