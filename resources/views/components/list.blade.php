@@ -16,7 +16,7 @@
                     <div class="list__text">
                         Создайте среду нулевого доверия и снизьте риск с помощью управления привилегированным доступом и PEDM.
                     </div>
-                    <a href="#" class="list__link">
+                    <a href="{{route('bastion')}}" class="list__link">
                         Wallix Bastion
                     </a>
                 </div>
@@ -34,7 +34,7 @@
                     <div class="list__text">
                         Упрощение и безопасность доступа пользователей к бизнес-приложениям с помощью управления доступом к достоверениям.
                     </div>
-                    <a href="#" class="list__link">
+                    <a href="{{route('trustelem')}}" class="list__link">
                         Wallix Trustelem
                     </a>
                 </div>
@@ -52,7 +52,7 @@
                     <div class="list__text">
                         Получите точный контроль над конечными точками даже за пределами сети с помощью управления привилегиями конечных точек.
                     </div>
-                    <a href="#" class="list__link">
+                    <a href="{{route('bestsafe')}}" class="list__link">
                         Wallix BestSafe
                     </a>
                 </div>

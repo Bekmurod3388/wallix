@@ -42,7 +42,7 @@
                         </div>
                     </a>
                 @else
-                    <a href="{{route('solution-item', $product->id)}}">
+                    <a href="{{route('product-item', $product->id)}}">
                         <div class="zero__row--resevre row">
                             <div class="zero__desc">
                                 <div class="zero__subtitle subtitle">

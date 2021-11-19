@@ -1,10 +1,9 @@
-<x-layout>
-
-    <x-header></x-header>
+@extends('layout')
+@section('content')
     <section class="preview">
         <div class="preview__wrapper">
             <div class="preview--left">
-                <img src="{{asset('assets/img/background/priview-bg.png')}}" alt="">
+                <img src="{{asset('assets/img/background/preview-bg.png')}}" alt="">
             </div>
             <div class="preview--center">
                 <div class="container">
@@ -55,10 +54,7 @@
             </div>
         </div>
     </section>
+    <x-list>
 
-
-
-
-    <x-footer></x-footer>
-
-</x-layout>
+    </x-list>
+@endsection

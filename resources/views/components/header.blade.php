@@ -18,7 +18,18 @@
                         <a href="{{route('index')}}" class="header__link">Главная</a>
                     </li>
                     <li class="header__item">
-                        <a href="{{route('product')}}" class="header__link">Продукты</a>
+                        <a href="#" class="header__link">Продукты</a>
+                        <ul class="header__drapdown">
+                            <li class="header__drapdown-item">
+                                <a href="{{route('bastion')}}" class="header__drapdown-link">Wallix Bastion</a>
+                            </li>
+                            <li class="header__drapdown-item">
+                                <a href="{{route('bestsafe')}}" class="header__drapdown-link">Wallix Bestsafe</a>
+                            </li>
+                            <li class="header__drapdown-item">
+                                <a href="{{route('trustelem')}}" class="header__drapdown-link">Wallix Trustelem</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="header__item">
                         <a href="#" class="header__link">Решения</a>

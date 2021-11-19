@@ -21,9 +21,9 @@
                     Продукты
                 </div>
                 <ul class="footer__list">
-                    <li><a href="#" class="footer__link">Priveleged Access Management</a></li>
-                    <li><a href="#" class="footer__link">Endpoint Priveleged Management</a></li>
-                    <li><a href="#" class="footer__link">Identity Management</a></li>
+                    <li><a href="{{route('bastion')}}" class="footer__link">Wallix Bastion</a></li>
+                    <li><a href="{{route('bestsafe')}}" class="footer__link">Wallix Bestsafe</a></li>
+                    <li><a href="{{route('trustelem')}}" class="footer__link">Wallix Trustelem</a></li>
                 </ul>
             </div>
             <div class="footer__item">
@@ -31,11 +31,11 @@
                     Решения
                 </div>
                 <ul class="footer__list">
-                    <li><a href="#" class="footer__link">Digital Transformation</a></li>
-                    <li><a href="#" class="footer__link">Audit&Compliance</a></li>
-                    <li><a href="#" class="footer__link">Risk Management&Security</a></li>
-                    <li><a href="#" class="footer__link">Security IT/OT Convergence</a></li>
-                    <li><a href="#" class="footer__link">Wallix Inside</a></li>
+                    <li><a href="{{route('solution1')}}" class="footer__link">Обеспеченный цифровой трансформации</a></li>
+                    <li><a href="{{route('solution2')}}" class="footer__link">Аудит И соответствие</a></li>
+                    <li><a href="{{route('solution3')}}" class="footer__link">Управление рисками и безопасностью</a></li>
+                    <li><a href="{{route('solution4')}}" class="footer__link">Wallix inside</a></li>
+                    <li><a href="{{route('solution5')}}" class="footer__link">Решения по отраслям</a></li>
                 </ul>
             </div>
             <div class="footer__item">
@@ -43,7 +43,7 @@
                     О нас
                 </div>
                 <ul class="footer__list">
-                    <li><a href="#" class="footer__link">О компании Wallix</a></li>
+                    <li><a href="{{route('about')}}" class="footer__link">О компании Wallix</a></li>
                     <li><a href="{{route('news')}}" class="footer__link">Новости</a></li>
                 </ul>
             </div>

@@ -1,7 +1,5 @@
-<x-layout>
-
-    <x-header></x-header>
-
+@extends('layout')
+@section('content')
     <section class="desc pt-3">
         <div class="container">
             <div class="desc__row">
@@ -15,19 +13,13 @@
 
                 <div class="desc__line line"></div>
             </div>
-
-
+        </div>
 
             <section class="zero">
                 <div class="container">
-
                     <div class="zero__line line">
                     </div>
                 </div>
             </section>
-
-            <x-footer>
-
-            </x-footer>
-            <script src="js/script.min.js"></script>
-</x-layout>
+        <x-news></x-news>
+@endsection
