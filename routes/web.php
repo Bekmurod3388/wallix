@@ -8,10 +8,10 @@ use App\Http\Controllers\PostController;
 
 
 Route::view('/','index')->name('index');
-Route::view('/session','session')->name('session');
+Route::view('/session','extra.session')->name('session');
 
 Route::view('/trustelemdemo','trustelemdemo')->name('turestelemdemo');
-Route::view('/health','health')->name('health');
+Route::view('/health','extra.health')->name('health');
 Route::view('/devops','devops')->name('devops');
 Route::view('/cyber','cyber')->name('cyber');
 //Route::view('bestsafedemo','bestsafedemo')->name('bestsafedemo');

@@ -1,11 +1,9 @@
-<x-layout>
-<x-header>
-
-</x-header>
+@extends('layout')
+@section('content')
     <section class="preview">
         <div class="preview__wrapper">
             <div class="preview--left">
-                <img src="{{asset('assets/img/background/priview-bg.png')}}" alt="">
+                <img src="{{asset('/assets/img/background/priview-bg.png')}}" alt="">
             </div>
             <div class="preview--center">
                 <div class="container">
@@ -123,6 +121,7 @@
     <x-message>
 
     </x-message>
-<x-footer
-<script src="js/script.min.js"></script>
-</x-layout>
+@endsection
+@section('script')
+    <script src = "{{asset('/asset/js/script.min.js')}}"></script>
+@endsection
