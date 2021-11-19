@@ -36,5 +36,23 @@ class NewsSeeder extends Seeder {
             'img' => "zero-39.jpg"
         ]);
 
+        Post::query()->create([
+            'header_ru' => "Семинар Robe",
+            'description_ru' => "30 января 2021 года наши сотрудники побывали...",
+            'img' => "news-3.jpg"
+        ]);
+
+        Post::query()->create([
+            'header_ru' => "Выставка Cyber eye Russia 2021",
+            'description_ru' => "30 контрактов, тысячи восторженных посетителей...",
+            'img' => "news-2.jpg"
+        ]);
+
+        Post::query()->create([
+            'header_ru' => "Семинар Milos",
+            'description_ru' => "А ещё элементы политического процесса призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов",
+            'img' => "news-1.jpg"
+        ]);
+
     }
 }

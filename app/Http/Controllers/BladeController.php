@@ -29,14 +29,13 @@ class BladeController extends Controller {
         return view('products.product')->with('products', $products);
     }
 
-
-    public function news(Post $post) {
+    public function newsItem(Post $post) {
         Post::where('id', $post->id)
             ->update([
                 'viewed' => DB::raw('viewed+1'),
             ]);
 
-        return view('news-item', compact('post'));
+        return view('news.news-item', compact('post'));
     }
 
 
