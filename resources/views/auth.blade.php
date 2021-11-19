@@ -1,6 +1,5 @@
-<x-layout>
-
-<x-header></x-header>
+@extends('layout')
+@section('content')
     <section class="preview" style="background: url('{{asset('assets/img/background/auth-bg.jpg')}}') no-repeat">
     <div class="container">
         <div class="auth__content">
@@ -41,7 +40,7 @@
                 <div class="zero__text text">
                     Принцип нулевого доверия требует подтверждения личности, чтобы обеспечить доступ, где бы вы ни находились. Предотвращайте несанкционированный доступ, уменьшайте количество утечек данных и снижайте риск бокового перемещения, чтобы защитить всю ИТ-среду без каких-либо технических ограничений для пользователей.
                 </div>
-                <a href="#" class="zero__link">Скачать брошюру</a>
+                <a href="{{asset('/files/DATASHEET_2021_AUTHENTICATOR_MFA_EN.pdf')}}" target="_blank" class="zero__link">Скачать брошюру</a>
             </div>
         </div>
         <div class="zero__row--resevre row">
@@ -64,7 +63,7 @@
                 <div class="zero__text text">
                     Подтвердите личность ваших сотрудников, партнеров и подрядчиков независимо от того, где они находятся, и уменьшите риск кражи паролей от фишинга или других методов атаки. Безопасность облегчила работу удаленных сотрудников и все цифровые взаимодействия!
                 </div>
-                <a href="#" class="zero__link">Скачать брошюру</a>
+                <a href="{{asset('/files/DATASHEET_2021_AUTHENTICATOR_MFA_EN.pdf')}}" target="_blank" class="zero__link">Скачать брошюру</a>
             </div>
         </div>
         <div class="zero__line line">
@@ -84,7 +83,7 @@
                     Простота в использовании с бесфрикционным и последовательным пользовательским интерфейсом.
                     Одна уникальная точка входа в Успех клиента. Мы обо всем позаботимся!
                 </div>
-                <a href="#" class="management__link">Свзаться</a>
+                <a href="{{route('about')}}" class="management__link">Свзаться</a>
             </div>
             <div class="management__item">
                 <img src="{{asset('assets/img/management-4.jpg')}}" alt="management" />
@@ -94,7 +93,7 @@
                     Добейтесь соблюдения правил безопасности, включая GDPR и CCPA.
                     Получите ценность полного сквозного решения WALLIX, сертифицированного CSPN ANSII.
                 </div>
-                <a href="#" class="management__link">Узнать больше</a>
+                <a href="{{route('solution2')}}" class="management__link">Узнать больше</a>
             </div>
             <div class="management__item">
                 <img src="{{asset('assets/img/management-4.jpg')}}" alt="management" />
@@ -103,7 +102,7 @@
                     Аутентификатор WALLIX работает от нашего партнера по технологическому альянсу InWebo.
                     Обеспечьте безопасность всех приложений с помощью уникальной комбинации технологии динамических случайных ключей и HSM
                 </div>
-                <a href="#" class="management__link">Узнать больше</a>
+                <a href="{{route('product')}}" class="management__link">Узнать больше</a>
             </div>
         </div>
         <div class="management__line line"></div>
@@ -122,8 +121,4 @@
         </div>
     </div>
 </section>
-<x-footer>
-
-</x-footer>
-<script src="js/script.min.js"></script>
-</x-layout>
+@endsection

@@ -8,8 +8,7 @@
                         <p>Пользователь</p>
                     </a>
                 </li>
-
-                <li class="nav-item {{  request()->routeIs('admin.posts.index') ? 'active' : '' }} ">
+                <li class="nav-item {{ request()->routeIs('admin.posts.index') ? 'active' : '' }} ">
                     <a href="{{route('admin.posts.index')}}">
                         <i class="fas fa-pen-square"></i>
                         <p>Новости</p>
@@ -33,8 +32,8 @@
                         <p>Решения</p>
                     </a>
                 </li>
-                <li class="nav-item {{  request()->routeIs('admin.produkt.index') ? 'active' : '' }}">
-                    <a href="{{route('admin.produkt.index')}}">
+                <li class="nav-item {{  request()->routeIs('admin.product.index') ? 'active' : '' }}">
+                    <a href="{{route('admin.product.index')}}">
                         <i class="fas fa-project-diagram"></i>
                         <p>Продукты</p>
                     </a>
@@ -45,11 +44,7 @@
                         <p>Категория</p>
                     </a>
                 </li>
-
-
             </ul>
-
-
         </div>
     </div>
 </div>

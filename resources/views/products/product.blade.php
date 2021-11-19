@@ -1,9 +1,9 @@
-<x-layout>
-    <x-header></x-header>
+@extends('layout')
+@section('content')
     <section class="preview">
         <div class="preview__wrapper">
             <div class="preview--left">
-                <img src="{{asset('assets/img/background/priview-bg.png')}}" alt="">
+                <img src="{{asset('assets/img/background/preview-bg.png')}}" alt="">
             </div>
             <div class="preview--center">
                 <div class="container">
@@ -26,54 +26,38 @@
     </section>
     <section class="zero">
         <div class="container">
-
-            @foreach($product as $products)
-
-                @if(($products->id)%2==1)
-                    <a href="{{route('product-item',$products->id)}}">
+            @foreach($products as $product)
+                @if(($product->id) % 2 == 1)
+                    <a href="{{route('product-item', $product->id)}}">
                         <div class="zero__row row">
-                            <img src="{{asset('storage/produkt/'.$products->img)}}" style="width: 80%" />
+                            <img src="{{asset('storage/product/' . $product->img)}}" style="width: 80%" alt="img">
                             <div class="zero__desc">
                                 <div class="zero__subtitle subtitle">
-                                    {{$products->title}}
+                                    {{$product->title}}
                                 </div>
                                 <div class="zero__text text">
-                                    {{ \Illuminate\Support\Str::limit($products->text, 150, '...') }}
+                                    {{ \Illuminate\Support\Str::limit($product->text, 150, '...') }}
                                 </div>
                             </div>
-
                         </div>
                     </a>
-
-
                 @else
-                    <a href="{{route('solution-item',$products->id)}}">
+                    <a href="{{route('solution-item', $product->id)}}">
                         <div class="zero__row--resevre row">
-
                             <div class="zero__desc">
                                 <div class="zero__subtitle subtitle">
-                                    {{$products->title}}
+                                    {{$product->title}}
                                 </div>
                                 <div class="zero__text text">
-                                    {{ \Illuminate\Support\Str::limit($products->text, 150, '...') }}
+                                    {{ \Illuminate\Support\Str::limit($product->text, 150, '...') }}
                                 </div>
                             </div>
-
-                            <img src="{{asset('storage/produkt/'.$products->img)}}" style="width: 80%" />
-
+                            <img src="{{asset('storage/product/' . $product->img)}}" style="width: 80%" alt="img">
                         </div>
                     </a>
                 @endif
             @endforeach
-            <div class="zero__line line">
-            </div>
+            <div class="zero__line line"></div>
         </div>
     </section>
-    <x-message>
-
-    </x-message>
-    <x-footer>
-
-    </x-footer>
-    <script src="js/script.min.js"></script>
-</x-layout>
+@endsection

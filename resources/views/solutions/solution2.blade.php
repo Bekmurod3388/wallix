@@ -18,9 +18,7 @@
                     </div>
                 </div>
             </div>
-            <div class="preview--right">
-                <img src="{{asset('assets/img/background/preview-11.png')}}" alt="">
-            </div>
+
         </div>
     </section>
 <section class="desc">
