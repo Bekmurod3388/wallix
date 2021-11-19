@@ -11,10 +11,7 @@ use Illuminate\Database\Eloquent\Model;
  * @method static where(string $string, $id)
  * @property int id
  */
-class Post extends Model
-{
+class Post extends Model {
     use HasFactory;
-    protected $fillable = ['header_ru','header2_ru','description_ru','header_uz','header2_uz','description_uz','header_en','header2_en','description_en','img','viewed'];
-
-
+    protected $fillable = ['header_ru', 'header2_ru', 'description_ru', 'img', 'viewed'];
 }

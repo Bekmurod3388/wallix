@@ -25,53 +25,47 @@
     </section>
     <section class="zero">
         <div class="container">
-            @foreach($posts as $post)
-                @if(($post->id)%2==0)
-                <div class="zero__row pb-3 row">
-
-                    <img src="{{asset('storage/posts/'.$post->img)}}" />
-                    <div class="zero__desc">
-                        <div class="zero__date">
-                            {{$post->created_at}}
-                        </div>
-                        <div class="zero__subtitle subtitle">
-                           {{$post->header_ru}}
-                        </div>
-                        <div class="zero__text text">
-                            {{ \Illuminate\Support\Str::limit($post->description_ru, 150, '...') }}
-                                                        </div>
-                        <a href="{{route('news-item',$post->id)}}" class="zero__link">
-                            Читать полностью
-                        </a>
+        @foreach($posts as $post)
+        @if(($post->id) % 2==0)
+            <div class="zero__row row">
+                <img src="{{asset('upload/news/' . $post->img)}}" alt="img">
+                <div class="zero__desc">
+                    <div class="zero__date">
+                        {{$post->created_at}}
+                    </div>
+                    <div class="zero__subtitle subtitle">
+                       {{$post->header_ru}}
+                    </div>
+                    <div class="zero__text text">
+                        {{ \Illuminate\Support\Str::limit($post->description_ru, 150, '...') }}
+                                                    </div>
+                    <a href="{{route('news-item',$post->id)}}" class="zero__link">
+                        Читать полностью
+                    </a>
+                </div>
+            </div>
+        @else
+            <div class="zero__row--resevre row">
+                <div class="zero__desc">
+                    <div class="zero__date">
+                        {{$post->created_at}}
+                    </div>
+                    <div class="zero__subtitle subtitle">
+                        {{$post->header_ru}}
+                    </div>
+                    <div class="zero__text text">
+                        {{ \Illuminate\Support\Str::limit($post->description_ru, 150, '...') }}
 
                     </div>
+                    <a href="{{route('news-item',$post->id)}}" class="zero__link">
+                        Читать полностью
+                    </a>
                 </div>
-                @else
-
-                <div class="zero__row--reserve pb-3 row">
-                    <div class="zero__desc">
-                        <div class="zero__date">
-                            {{$post->created_at}}
-                        </div>
-                        <div class="zero__subtitle subtitle">
-                            {{$post->header_ru}}
-                        </div>
-                        <div class="zero__text text">
-                            {{ \Illuminate\Support\Str::limit($post->description_ru, 150, '...') }}
-
-                        </div>
-                        <a href="{{route('news-item',$post->id)}}" class="zero__link">
-                            Читать полностью
-                        </a>
-                    </div>
-                    <img src="{{asset('storage/posts/'.$post->img)}}" />
-                </div>
-                @endif
-            @endforeach
-
-            <button class="zero__btn btn">
-                Загрузить еще
-            </button>
+                <img src="{{asset('upload/news/'.$post->img)}}" alt="img">
+            </div>
+        @endif
+        @endforeach
+            <button class="zero__btn btn">Загрузить еще</button>
         </div>
     </section>
 @endsection

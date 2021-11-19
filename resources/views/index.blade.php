@@ -221,52 +221,58 @@
         <div class="container">
             <div class="news__header">
                 <div class="news__title">Новости</div>
-                <a href="{{route('news')}}" class="news__btn btn">Все новости</a>
+                <div class="news__btn btn">Все новости</div>
             </div>
             <div class="news__row">
-                @foreach($news as $new)
-
-                        @if($count==3)
                 <div class="news__seminar">
-                    <img src="{{asset('storage/posts/'.$new->img)}}" alt="img">
+                    <img src="{{'/assets/img/news-1.jpg'}}">
                     <div class="news__desc">
                         <div class="news__date">
-                            {{$new->created_at}}
+                            27.01.2021
                         </div>
                         <div class="news__subtitle">
-                            {{$new->header_ru}}
+                            Семинар Milos
                         </div>
                         <div class="news__text">
-                            {{ \Illuminate\Support\Str::limit($new->description_ru, 200, '...') }}
+                            А ещё элементы политического процесса призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов
                         </div>
-                        <a href="{{route('news-item',$new->id)}}" class="zero__link">
+                        <a href='#' class="news__link">
                             Читать полностью
                         </a>
                     </div>
                 </div>
-                        @else
                 <div class="news__list">
                     <div class="news__item">
                         <div class="news__subtitle">
-                            {{$new->header_ru}}
+                            Выставка Cyber eye Russia 2021
                         </div>
                         <div class="news__text">
-                            {{ \Illuminate\Support\Str::limit($new->description_ru, 50, '...') }}
+                            30 контрактов, тысячи восторженных посетителей...
                         </div>
                         <div class="news__xz">
-                            <img src="{{asset('storage/posts/'.$new->img)}}" alt="img">
+                            <img src="{{'/assets/img/news-2.jpg'}}">
                             <div class="news__subdate">
-                                {{$new->created_at}}
+                                27.02.2021
                             </div>
                         </div>
                     </div>
-                    @endif
-                    <?php $count -= 1 ?>
-                    @endforeach
-                </div>
-
+                    <div class="news__item">
+                        <div class="news__subtitle w">
+                            Семинар Robe
+                        </div>
+                        <div class="news__text">
+                            30 января 2021 года наши сотрудники побывали...
+                        </div>
+                        <div class="news__xz">
+                            <img src="{{'/assets/img/news-3.jpg'}}">
+                            <div class="news__subdate">
+                                27.03.2021
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
     </section>
     <section class="form">
         <div class="container">

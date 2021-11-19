@@ -35,7 +35,7 @@
                         </ul>
                     </li>
                     <li class="header__item">
-                        <a href="{{route('about')}}" class="header__link">Контакты</a>
+                        <a href="{{route('contact')}}" class="header__link">Контакты</a>
                     </li>
                 </ul>
             </nav>
