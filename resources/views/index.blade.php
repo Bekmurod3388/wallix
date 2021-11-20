@@ -14,9 +14,9 @@
                         <div class="preview__desc">
                             Wallix защищает идентификационные данные и доступ для ускорения цифровой трансформации
                         </div>
-                        <button class="preview__btn btn">
+                        <a href="#video" class="preview__btn btn">
                             Смотреть видео
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -222,7 +222,7 @@
             <div onclick="show(this)" class="solution__btn btn">Все решения</div>
         </div>
     </section>
-    <section class="video">
+    <section id="video" class="video">
         <div class="video__bg" style="background: url('/assets/img/background/video-bg.jpg');">
         </div>
         <div class="container">

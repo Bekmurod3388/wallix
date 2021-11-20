@@ -1,0 +1,8 @@
+.header__drapdown {
+    margin-top: 12px;
+    pointer-events: none;
+}
+
+.header__item:hover .header__drapdown {
+    pointer-events: auto !important;
+}
