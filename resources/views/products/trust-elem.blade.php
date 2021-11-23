@@ -43,17 +43,11 @@
                 Функции управления идентификацией
             </div>
             <div class="security__body row">
-                <img src="{{'/upload/news/news-1.jpg'}}" alt="img">
+                <img src="{{"/img/products/$img"}}" alt="img">
                 <div class="security__desc">
-                    <div class="security__subtitle subtitle">Центральный каталог</div>
+                    <div class="security__subtitle subtitle">{{$title}}</div>
                     <div class="security__text text">
-                        Соберите свои источники идентичности в единую ссылку на идентичность, чтобы легко управлять правами доступа в одном централизованном месте.
-                        <ul>
-                            <li>Поддержка каталогов Active Directory, Azure AD, LDAP и Google G Suite directory</li>
-                            <li>Импортируйте столько каталогов сколько необходимо в вашу платформу WALLIX Trustelem</li>
-                            <li>Полный или частичный импорт каталога на основе членства в группе и фильтрации атрибутов</li>
-                            <li>Импорт членства в группах и атрибутов пользователей для определения надлежащих политик управления доступом</li>
-                        </ul>
+                        {!! $text !!}
                     </div>
                 </div>
             </div>
@@ -70,8 +64,8 @@
                         Предоставьте пользователям возможность единого входа...
                     </div>
                     <div class="news__xz">
-                        <img src="{{'/upload/news/news-2.jpg'}}" alt="img">
-                        <a href="#" class="news__link">
+                        <img src="{{'/img/products/pro-5.png'}}" alt="img">
+                        <a href="{{route('trustelem', ['type' => 1])}}" class="news__link">
                             Читать
                         </a>
                     </div>
@@ -84,8 +78,8 @@
                         Выберите один из множества механизмов многофакторной...
                     </div>
                     <div class="news__xz">
-                        <img src="{{'/upload/news/news-3.jpg'}}" alt="img">
-                        <a href="#" class="news__link">
+                        <img src="{{'/img/products/pro-6.png'}}" alt="img">
+                        <a href="{{route('trustelem', ['type' => 2])}}" class="news__link">
                             Читать
                         </a>
                     </div>
@@ -98,8 +92,8 @@
                         Предложите пользователям решение самообслуживания...
                     </div>
                     <div class="news__xz">
-                        <img src="{{'/upload/news/news-3.jpg'}}" alt="img">
-                        <a href="#" class="news__link">
+                        <img src="{{'/img/products/pro-7.png'}}" alt="img">
+                        <a href="{{route('trustelem', ['type' => 3])}}" class="news__link">
                             Читать
                         </a>
                     </div>

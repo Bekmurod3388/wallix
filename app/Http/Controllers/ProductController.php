@@ -90,4 +90,13 @@ class ProductController extends Controller {
         return redirect()->route('admin.product.index')
             ->with('success', 'Продукты solution удалено');
     }
+
+
+    public function bestsafe(Request $request) {
+        return view('products.bestsafe', Product::best($request->get('type')));
+    }
+
+    public function trustelem(Request $request) {
+        return view('products.trust-elem', Product::trust($request->get('type')));
+    }
 }

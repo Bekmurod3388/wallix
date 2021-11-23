@@ -43,17 +43,11 @@
                 Особенности BestSafe
             </div>
             <div class="security__body row">
-                <img src="{{asset('assets/img/bastion-1.jpg')}}" />
+                <img src="{{asset("/img/products/$img")}}" />
                 <div class="security__desc">
-                    <div class="security__subtitle subtitle">Белый / серый / черный список</div>
+                    <div class="security__subtitle subtitle"{{$title}}</div>
                     <div class="security__text text">
-                        Белый список для корпоративных приложений, серый список для опасных приложений, чёрный список для вредоносных программ
-                        <ul>
-                            <li>Исключите привилегированные учетные записи и права локального администратора</li>
-                            <li>Привилегии на уровне приложений и процессов для выполнения разрешенных административных задач (Белый список)</li>
-                            <li>Уменьшите привилегии потенциально опасных приложений (почтовых клиентов, браузеров и т. д. с доступом в Интернет), запретите доступ к конфиденциальным ресурсам, независимо от повышенных привилегий пользователя (Серый список)</li>
-                            <li>Остановите выполнение или шифрование файлов вредоносными программами, программами-вымогателями и криптовирусами</li>
-                        </ul>
+                        {!! $text !!}
                     </div>
                 </div>
             </div>
@@ -71,8 +65,8 @@
                         Используйте проактивный подход к endpoint security...
                     </div>
                     <div class="news__xz">
-                        <img src="{{asset('upload/news/news-2.jpg')}}">
-                        <a href="#" class="news__link">
+                        <img src="{{asset('img/products/pro-1.png')}}">
+                        <a href="{{route('bestsafe', ['type' => 1])}}" class="news__link">
                             Читать
                         </a>
                     </div>
@@ -86,8 +80,8 @@
                         Положите конец общим паролям, используемым на бесчисленных...
                     </div>
                     <div class="news__xz">
-                        <img src="{{asset('upload/news/news-3.jpg')}}">
-                        <a href="#" class="news__link">
+                        <img src="{{asset('img/products/pro-2.png')}}">
+                        <a href="{{route('bestsafe', ['type' => 2])}}" class="news__link">
                             Читать
                         </a>
                     </div>
@@ -101,8 +95,8 @@
                         Обнаружение попыток шифрования в режиме...
                     </div>
                     <div class="news__xz">
-                        <img src="{{asset('upload/news/news-3.jpg')}}">
-                        <a href="#" class="news__link">
+                        <img src="{{asset('img/products/pro-3.png')}}">
+                        <a href="{{route('bestsafe', ['type' => 3])}}" class="news__link">
                             Читать
                         </a>
                     </div>
@@ -115,8 +109,8 @@
                         Управляйте и контролируйте все ключевые бизнес-приложения...
                     </div>
                     <div class="news__xz">
-                        <img src="{{asset('upload/news/news-3.jpg')}}">
-                        <a href="#" class="news__link">
+                        <img src="{{asset('img/products/pro-4.png')}}">
+                        <a href="{{route('bestsafe', ['type' => 4])}}" class="news__link">
                             Читать
                         </a>
                     </div>
