@@ -19,6 +19,6 @@ class Categories extends Model
 
     public function solution()
     {
-        return $this->hasMany(solution::class);
+        return $this->hasMany(Solution::class);
     }
 }

@@ -6,12 +6,12 @@ use Illuminate\Support\Facades\DB;
 use App\Models\Categories;
 use App\Models\Post;
 use App\Models\Product;
-use App\Models\solution;
+use App\Models\Solution;
 
 class BladeController extends Controller {
 
     public function index() {
-        $solution = solution::orderBy('id','desc')->take(3)->get();
+        $solution = Solution::orderBy('id','desc')->take(3)->get();
         $news=Post::orderby('id','desc')->take(4)->get();
         $count=count($news);
         return view('index', compact('solution','news', 'count'));
@@ -19,7 +19,7 @@ class BladeController extends Controller {
 
 
     public function solution() {
-        $solution = solution::orderBy('id','desc')->paginate(25);
+        $solution = Solution::orderBy('id','desc')->paginate(25);
         return view('solutions.solution')->with('solution', $solution);
     }
 
@@ -39,8 +39,8 @@ class BladeController extends Controller {
     }
 
 
-    public function show(solution $solution) {
-        $cat=solution::all()->where('category_id', $solution->category_id );
+    public function show(Solution $solution) {
+        $cat=Solution::all()->where('category_id', $solution->category_id );
         $count=count($cat);
         $category=Categories::all()->where('id',$solution->category_id);
         return view('solutions.solution1', compact('solution','cat', 'count', 'category'));

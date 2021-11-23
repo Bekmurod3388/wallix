@@ -34,7 +34,7 @@ Route::view('bastion2','bastion2')->name('bastion2');
 //Route::get('/solution', [BladeController::class, 'solution'])->name('solution');
 //Route::get('/solution/{solution}', [App\Http\Controllers\BladeController::class, 'show'])->name('solution-item');
 Route::view('/solutions/1','solutions.solution1')->name('solution1');
-Route::view('/solutions/2','solutions.solution2')->name('solution2');
+Route::get('/solutions/2', [App\Http\Controllers\SolutionController::class, 'audit'])->name('solution2');
 Route::view('/solutions/3','solutions.solution3')->name('solution3');
 Route::view('/solutions/4','solutions.solution4')->name('solution4');
 Route::view('/solutions/5','solutions.solution5')->name('solution5');

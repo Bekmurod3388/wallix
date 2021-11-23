@@ -14,9 +14,7 @@
                         <div class="preview__desc">
                             Безопасное управление доступом для плавного подключения к бизнес приложениям
                         </div>
-                        <button class="preview__btn btn">
-                            Подробно
-                        </button>
+                        <a href="#message" class="preview__btn btn">Попробовать бесплатно</a>
                     </div>
                 </div>
             </div>

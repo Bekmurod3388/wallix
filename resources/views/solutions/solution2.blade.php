@@ -71,17 +71,11 @@
                 Упрощенный аудит и соответствие
             </div>
             <div class="security__body row">
-                <img src="{{asset('assets/img/bastion-1.jpg')}}" alt="img">
+                <img src="{{asset("/img/solutions/$img")}}" alt="img">
                 <div class="security__desc">
-                    <div class="security__subtitle subtitle">GDPR</div>
+                    <div class="security__subtitle subtitle">{{$title}}</div>
                     <div class="security__text text">
-                        Защищайте персональные данные в соответствии с Общим Европейским регламентом защиты данных (GDPR). Контролируйте, кто имеет доступ к личным данным и как этот доступ управляется.
-                        <ul>
-                            <li>Обеспечьте соблюдение требований и избегайте тяжелых штрафов</li>
-                            <li>Поддержание отношений с клиентами и репутации бренда</li>
-                            <li>Улучшите целостную систему безопасности с помощью управления безопасностью данных и доступом к ним</li>
-                            <li>Проактивный подход к будущим нормативным актам</li>
-                        </ul>
+                        {!! $text !!}
                     </div>
                 </div>
             </div>
@@ -99,7 +93,7 @@
                     </div>
                     <div class="news__xz">
                         <img src="{{'/upload/news/news-2.jpg'}}" alt="img">
-                        <a href="#" class="news__link">
+                        <a href="{{route('solution2', ['type' => 1])}}" class="news__link">
                             Читать
                         </a>
                     </div>
@@ -113,7 +107,7 @@
                     </div>
                     <div class="news__xz">
                         <img src="{{'/upload/news/news-3.jpg'}}" alt="img">
-                        <a href="#" class="news__link">
+                        <a href="{{route('solution2', ['type' => 2])}}" class="news__link">
                             Читать
                         </a>
                     </div>
@@ -127,7 +121,7 @@
                     </div>
                     <div class="news__xz">
                         <img src="{{'/upload/news/news-3.jpg'}}" alt="img">
-                        <a href="#" class="news__link">
+                        <a href="{{route('solution2', ['type' => 3])}}" class="news__link">
                             Читать
                         </a>
                     </div>
@@ -141,7 +135,7 @@
                     </div>
                     <div class="news__xz">
                         <img src="{{'/upload/news/news-3.jpg'}}" alt="img">
-                        <a href="#" class="news__link">
+                        <a href="{{route('solution2', ['type' => 4])}}" class="news__link">
                             Читать
                         </a>
                     </div>

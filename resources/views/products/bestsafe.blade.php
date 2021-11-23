@@ -14,9 +14,7 @@
                         <div class="preview__desc">
                             Управление привилегиями конечных точек для мощной безопасности с наименьшими привилегиями
                         </div>
-                        <button class="preview__btn btn">
-                            Подробно
-                        </button>
+                        <a href="#message" class="preview__btn btn">Попробовать бесплатно</a>
                     </div>
                 </div>
             </div>
