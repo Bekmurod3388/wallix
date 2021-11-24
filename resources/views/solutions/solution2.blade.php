@@ -70,7 +70,7 @@
             <div class="management__title">
                 Упрощенный аудит и соответствие
             </div>
-            <div class="security__body row">
+            <div class="security__body row content-div">
                 <img src="{{asset("/img/solutions/$img")}}" alt="img">
                 <div class="security__desc">
                     <div class="security__subtitle subtitle">{{$title}}</div>
