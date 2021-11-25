@@ -3,7 +3,7 @@
     <section class="preview">
         <div class="preview__wrapper">
             <div class="preview--left">
-                <img src="{{asset('assets/img/background/preview-bg.png')}}" alt="">
+                <img src="{{asset('img/background/preview-bg.png')}}" alt="">
             </div>
             <div class="preview--center">
                 <div class="container">
@@ -21,7 +21,7 @@
                 </div>
             </div>
             <div class="preview--right">
-                <img src="{{asset('assets/img/background/preview-1.png')}}" alt="">
+                <img src="{{asset('img/background/preview-1.png')}}" alt="">
             </div>
         </div>
     </section>
@@ -43,7 +43,7 @@
                 <div class="list__item">
                     <div class="list__icon">
                         <div class="list__border">
-                            <img src="{{asset('assets/img/icon/list.svg')}}" alt="img">
+                            <img src="{{asset('img/icon/list.svg')}}" alt="img">
                         </div>
                     </div>
                     <div class="list__desc">
@@ -58,7 +58,7 @@
                 <div class="list__item">
                     <div class="list__icon">
                         <div class="list__border">
-                            <img src="{{asset('assets/img/icon/list.svg')}}" alt="img">
+                            <img src="{{asset('img/icon/list.svg')}}" alt="img">
                         </div>
                     </div>
                     <div class="list__desc">
@@ -73,7 +73,7 @@
                 <div class="list__item">
                     <div class="list__icon">
                         <div class="list__border">
-                            <img src="{{asset('assets/img/icon/list.svg')}}" alt="img">
+                            <img src="{{asset('img/icon/list.svg')}}" alt="img">
                         </div>
                     </div>
                     <div class="list__desc">
@@ -90,7 +90,7 @@
                 <div class="list__item">
                     <div class="list__icon">
                         <div class="list__border">
-                            <img src="{{asset('assets/img/icon/list.svg')}}" alt="img">
+                            <img src="{{asset('img/icon/list.svg')}}" alt="img">
                         </div>
                     </div>
                     <div class="list__desc">
@@ -223,7 +223,7 @@
         </div>
     </section>
     <section id="video" class="video">
-        <div class="video__bg" style="background: url('/assets/img/background/video-bg.jpg');">
+        <div class="video__bg" style="background: url('/img/background/video-bg.jpg');">
         </div>
         <div class="container">
             <div class="video__title title">

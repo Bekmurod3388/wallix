@@ -3,10 +3,10 @@
         <div class="header__body">
             <div class="header__logos">
                 <a href="/" class="header__logo">
-                    <img src="{{asset('assets/img/logo/logo.png')}}" alt="logo">
+                    <img src="{{asset('img/logo/logo.png')}}" alt="logo">
                 </a>
                 <a href="/" class="header__logo">
-                    <img src="{{asset('assets/img/logo/abris-logo.png')}}" alt="Abris logo">
+                    <img src="{{asset('img/logo/abris-logo.png')}}" alt="Abris logo">
                 </a>
             </div>
             <div class="header__gamburger">

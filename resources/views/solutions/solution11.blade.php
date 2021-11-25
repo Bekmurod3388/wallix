@@ -1,7 +1,7 @@
 @extends('layout')
 @section('content')
-    <section class="preview" style="background: url('{{asset('assets/img/background/priview-bg.png')}}') no-repeat">
-    <img src="{{asset('assets/img/background/preview-6.png')}}" alt="" />
+    <section class="preview" style="background: url('{{asset('img/background/priview-bg.png')}}') no-repeat">
+    <img src="{{asset('img/background/preview-6.png')}}" alt="" />
     <div class="container">
         <div class="preview__body">
             <h1 class="preview__title">
@@ -88,7 +88,7 @@
             <div class="list__item">
                 <div class="list__icon">
                     <div class="list__border">
-                        <img src="{{asset('assets/img/icon/list-10.svg')}}">
+                        <img src="{{asset('img/icon/list-10.svg')}}">
                     </div>
                 </div>
                 <div class="list__desc">
@@ -106,7 +106,7 @@
             <div class="list__item">
                 <div class="list__icon">
                     <div class="list__border">
-                        <img src="{{asset('assets/img/icon/list-11.svg')}}">
+                        <img src="{{asset('img/icon/list-11.svg')}}">
                     </div>
                 </div>
                 <div class="list__desc">
@@ -124,7 +124,7 @@
             <div class="list__item">
                 <div class="list__icon">
                     <div class="list__border">
-                        <img src="{{asset('assets/img/icon/list-12.svg')}}">
+                        <img src="{{asset('img/icon/list-12.svg')}}">
                     </div>
                 </div>
                 <div class="list__desc">

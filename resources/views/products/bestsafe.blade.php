@@ -3,7 +3,7 @@
     <section class="preview">
         <div class="preview__wrapper">
             <div class="preview--left">
-                <img src="{{asset('assets/img/background/preview-bg.png')}}" alt="">
+                <img src="{{asset('img/background/preview-bg.png')}}" alt="">
             </div>
             <div class="preview--center">
                 <div class="container">
@@ -19,7 +19,7 @@
                 </div>
             </div>
             <div class="preview--right">
-                <img src="{{asset('assets/img/background/preview-4.png')}}" alt="">
+                <img src="{{asset('img/background/preview-4.png')}}" alt="">
             </div>
         </div>
     </section>

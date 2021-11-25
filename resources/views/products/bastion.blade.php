@@ -3,7 +3,7 @@
     <section class="preview">
         <div class="preview__wrapper">
             <div class="preview--left">
-                <img src="{{asset('assets/img/background/preview-bg.png')}}" alt="">
+                <img src="{{asset('img/background/preview-bg.png')}}" alt="">
             </div>
             <div class="preview--center">
                 <div class="container">
@@ -20,7 +20,7 @@
                 </div>
             </div>
             <div class="preview--right">
-                <img src="{{asset('assets/img/background/preview-2.png')}}" alt="">
+                <img src="{{asset('img/background/preview-2.png')}}" alt="">
             </div>
         </div>
     </section>
@@ -47,7 +47,7 @@
                 Комплексные функции безопасности доступа
             </div>
             <div class="security__body row">
-                <img src="{{asset('assets/img/bastion-1.jpg')}}" alt="img">
+                <img src="{{asset('img/products/bastion-1.jpg')}}" alt="img">
                 <div class="security__desc">
                     <div class="security__subtitle subtitle">Менеджер сеансов</div>
                     <div class="security__text text">
@@ -167,7 +167,7 @@
             <div class="management__title">Wallix Bastion</div>
             <div class="management__list">
                 <div class="management__item">
-                    <img src="{{asset('assets/img/management-4.jpg')}}" alt="management" />
+                    <img src="{{asset('img/products/bast-1.png')}}" alt="management" />
                     <div class="management__subtitle">Гибкое лицензирование</div>
                     <div class="management__desc">
                         Годовая подписка с подпиской на обслуживание от 12 до 36 месяцев;
@@ -179,7 +179,7 @@
                     <a href="{{route('contact')}}" class="management__link"> Свзаться </a>
                 </div>
                 <div class="management__item">
-                    <img src="{{asset('assets/img/management-4.jpg')}}" alt="management" />
+                    <img src="{{asset('img/products/bast-2.png')}}" alt="management" />
                     <div class="management__subtitle">Управляемые службы</div>
                     <div class="management__desc">
                         Экономьте время и ресурсы благодаря привилегированному доступу,
@@ -189,10 +189,10 @@
                         Требуется минимальная подписка на 36 месяцев. Техническое
                         обслуживание на золотом уровне входит в стоимость проживания.
                     </div>
-                    <a href="#" class="management__link"> Узнать больше </a>
+                    <a href="https://www.wallix.com/privileged-access-management/bastion-managed-services/" class="management__link"> Узнать больше </a>
                 </div>
                 <div class="management__item">
-                    <img src="{{asset('assets/img/management-4.jpg')}}" alt="management" />
+                    <img src="{{asset('img/products/bast-3.png')}}" alt="management" />
                     <div class="management__subtitle">Облачный рынок</div>
                     <div class="management__desc">
                         WALLIX Bastion доступен на нескольких облачных маркетплейсах для
@@ -258,7 +258,7 @@
                 <div class="list__item">
                     <div class="list__icon">
                         <div class="list__border">
-                            <img src="{{asset('assets/img/icon/list.svg')}}" alt="img">
+                            <img src="{{asset('img/icon/list.svg')}}" alt="img">
                         </div>
                     </div>
                     <div class="list__desc">
@@ -272,7 +272,7 @@
                 <div class="list__item">
                     <div class="list__icon">
                         <div class="list__border">
-                            <img src="{{asset('assets/img/icon/list.svg')}}" alt="img">
+                            <img src="{{asset('img/icon/list.svg')}}" alt="img">
                         </div>
                     </div>
                     <div class="list__desc">
