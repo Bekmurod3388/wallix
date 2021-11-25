@@ -176,7 +176,7 @@
                         использование накладных расходов для минимального 12-месячного
                         контракта, обслуживание от 12 до 36 месяцев
                     </div>
-                    <a href="{{route('contact')}}" class="management__link"> Свзаться </a>
+{{--                    <a href="{{route('contact')}}" class="management__link"> Свзаться </a>--}}
                 </div>
                 <div class="management__item">
                     <img src="{{asset('img/products/bast-2.png')}}" alt="management" />
@@ -189,7 +189,7 @@
                         Требуется минимальная подписка на 36 месяцев. Техническое
                         обслуживание на золотом уровне входит в стоимость проживания.
                     </div>
-                    <a href="https://www.wallix.com/privileged-access-management/bastion-managed-services/" class="management__link"> Узнать больше </a>
+{{--                    <a href="https://www.wallix.com/privileged-access-management/bastion-managed-services/" class="management__link"> Узнать больше </a>--}}
                 </div>
                 <div class="management__item">
                     <img src="{{asset('img/products/bast-3.png')}}" alt="management" />
@@ -206,7 +206,7 @@
                             <li>VMware</li>
                         </ul>
                     </div>
-                    <a href="#" class="management__link"> Wallix Bastion </a>
+{{--                    <a href="#" class="management__link"> Wallix Bastion </a>--}}
                 </div>
             </div>
             <div class="management__line line"></div>
