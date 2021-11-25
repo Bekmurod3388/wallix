@@ -8,7 +8,7 @@
                     <li>+7 727 355 30 34</li>
                     <li>+7 727 355 30 36</li>
                 </ul>
-                <span class="footer__email">wallix@abrisdc.com</span>
+                <a href="mailto:wallix@abrisdc.com" class="footer__email">wallix@abrisdc.com</a>
                 <div class="footer__address">
                     Офис 17, Блок 5б,
                     ул. Аль-Фараби, 17/1,
