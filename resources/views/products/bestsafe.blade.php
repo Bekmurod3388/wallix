@@ -199,7 +199,7 @@
                 <div class="list__item">
                     <div class="list__icon">
                         <div class="list__border">
-                            <img src="{{asset('/img/icon/list-5.svg')}}">
+                            <img src="{{asset('/img/icon/list-4.svg')}}">
                         </div>
                     </div>
                     <div class="list__desc">

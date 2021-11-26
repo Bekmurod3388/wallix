@@ -16,6 +16,7 @@
 
     <script src="{{asset('js/script.min.js')}}"></script>
     <script src="{{asset('js/sweetalert2.min.js')}}"></script>
+    <script src="{{'/js/main.js'}}"></script>
     @yield('script')
 </body>
 </html>

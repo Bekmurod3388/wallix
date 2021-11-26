@@ -7,6 +7,32 @@
     pointer-events: auto !important;
 }
 
+.header-side {
+    /*opacity: 1;*/
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 1200px) {
+    .desc .container,
+    .security .container {
+        margin-left: 100px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .desc .container,
+    .security .container {
+        margin-left: 200px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .desc .container,
+    .security .container {
+        margin-left: 300px;
+    }
+}
+
 .content-div {
     grid-template-columns: 40% 1fr;
 }

@@ -43,7 +43,7 @@
                 <div class="list__item">
                     <div class="list__icon">
                         <div class="list__border">
-                            <img src="{{asset('img/icon/list.svg')}}" alt="img">
+                            <img src="{{asset('img/icon/list-18.svg')}}" alt="img">
                         </div>
                     </div>
                     <div class="list__desc">
@@ -58,7 +58,7 @@
                 <div class="list__item">
                     <div class="list__icon">
                         <div class="list__border">
-                            <img src="{{asset('img/icon/list.svg')}}" alt="img">
+                            <img src="{{asset('img/icon/list-19.svg')}}" alt="img">
                         </div>
                     </div>
                     <div class="list__desc">
@@ -73,7 +73,7 @@
                 <div class="list__item">
                     <div class="list__icon">
                         <div class="list__border">
-                            <img src="{{asset('img/icon/list.svg')}}" alt="img">
+                            <img src="{{asset('img/icon/list-20.svg')}}" alt="img">
                         </div>
                     </div>
                     <div class="list__desc">
@@ -90,7 +90,7 @@
                 <div class="list__item">
                     <div class="list__icon">
                         <div class="list__border">
-                            <img src="{{asset('img/icon/list.svg')}}" alt="img">
+                            <img src="{{asset('img/icon/list-21.svg')}}" alt="img">
                         </div>
                     </div>
                     <div class="list__desc">
