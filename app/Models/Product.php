@@ -124,7 +124,7 @@ class Product extends Model {
 
             default:
                 $title = "Центральный каталог";
-                $img = "news-1.jpg";
+                $img = "pro-8.jpg";
                 $text = "Соберите свои источники идентичности в единую ссылку на идентичность, чтобы легко управлять правами доступа в одном централизованном месте.
                         <ul>
                             <li>Поддержка каталогов Active Directory, Azure AD, LDAP и Google G Suite directory</li>

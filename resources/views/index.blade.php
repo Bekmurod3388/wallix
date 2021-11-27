@@ -163,7 +163,7 @@
                 Наши решения
             </div>
             <div class="solution__list">
-                <a href="{{route('solution1')}}" class="solution__item" style="background: url('/assets/img/solution-1.jpg') center center/cover no-repeat ;">
+                <a href="{{route('solution1')}}" class="solution__item" style="background: url('/img/solutions/solution-1.jpg') center center/cover no-repeat ;">
                     <div class="solution__text">
                         <div class="solution__subtitle">
                             Обеспеченный цифровой трансформации
@@ -174,7 +174,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="{{route('solution2')}}" class="solution__item" style="background: url('/assets/img/solution-2.jpg') center center/cover no-repeat ;">
+                <a href="{{route('solution2')}}" class="solution__item" style="background: url('/img/solutions/solution-2.jpg') center center/cover no-repeat ;">
                     <div class="solution__text">
                         <div class="solution__subtitle">
                             Аудит и соответствие
@@ -184,7 +184,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="{{route('solution3')}}" class="solution__item" style="background: url('/assets/img/solution-2.jpg') center center/cover no-repeat ;">
+                <a href="{{route('solution3')}}" class="solution__item" style="background: url('/img/solutions/solution-3.jpg') center center/cover no-repeat ;">
                     <div class="solution__text">
                         <div class="solution__subtitle">
                             Управление рисками и безопасностью
@@ -197,7 +197,7 @@
             </div>
 
             <div id="solution" class="solution__list" style="display: none;">
-                <a href="{{route('solution4')}}" class="solution__item" style="background: url('/assets/img/solution-2.jpg') center center/cover no-repeat ;">
+                <a href="{{route('solution4')}}" class="solution__item" style="background: url('/img/solutions/solution-2.jpg') center center/cover no-repeat ;">
                     <div class="solution__text">
                         <div class="solution__subtitle">
                             Wallix inside
@@ -207,7 +207,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="{{route('solution5')}}" class="solution__item" style="background: url('/assets/img/solution-2.jpg') center center/cover no-repeat ;">
+                <a href="{{route('solution5')}}" class="solution__item" style="background: url('/img/solutions/solution-3.jpg') center center/cover no-repeat ;">
                     <div class="solution__text">
                         <div class="solution__subtitle">
                             Решения по отраслям

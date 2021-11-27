@@ -10,7 +10,7 @@
                 <img src="{{'/upload/news/' . $post->img}}" alt="Image">
                 <div class="news__desc">
                     <div class="news__date">
-                        {{$post->created_at}}
+                        {{$post->created_at->format('d.m.Y')}}
                     </div>
                     <div class="news__subtitle">
                         {{$post->header_ru}}
@@ -29,20 +29,20 @@
             <div class="news__list">
             @foreach($news as $post)
                 @if($loop->index)
-                    <div class="news__item">
-                        <div class="news__subtitle w">
-                            Семинар Robe
+                    <a href="{{route('news-item', ['post' => $post])}}" class="news__item">
+                        <div class="news__subtitle">
+                            {{$post->header_ru}}
                         </div>
                         <div class="news__text">
-                            30 января 2021 года наши сотрудники побывали...
+                            {{strLimit($post->description_ru)}}
                         </div>
                         <div class="news__xz">
                             <img src="{{"/upload/news/" . $post->img}}">
                             <div class="news__subdate">
-                                27.03.2021
+                                {{$post->created_at->format('d.m.Y')}}
                             </div>
                         </div>
-                    </div>
+                    </a>
                 @endif
             @endforeach
             </div>

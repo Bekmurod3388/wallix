@@ -48,3 +48,47 @@
 .content-product {
     grid-template-columns: 30% 1fr;
 }
+
+/* index -> news */
+.news__list .news__text {
+    width: 90%;
+}
+
+.news__item:hover .news__subtitle {
+    font-weight: bold;
+    color: orange;
+}
+
+.form__desc {
+    text-align: center;
+}
+
+.text-orange {
+    font-weight: bold;
+    color: orange;
+}
+
+/* Form */
+.form__agree {
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.form__btn {
+    margin-left: auto;
+    width: fit-content;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 12px 50px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(111, 111, 111, 0.25);
+}
+
+/**/
+.line {
+    border: none;
+}
+
+.pack__line {
+    border: 1px solid #b2b2b2;
+}
