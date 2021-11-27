@@ -37,7 +37,7 @@
         </div>
     </section>
     <section class="security">
-        <div class="security__orange orange best-{{request()->get('type')}}"></div>
+        <div class="security__orange orange"></div>
         <div class="container">
             <div class="management__title">
                 Особенности BestSafe

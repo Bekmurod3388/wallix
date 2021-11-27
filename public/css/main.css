@@ -59,16 +59,11 @@
     color: orange;
 }
 
+/* Form */
 .form__desc {
     text-align: center;
 }
 
-.text-orange {
-    font-weight: bold;
-    color: orange;
-}
-
-/* Form */
 .form__agree {
     margin-top: 5px;
     margin-bottom: 25px;
@@ -91,4 +86,18 @@
 
 .pack__line {
     border: 1px solid #b2b2b2;
+}
+
+/* Units */
+.text-center {
+    text-align: center;
+}
+
+.text-orange {
+    font-weight: bold;
+    color: orange;
+}
+
+.bg-orange {
+    background: linear-gradient(90deg, #f37324 20.44%, #f58e4e 80.91%), #c4c4c4;
 }

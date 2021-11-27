@@ -76,9 +76,11 @@
             <div class="map__title title">
                 Wallix & Abris в мире
             </div>
-            <a href="https://www.wallix.com/" class="map__btn btn">
-                Перейти на официальный сайт WALLIX
-            </a>
+            <div class="text-center map__btn">
+                <a href="https://www.wallix.com/" class="btn">
+                    Перейти на официальный сайт WALLIX
+                </a>
+            </div>
             <div class="map__body">
                 <img src="{{asset('assets/img/map.jpg')}}" alt="map">
             </div>
