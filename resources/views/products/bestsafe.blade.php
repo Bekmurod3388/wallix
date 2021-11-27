@@ -36,14 +36,16 @@
             </div>
         </div>
     </section>
-    <section class="security">
-        <div class="security__orange orange"></div>
+    <section class="security bg-orange">
+{{--        <div class="security__orange orange"></div>--}}
         <div class="container">
             <div class="management__title">
                 Особенности BestSafe
             </div>
             <div class="security__body row">
-                <img src="{{asset("/img/products/$img")}}" />
+                <div class="d-flex">
+                    <img src="{{asset("/img/products/$img")}}" alt="img" class="content-img">
+                </div>
                 <div class="security__desc">
                     <div class="security__subtitle subtitle"{{$title}}</div>
                     <div class="security__text text">

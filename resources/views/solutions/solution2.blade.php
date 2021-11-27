@@ -64,14 +64,17 @@
             </div>
         </div>
     </section>
-    <section class="security">
-        <div class="security__orange orange"></div>
+    <section class="security bg-orange">
+{{--        <div class="security__orange orange"></div>--}}
         <div class="container">
             <div class="management__title">
                 Упрощенный аудит и соответствие
             </div>
             <div class="security__body row content-div">
-                <img src="{{asset("/img/solutions/$img")}}" alt="img">
+                <div class="d-flex">
+                    <img src="{{asset("/img/solutions/$img")}}" alt="img" class="content-img audit-img"
+                        style="@if(!request()->get('type')){{"height: 75%"}}@endif">
+                </div>
                 <div class="security__desc">
                     <div class="security__subtitle subtitle">{{$title}}</div>
                     <div class="security__text text">

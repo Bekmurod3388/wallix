@@ -100,4 +100,27 @@
 
 .bg-orange {
     background: linear-gradient(90deg, #f37324 20.44%, #f58e4e 80.91%), #c4c4c4;
+    overflow: hidden;
+}
+
+.security__body .content-img {
+    position: absolute;
+    width: 40%;
+    bottom: -50px;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.security__body .audit-img {
+    width: 35%;
+}
+
+.bg-orange {
+    overflow: visible;
+    margin-bottom: 150px;
+}
+
+/* containers */
+.management__title {
+    width: 100%;
 }
