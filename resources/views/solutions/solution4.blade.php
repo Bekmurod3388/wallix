@@ -67,6 +67,72 @@
         </div>
     </section>
 
-    <x-list></x-list>
+    <section class="list">
+        <div class="container">
+            <div class="list__label title">Решения для обеспечения безопасности цифровой трансформации</div>
+            <div class="list__body">
+                <div class="list__item">
+                    <div class="list__icon">
+                        <div class="list__border">
+                            <img src="{{'/img/icon/list-13.svg'}}" alt="img">
+                        </div>
+                    </div>
+                    <div class="list__desc">
+                        <div class="list__title">
+                            Новое качество
+                        </div>
+                        <div class="list__text">
+                            Повысьте ценность вашего предложения и избегайте дисквалификации по ключевым проектам решая проблемы кибербезопасности ваших рынков.
+                        </div>
+                    </div>
+                </div>
+                <div class="list__item">
+                    <div class="list__icon">
+                        <div class="list__border">
+                            <img src="{{'/img/icon/list-14.svg'}}" alt="img">
+                        </div>
+                    </div>
+                    <div class="list__desc">
+                        <div class="list__title">
+                            Новый взгляд
+                        </div>
+                        <div class="list__text">
+                            Измените восприятие клиентами вашего бизнеса; Докажите, что вы учитываете управление киберрисками в своих решениях и бизнесе
+                        </div>
+                    </div>
+                </div>
+                <div class="list__item">
+                    <div class="list__icon">
+                        <div class="list__border">
+                            <img src="{{'/img/icon/list-15.svg'}}" alt="img">
+                        </div>
+                    </div>
+                    <div class="list__desc">
+                        <div class="list__title">
+                            Лучший опыт
+                        </div>
+                        <div class="list__text">
+                            Положитесь на опыт компании WALLIX, которая предлагает сертифицированные и запатентованные технологические решения для обогащения вашего ассортимента продукции. Оставайтесь сосредоточенными на своем бизнесе и сильных сторонах
+                        </div>
+                    </div>
+                </div>
+                <div class="list__item">
+                    <div class="list__icon">
+                        <div class="list__border">
+                            <img src="{{'/img/icon/list-16.svg'}}" alt="img">
+                        </div>
+                    </div>
+                    <div class="list__desc">
+                        <div class="list__title">
+                            Лучшая команда
+                        </div>
+                        <div class="list__text">
+                            Присоединяйтесь к WALLIX в приверженности защите и этическому управлению данными, внося свой вклад в создание ответственной цифровой культуры, где технологии находятся на службе людей
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <x-message></x-message>
 @endsection

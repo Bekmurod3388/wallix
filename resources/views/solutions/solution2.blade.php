@@ -72,8 +72,7 @@
             </div>
             <div class="security__body row content-div">
                 <div class="d-flex">
-                    <img src="{{asset("/img/solutions/$img")}}" alt="img" class="content-img audit-img"
-                        style="@if(!request()->get('type')){{"height: 75%"}}@endif">
+                    <img src="{{asset("/img/solutions/$img")}}" alt="img" class="audit-img">
                 </div>
                 <div class="security__desc">
                     <div class="security__subtitle subtitle">{{$title}}</div>
