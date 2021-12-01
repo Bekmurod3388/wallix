@@ -23,7 +23,7 @@
             </div>
         </div>
     </section>
-    <section class="desc">
+    <section class="desc just-align">
         <div class="container">
             <div class="desc__row">
                 <div class="desc__title">
@@ -36,7 +36,7 @@
             </div>
         </div>
     </section>
-    <section class="security">
+    <section class="security just-align">
         <div class="security__orange orange bast-{{request()->get('type')}}"></div>
         <div class="container">
             <div class="management__title">
@@ -53,7 +53,7 @@
             </div>
         </div>
     </section>
-    <section class="news">
+    <section class="news just-align">
         <div class="container">
             <div class="news__row news__row--three">
                 <div class="news__item">
@@ -102,7 +102,7 @@
             <div class="news__line line"></div>
         </div>
     </section>
-    <section class="zero">
+    <section class="zero just-align">
         <div class="container">
             <div class="zero__row row">
                 <img src="{{asset('assets/img/zero-20.jpg')}}" alt="img">
@@ -141,7 +141,7 @@
             </div>
         </div>
     </section>
-    <section class="list">
+    <section class="list just-align">
         <div class="container">
             <div class="list__label title">Wallix Trustelem</div>
             <div class="list__body">

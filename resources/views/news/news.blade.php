@@ -23,7 +23,7 @@
             </div>
         </div>
     </section>
-    <section class="zero">
+    <section class="zero just-align">
         <div class="container">
         @foreach($posts as $post)
         @if(($post->id) % 2==0)

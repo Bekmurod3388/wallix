@@ -22,7 +22,7 @@
             </div>
         </div>
     </section>
-    <section class="desc">
+    <section class="desc just-align">
         <div class="container">
             <div class="desc__row">
                 <div class="desc__title">
@@ -36,7 +36,7 @@
             <div class="desc__line line"></div>
         </div>
     </section>
-    <section class="zero">
+    <section class="zero just-align">
         <div class="container">
             <div class="zero__row row">
                 <img src="{{asset('assets/img/zero-27.jpg')}}" alt="img">
@@ -84,7 +84,7 @@
             </div>
         </div>
     </section>
-    <section class="news">
+    <section class="news just-align">
         <div class="container">
             <div class="news__row news__row--four">
                 <div class="news__item">

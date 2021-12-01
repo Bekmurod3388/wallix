@@ -24,7 +24,7 @@
             </div>
         </div>
     </section>
-    <section class="zero">
+    <section class="zero just-align">
         <div class="container">
             <div class="zero__row row">
                 <img src="{{'/img/solutions/zero-23.jpg'}}" alt="img">

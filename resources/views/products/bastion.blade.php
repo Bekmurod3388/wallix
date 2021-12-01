@@ -24,7 +24,7 @@
             </div>
         </div>
     </section>
-    <section class="desc">
+    <section class="desc just-align">
         <div class="container">
             <div class="desc__row">
                 <div class="desc__title">
@@ -40,7 +40,7 @@
             </div>
         </div>
     </section>
-    <section class="security">
+    <section class="security just-align">
         <div class="security__orange orange"></div>
         <div class="container">
             <div class="management__title">
@@ -68,7 +68,7 @@
             <div class="management__line line"></div>
         </div>
     </section>
-    <section class="zero">
+    <section class="zero just-align">
         <div class="container">
             <div class="zero__row row">
                 <img src="{{asset('assets/img/zero-1.jpg')}}" alt="title">
@@ -161,7 +161,7 @@
             </div>
         </div>
     </section>
-    <section class="management">
+    <section class="management just-align">
         <div class="management__orange orange"></div>
         <div class="container">
             <div class="management__title">Wallix Bastion</div>
@@ -212,7 +212,7 @@
             <div class="management__line line"></div>
         </div>
     </section>
-    <section class="pack">
+    <section class="pack just-align">
         <div class="container">
             <div class="pack__title title">Пакеты Wallix Bastion</div>
             <div class="pack__desc">
@@ -258,7 +258,7 @@
                 <div class="list__item">
                     <div class="list__icon">
                         <div class="list__border">
-                            <img src="{{asset('img/icon/list.svg')}}" alt="img">
+                            <img src="{{asset('img/icon/icon-6.svg')}}" alt="img">
                         </div>
                     </div>
                     <div class="list__desc">
@@ -272,7 +272,7 @@
                 <div class="list__item">
                     <div class="list__icon">
                         <div class="list__border">
-                            <img src="{{asset('img/icon/list.svg')}}" alt="img">
+                            <img src="{{asset('img/icon/icon-5.svg')}}" alt="img">
                         </div>
                     </div>
                     <div class="list__desc">

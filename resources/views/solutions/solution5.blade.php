@@ -24,7 +24,7 @@
             </div>
         </div>
     </section>
-    <section class="zero">
+    <section class="zero just-align">
         <div class="container">
             <div class="zero__row row">
                 <img src="{{asset('assets/img/zero-34.jpg')}}" />
@@ -54,7 +54,5 @@
             </div>
         </div>
     </section>
-    <x-list>
-
-    </x-list>
+    <x-list></x-list>
 @endsection

@@ -1,30 +1,30 @@
 @extends('layout')
 @section('content')
-        <section class="preview">
-            <div class="preview__wrapper">
-                <div class="preview--left">
-                    <img src="{{asset('img/background/preview-bg.png')}}" alt="">
-                </div>
-                <div class="preview--center">
-                    <div class="container">
-                        <div class="preview__body">
-                            <h1 class="preview__title">
-                                О компании
-                                Wallix & Abris
-                            </h1>
-                            <div class="preview__desc">
-                                Европейские глобальные решения в области кибербезопасности для цифровой трансформации и конкурентоспособности в бизнесе
-                            </div>
+    <section class="preview">
+        <div class="preview__wrapper">
+            <div class="preview--left">
+                <img src="{{asset('img/background/preview-bg.png')}}" alt="">
+            </div>
+            <div class="preview--center">
+                <div class="container">
+                    <div class="preview__body">
+                        <h1 class="preview__title">
+                            О компании
+                            Wallix & Abris
+                        </h1>
+                        <div class="preview__desc">
+                            Европейские глобальные решения в области кибербезопасности для цифровой трансформации и конкурентоспособности в бизнесе
                         </div>
                     </div>
                 </div>
-                <div class="preview--right">
-                    <img src="{{asset('img/background/preview-14.png')}}" alt="">
-                </div>
             </div>
-        </section>
+            <div class="preview--right">
+                <img src="{{asset('img/background/preview-14.png')}}" alt="">
+            </div>
+        </div>
+    </section>
 
-    <section class="desc">
+    <section class="desc just-align">
         <div class="container">
             <div class="desc__row">
                 <div class="desc__title">
@@ -49,7 +49,7 @@
             </div>
         </div>
     </section>
-    <section class="zero">
+    <section class="zero just-align">
         <div class="container">
             <div class="zero__row row">
                 <img src="{{asset('assets/img/zero-36.jpg')}}" alt="img">
@@ -71,7 +71,7 @@
             </div>
         </div>
     </section>
-    <section class="map">
+    <section class="map just-align">
         <div class="container">
             <div class="map__title title">
                 Wallix & Abris в мире

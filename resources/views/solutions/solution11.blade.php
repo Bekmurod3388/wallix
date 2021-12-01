@@ -1,36 +1,35 @@
 @extends('layout')
 @section('content')
     <section class="preview" style="background: url('{{asset('img/background/priview-bg.png')}}') no-repeat">
-    <img src="{{asset('img/background/preview-6.png')}}" alt="" />
-    <div class="container">
-        <div class="preview__body">
-            <h1 class="preview__title">
-                @foreach($category as $item)
-                {{$item->name}}
-                @endforeach
-            </h1>
-            <div class="preview__desc">
-                Обеспечьте безопасность вашей трансформации
-                независимо от того, где она подключена
+        <img src="{{asset('img/background/preview-6.png')}}" alt="" />
+        <div class="container">
+            <div class="preview__body">
+                <h1 class="preview__title">
+                    @foreach($category as $item)
+                    {{$item->name}}
+                    @endforeach
+                </h1>
+                <div class="preview__desc">
+                    Обеспечьте безопасность вашей трансформации
+                    независимо от того, где она подключена
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
+    <section class="desc just-align">
+        <div class="container">
+            <div class="desc__row">
 
-<section class="desc">
-    <div class="container">
-        <div class="desc__row">
-
-            <div class="desc__title">
-                {{$solution->title}}
+                <div class="desc__title">
+                    {{$solution->title}}
+                </div>
+                <div class="desc__text">
+                    {{$solution->text}}
             </div>
-            <div class="desc__text">
-                {{$solution->text}}
-        </div>
 
-        <div class="desc__line line"></div>
-    </div>
+            <div class="desc__line line"></div>
+        </div>
 
 
 

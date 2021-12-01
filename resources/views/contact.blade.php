@@ -24,7 +24,7 @@
             </div>
         </div>
     </section>
-    <section class="ofice">
+    <section class="ofice just-align">
         <div class="ofice__bg"></div>
         <div class="container">
             <div class="ofice__row">
@@ -57,7 +57,7 @@
         </div>
         </div>
     </section>
-    <section class="map">
+    <section class="map just-align">
         <div class="container">
             <div class="map__title title">
                 Wallix & Abris в мире

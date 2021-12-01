@@ -25,7 +25,7 @@
             </div>
         </div>
     </section>
-    <section class="desc">
+    <section class="desc just-align">
         <div class="container">
             <div class="desc__row">
                 <div class="desc__title">
@@ -37,7 +37,7 @@
             </div>
         </div>
     </section>
-    <section class="list">
+    <section class="list just-align">
         <div class="container">
             <div class="list__body">
                 <div class="list__item">
@@ -106,7 +106,7 @@
             <div class="list__line line"></div>
         </div>
     </section>
-    <section class="management">
+    <section class="management just-align">
         <div class="management__orange orange">
         </div>
         <div class="container">
@@ -157,7 +157,7 @@
             <div class="management__line line"></div>
         </div>
     </section>
-    <section class="solution">
+    <section class="solution just-align">
         <div class="container">
             <div class="solution__title title">
                 Наши решения

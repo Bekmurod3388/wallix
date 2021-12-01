@@ -13,23 +13,23 @@
 }
 
 @media (min-width: 1200px) {
-    .desc .container,
-    .security .container {
+    .just-align .container {
         margin-left: 100px;
+        margin-right: 100px;
     }
 }
 
 @media (min-width: 1400px) {
-    .desc .container,
-    .security .container {
+    .just-align .container {
         margin-left: 200px;
+        margin-right: 200px;
     }
 }
 
 @media (min-width: 1600px) {
-    .desc .container,
-    .security .container {
+    .just-align .container {
         margin-left: 300px;
+        margin-right: 300px;
     }
 }
 
