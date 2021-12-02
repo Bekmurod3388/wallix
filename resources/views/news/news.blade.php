@@ -9,8 +9,7 @@
                 <div class="container">
                     <div class="preview__body">
                         <h1 class="preview__title">
-                            Новости
-                            и пресс-релизы
+                            Новости и пресс-релизы
                         </h1>
                         <div class="preview__desc">
                             Будьте в курсе всех новостей в мире кибербезопасности, узнайте, чем живет компания
@@ -26,20 +25,20 @@
     <section class="zero just-align">
         <div class="container">
         @foreach($posts as $post)
-        @if(($post->id) % 2==0)
+        @if(($post->id) % 2 == 0)
             <div class="zero__row row">
                 <img src="{{asset('upload/news/' . $post->img)}}" alt="img">
                 <div class="zero__desc">
                     <div class="zero__date">
-                        {{$post->created_at}}
+                        {{$post->created_at->format('d.m.Y')}}
                     </div>
                     <div class="zero__subtitle subtitle">
                        {{$post->header_ru}}
                     </div>
                     <div class="zero__text text">
-                        {{ \Illuminate\Support\Str::limit($post->description_ru, 150, '...') }}
+                        {{ \Illuminate\Support\Str::limit($post->description_ru, 310, '...') }}
                                                     </div>
-                    <a href="{{route('news-item',$post->id)}}" class="zero__link">
+                    <a href="{{route('news-item', $post->id)}}" class="zero__link">
                         Читать полностью
                     </a>
                 </div>
@@ -48,24 +47,23 @@
             <div class="zero__row--resevre row">
                 <div class="zero__desc">
                     <div class="zero__date">
-                        {{$post->created_at}}
+                        {{$post->created_at->format('d.m.Y')}}
                     </div>
                     <div class="zero__subtitle subtitle">
                         {{$post->header_ru}}
                     </div>
                     <div class="zero__text text">
-                        {{ \Illuminate\Support\Str::limit($post->description_ru, 150, '...') }}
-
+                        {{ \Illuminate\Support\Str::limit($post->description_ru, 310, '...') }}
                     </div>
-                    <a href="{{route('news-item',$post->id)}}" class="zero__link">
+                    <a href="{{route('news-item', $post->id)}}" class="zero__link">
                         Читать полностью
                     </a>
                 </div>
-                <img src="{{asset('upload/news/'.$post->img)}}" alt="img">
+                <img src="{{asset('upload/news/' . $post->img)}}" alt="img">
             </div>
         @endif
         @endforeach
-            <button class="zero__btn btn">Загрузить еще</button>
+            <button class="zero__btn btn" style="pointer-events: none; opacity: .3">Загрузить еще</button>
         </div>
     </section>
 @endsection
