@@ -274,3 +274,8 @@
         width: 35%;
     }
 }
+
+/* Header image */
+.preview img {
+    height: auto;
+}
