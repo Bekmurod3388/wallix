@@ -40,11 +40,12 @@
 {{--        <div class="security__orange orange"></div>--}}
         <div class="container">
             <div class="management__title">
-                Особенности BestSafe
+                {{$title}}
             </div>
             <div class="security__body row">
                 <div class="d-flex">
-                    <img src="{{asset("/img/products/$img")}}" alt="img" class="content-img">
+                    <img src="{{asset("/img/products/$img")}}" alt="img"
+                        class="content-img @if(request()->get('type') == 2){{'parol'}}@endif">
                 </div>
                 <div class="security__desc">
                     <div class="security__subtitle subtitle"{{$title}}</div>

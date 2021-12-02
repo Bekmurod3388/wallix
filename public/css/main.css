@@ -100,25 +100,77 @@
         width: 40%;
         height: initial;
     }
+
+    .security__body .parol {
+        width: 30%;
+    }
+}
+
+@media (min-width: 1900px) and (max-width: 2000px) {
+    .security__body .content-img {
+        width: 27%;
+    }
+
+    .security__body .parol {
+        width: 22%;
+    }
 }
 
 @media (min-width: 1600px) and (max-width: 1900px) {
     .security__body .content-img {
-        width: 35%;
+        width: 29%;
         height: 77%;
+    }
+
+    .security__body .parol {
+        width: 28%;
+        height: auto;
     }
 }
 
-@media (min-width: 1200px) and (max-width: 1599px) {
+@media (min-width: 1400px) and (max-width: 1600px) {
+    .security__body .content-img {
+        width: 35%;
+        height: initial;
+    }
+
+    .security__body .parol {
+        width: 30%;
+        height: auto;
+    }
+}
+
+@media (min-width: 1326px) and (max-width: 1400px) {
+    .security__body .content-img {
+        width: 37%;
+        height: initial;
+    }
+
+    .security__body .parol {
+        width: 32%;
+        height: auto;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1326px) {
     .security__body .content-img {
         width: 40%;
         height: initial;
+    }
+
+    .security__body .parol {
+        width: 32%;
+        height: auto;
     }
 }
 
 @media (min-width: 1100px) and (max-width: 1199px) {
     .security__body .content-img {
         width: 42%;
+    }
+
+    .security__body .parol {
+        width: 35%;
     }
 }
 
