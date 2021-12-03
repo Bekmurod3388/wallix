@@ -19,7 +19,8 @@
                     </div>
                 </div>
             </div>
-            <div class="preview--right">
+            <div class="preview--right"
+                 style="background-image: url('{{'/img/background/preview-6.png'}}')">
                 <img src="{{asset('img/background/preview-6.png')}}" alt="img">
             </div>
         </div>

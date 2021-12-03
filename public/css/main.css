@@ -277,5 +277,5 @@
 
 /* Header image */
 .preview img {
-    height: auto;
+    height: 0;
 }
