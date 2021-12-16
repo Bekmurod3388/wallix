@@ -26,13 +26,13 @@
                         <p>Офисы</p>
                     </a>
                 </li>
-                {{--<li class="nav-item {{  request()->routeIs('admin.solution.index') ? 'active' : '' }}">
+                <li class="nav-item {{  request()->routeIs('admin.solution.index') ? 'active' : '' }}">
                     <a href="{{route('admin.solution.index')}}">
                         <i class="fas fa-cog"></i>
                         <p>Решения</p>
                     </a>
-                </li>--}}
-                {{--<li class="nav-item {{  request()->routeIs('admin.product.index') ? 'active' : '' }}">
+                </li>
+                <li class="nav-item {{  request()->routeIs('admin.product.index') ? 'active' : '' }}">
                     <a href="{{route('admin.product.index')}}">
                         <i class="fas fa-project-diagram"></i>
                         <p>Продукты</p>
@@ -43,7 +43,7 @@
                         <i class="fas fa-folder-open"></i>
                         <p>Категория</p>
                     </a>
-                </li>--}}
+                </li>
             </ul>
         </div>
     </div>
