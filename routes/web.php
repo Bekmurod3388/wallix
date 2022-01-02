@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BladeController;
@@ -14,14 +15,13 @@ Route::view('/trustelemdemo','trustelemdemo')->name('turestelemdemo');
 Route::view('/health','extra.health')->name('health');
 Route::view('/devops','devops')->name('devops');
 Route::view('/cyber','cyber')->name('cyber');
-//Route::view('bestsafedemo','bestsafedemo')->name('bestsafedemo');
 
 # Products
-Route::get('/product', [BladeController::class, 'product'])->name('product');
-Route::get('/product/{product}', [BladeController::class, 'product'])->name('product-item');
+//Route::get('/product', [ProductController::class, 'product'])->name('product');
+Route::get('/product/{product?}', [ProductController::class, 'product'])->name('product');
 Route::view('/products/bastion', 'products.bastion')->name('bastion');
-Route::get('/products/bestsafe',[App\Http\Controllers\ProductController::class, 'bestsafe'])->name('bestsafe');
-Route::get('/products/trustelem', [App\Http\Controllers\ProductController::class, 'trustelem'])->name('trustelem');
+Route::get('/products/bestsafe',[ProductController::class, 'bestsafe'])->name('bestsafe');
+Route::get('/products/trustelem', [ProductController::class, 'trustelem'])->name('trustelem');
 //Route::view('bastion6','bastion6')->name('bastion6');
 //Route::view('bastion5','bastion5')->name('bastion5');
 //Route::view('bastion4','bastion4')->name('bastion4');

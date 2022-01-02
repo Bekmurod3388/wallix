@@ -29,6 +29,11 @@
                             <li class="header__drapdown-item">
                                 <a href="{{route('trustelem')}}" class="header__drapdown-link">Wallix Trustelem</a>
                             </li>
+                        @foreach($products as $product)
+                            <li class="header__drapdown-item">
+                                <a href="{{route('product', ['product' => $product])}}" class="header__drapdown-link">{{$product->title}}</a>
+                            </li>
+                        @endforeach
                         </ul>
                     </li>
                     <li class="header__item">

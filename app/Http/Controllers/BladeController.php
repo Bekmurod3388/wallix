@@ -23,12 +23,6 @@ class BladeController extends Controller {
         return view('solutions.solution')->with('solution', $solution);
     }
 
-
-    public function product() {
-        $products = Product::orderBy('id','desc')->paginate(25);
-        return view('products.product')->with('products', $products);
-    }
-
     public function newsItem(Post $post) {
         Post::where('id', $post->id)
             ->update([

@@ -10,12 +10,13 @@ use Illuminate\Database\Eloquent\Model;
  * @method static orderBy(string $string, string $string1)
  * @method static create(array $array)
  * @property int category_id
+ * @property string $img
  */
 class Product extends Model {
     use HasFactory;
     protected $fillable = ['title','text','img','category_id'];
 
-    public static function best($type) {
+public static function best($type) {
         switch ($type) {
             case 1:
                 $title = "Членство в локальной группе";

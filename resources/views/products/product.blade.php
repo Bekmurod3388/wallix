@@ -3,61 +3,221 @@
     <section class="preview">
         <div class="preview__wrapper">
             <div class="preview--left">
-                <img src="{{asset('assets/img/background/preview-bg.png')}}" alt="">
+                <img src="{{asset('img/background/preview-bg.png')}}" alt="">
             </div>
             <div class="preview--center">
                 <div class="container">
                     <div class="preview__body">
                         <h1 class="preview__title">
-                            Обеспечьте цифровую
-                            трансформацию
+                            {{$heading}}
                         </h1>
                         <div class="preview__desc">
-                            Обеспечьте безопасность вашей трансформации
-                            независимо от того, где она подключена
+                            {{$description}}
+                        </div>
+                        <a href="#message" class="preview__btn btn">Попробовать бесплатно</a>
+                    </div>
+                </div>
+            </div>
+            <div class="preview--right"
+                 style="background-image: url('{{'/img/background/preview-4.png'}}')">
+                <img src="{{asset('img/background/preview-4.png')}}" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="desc just-align">
+        <div class="container">
+            <div class="desc__row">
+                <div class="desc__title">
+                    Инновационная безопасность конечных точек с наименьшими привилегиями
+                </div>
+                <div class="desc__text">
+                    Устраните необходимость в учетных записях пользователей с повышенными разрешениями благодаря инновационному управлению правами конечных точек.<br><br>
+                    Достигните беспрецедентной безопасности во всех конечных точках с разрешениями, управляемыми на уровне приложения и процесса – без влияния на производительность пользователя.
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="security bg-orange just-align">
+        <div class="container">
+            <div class="management__title">
+                {{$title}}
+            </div>
+            <div class="security__body row">
+                <div class="d-flex">
+                    <img src="{{asset("/storage/product/$img")}}" alt="img"
+                         class="content-img @if(request()->get('type') == 2){{'parol'}}@endif">
+                </div>
+                <div class="security__desc">
+                    <div class="security__subtitle subtitle"{{$title}}</div>
+                <div class="security__text text">
+                    {!! $text !!}
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="news just-align">
+        <div class="container">
+            <div class="news__row news__row--four">
+                <div class="news__item">
+                    <div class="news__subtitle">
+                        Членство в
+                        локальной группе
+                    </div>
+                    <div class="news__text">
+                        Используйте проактивный подход к endpoint security...
+                    </div>
+                    <div class="news__xz">
+                        <img src="{{asset('img/products/pro-1.png')}}">
+                        <a href="{{route('bestsafe', ['type' => 1])}}" class="news__link">
+                            Читать
+                        </a>
+                    </div>
+                </div>
+                <div class="news__item">
+                    <div class="news__subtitle w">
+                        Ротация
+                        пароля
+                    </div>
+                    <div class="news__text">
+                        Положите конец общим паролям, используемым на бесчисленных...
+                    </div>
+                    <div class="news__xz">
+                        <img src="{{asset('img/products/pro-2.png')}}">
+                        <a href="{{route('bestsafe', ['type' => 2])}}" class="news__link">
+                            Читать
+                        </a>
+                    </div>
+                </div>
+                <div class="news__item">
+                    <div class="news__subtitle w">
+                        Управление
+                        вымогателями
+                    </div>
+                    <div class="news__text">
+                        Обнаружение попыток шифрования в режиме...
+                    </div>
+                    <div class="news__xz">
+                        <img src="{{asset('img/products/pro-3.png')}}">
+                        <a href="{{route('bestsafe', ['type' => 3])}}" class="news__link">
+                            Читать
+                        </a>
+                    </div>
+                </div>
+                <div class="news__item">
+                    <div class="news__subtitle w">
+                        Управление приложениями
+                    </div>
+                    <div class="news__text">
+                        Управляйте и контролируйте все ключевые бизнес-приложения...
+                    </div>
+                    <div class="news__xz">
+                        <img src="{{asset('img/products/pro-4.png')}}">
+                        <a href="{{route('bestsafe', ['type' => 4])}}" class="news__link">
+                            Читать
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="news__line line"></div>
+        </div>
+    </section>
+    <section class="zero just-align">
+        <div class="container">
+            <div class="zero__row row">
+                <img src="{{asset('assets/img/zero-18.jpg')}}" />
+                <div class="zero__desc">
+                    <div class="zero__subtitle subtitle">
+                        Применение наименьших привилегий
+                    </div>
+                    <div class="zero__text text">
+                        Уменьшите риски, связанные с предоставлением прав администратора, не перегружая свою ИТ-команду чрезмерной нагрузкой. Управление привилегиями конечных точек применяет принцип наименьших привилегий с плавным и детализированным контролем разрешений на уровне приложений, одновременно предоставляя пользователям возможность эффективно работать.
+                    </div>
+                </div>
+            </div>
+            <div class="zero__row--resevre row">
+                <div class="zero__desc">
+                    <div class="zero__subtitle subtitle">
+                        Защита уязвимых конечных точек
+                    </div>
+                    <div class="zero__text text">
+                        Блокировать вымогателей, вредоносных программ и криптовирусов от входа в вашу сеть, даже если пользователи имеют повышенные привилегии. Управление привилегиями на уровне приложений и процессов и остановка операций шифрования с помощью инновационной технологии endpoint protection
+                    </div>
+                </div>
+                <img src="{{asset('assets/img/zero-19.jpg')}}" />
+            </div>
+            <div class="zero__line line">
+            </div>
+        </div>
+    </section>
+    <section class="list just-align">
+        <div class="container">
+            <div class="list__label title">Ультрасовременное управление конечными точками</div>
+            <div class="list__body">
+                <div class="list__item">
+                    <div class="list__icon">
+                        <div class="list__border">
+                            <img src="{{asset('/img/icon/list-5.svg')}}">
+                        </div>
+                    </div>
+                    <div class="list__desc">
+                        <div class="list__title">
+                            Безопасность
+                        </div>
+                        <div class="list__text">
+                            Устраните самую большую угрозу для конечных точек с удалением привилегий локального администратора для проактивной, беспрецедентной защиты конечных точек
+                        </div>
+                    </div>
+                </div>
+                <div class="list__item">
+                    <div class="list__icon">
+                        <div class="list__border">
+                            <img src="{{asset('/img/icon/list-3.svg')}}">
+                        </div>
+                    </div>
+                    <div class="list__desc">
+                        <div class="list__title">
+                            Средства для эффективной работы
+                        </div>
+                        <div class="list__text">
+                            Эффективно применять наименьшую защиту привилегий, не влияя на производительность пользователей и сводя к минимуму необходимость ИТ-вмешательства
+                        </div>
+                    </div>
+                </div>
+                <div class="list__item">
+                    <div class="list__icon">
+                        <div class="list__border">
+                            <img src="{{asset('/img/icon/list-2.svg')}}">
+                        </div>
+                    </div>
+                    <div class="list__desc">
+                        <div class="list__title">
+                            Соответствие
+                        </div>
+                        <div class="list__text">
+                            Добивайтесь соблюдения правил безопасности. BestSafe позволяет управлять привилегиями на уровне приложения, устраняя администраторов на конечных точках
+                        </div>
+                    </div>
+                </div>
+                <div class="list__item">
+                    <div class="list__icon">
+                        <div class="list__border">
+                            <img src="{{asset('/img/icon/list-4.svg')}}">
+                        </div>
+                    </div>
+                    <div class="list__desc">
+                        <div class="list__title">
+                            ROI
+                        </div>
+                        <div class="list__text">
+                            Автоматизируйте и централизовайте управление конечными точками, а также повысьте эффективность работы пользователей и рентабельность инвестиций.
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="preview--right">
-                <img src="{{asset('assets/img/background/preview-6.png')}}" alt="">
+            <div class="list__line line">
             </div>
         </div>
     </section>
-    <section class="zero">
-        <div class="container">
-            @foreach($products as $product)
-                @if(($product->id) % 2 == 1)
-                    <a href="{{route('product-item', $product->id)}}">
-                        <div class="zero__row row">
-                            <img src="{{asset('storage/product/' . $product->img)}}" style="width: 80%" alt="img">
-                            <div class="zero__desc">
-                                <div class="zero__subtitle subtitle">
-                                    {{$product->title}}
-                                </div>
-                                <div class="zero__text text">
-                                    {{ \Illuminate\Support\Str::limit($product->text, 150, '...') }}
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                @else
-                    <a href="{{route('product-item', $product->id)}}">
-                        <div class="zero__row--resevre row">
-                            <div class="zero__desc">
-                                <div class="zero__subtitle subtitle">
-                                    {{$product->title}}
-                                </div>
-                                <div class="zero__text text">
-                                    {{ \Illuminate\Support\Str::limit($product->text, 150, '...') }}
-                                </div>
-                            </div>
-                            <img src="{{asset('storage/product/' . $product->img)}}" style="width: 80%" alt="img">
-                        </div>
-                    </a>
-                @endif
-            @endforeach
-            <div class="zero__line line"></div>
-        </div>
-    </section>
+    <x-message></x-message>
 @endsection
