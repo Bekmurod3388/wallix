@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="{{asset('/asset/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('/asset/css/atlantis.min.css')}}">
 
-
+    @yield('link')
 </head>
 <body>
 <div class="wrapper">

@@ -16,7 +16,7 @@ class CreateProductsTable extends Migration {
             $table->string('title');
             $table->string('text');
             $table->string('img');
-            $table->bigInteger('category_id');
+//            $table->bigInteger('category_id');
             $table->timestamps();
         });
     }
@@ -27,6 +27,6 @@ class CreateProductsTable extends Migration {
      * @return void
      */
     public function down() {
-        Schema::dropIfExists('produkts');
+        Schema::dropIfExists('products');
     }
 }

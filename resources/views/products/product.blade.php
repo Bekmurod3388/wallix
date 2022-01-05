@@ -12,7 +12,7 @@
                             {{$heading}}
                         </h1>
                         <div class="preview__desc">
-                            {{$description}}
+{{--                            {{$description}}--}}
                         </div>
                         <a href="#message" class="preview__btn btn">Попробовать бесплатно</a>
                     </div>
@@ -54,8 +54,8 @@
                 </div>
             </div>
         </div>
-        </div>
     </section>
+
     <section class="news just-align">
         <div class="container">
             <div class="news__row news__row--four">
@@ -68,7 +68,7 @@
                         Используйте проактивный подход к endpoint security...
                     </div>
                     <div class="news__xz">
-                        <img src="{{asset('img/products/pro-1.png')}}">
+                        <img src="{{asset('img/products/pro-1.png')}}" alt="">
                         <a href="{{route('bestsafe', ['type' => 1])}}" class="news__link">
                             Читать
                         </a>
@@ -83,7 +83,7 @@
                         Положите конец общим паролям, используемым на бесчисленных...
                     </div>
                     <div class="news__xz">
-                        <img src="{{asset('img/products/pro-2.png')}}">
+                        <img src="{{asset('img/products/pro-2.png')}}" alt="">
                         <a href="{{route('bestsafe', ['type' => 2])}}" class="news__link">
                             Читать
                         </a>
@@ -98,7 +98,7 @@
                         Обнаружение попыток шифрования в режиме...
                     </div>
                     <div class="news__xz">
-                        <img src="{{asset('img/products/pro-3.png')}}">
+                        <img src="{{asset('img/products/pro-3.png')}}" alt="">
                         <a href="{{route('bestsafe', ['type' => 3])}}" class="news__link">
                             Читать
                         </a>
@@ -112,7 +112,7 @@
                         Управляйте и контролируйте все ключевые бизнес-приложения...
                     </div>
                     <div class="news__xz">
-                        <img src="{{asset('img/products/pro-4.png')}}">
+                        <img src="{{asset('img/products/pro-4.png')}}" alt="">
                         <a href="{{route('bestsafe', ['type' => 4])}}" class="news__link">
                             Читать
                         </a>
@@ -125,7 +125,7 @@
     <section class="zero just-align">
         <div class="container">
             <div class="zero__row row">
-                <img src="{{asset('assets/img/zero-18.jpg')}}" />
+                <img src="{{asset('assets/img/zero-18.jpg')}}" alt="">
                 <div class="zero__desc">
                     <div class="zero__subtitle subtitle">
                         Применение наименьших привилегий
@@ -144,7 +144,7 @@
                         Блокировать вымогателей, вредоносных программ и криптовирусов от входа в вашу сеть, даже если пользователи имеют повышенные привилегии. Управление привилегиями на уровне приложений и процессов и остановка операций шифрования с помощью инновационной технологии endpoint protection
                     </div>
                 </div>
-                <img src="{{asset('assets/img/zero-19.jpg')}}" />
+                <img src="{{asset('assets/img/zero-19.jpg')}}" alt="">
             </div>
             <div class="zero__line line">
             </div>
@@ -157,7 +157,7 @@
                 <div class="list__item">
                     <div class="list__icon">
                         <div class="list__border">
-                            <img src="{{asset('/img/icon/list-5.svg')}}">
+                            <img src="{{asset('/img/icon/list-5.svg')}}" alt="">
                         </div>
                     </div>
                     <div class="list__desc">
@@ -172,7 +172,7 @@
                 <div class="list__item">
                     <div class="list__icon">
                         <div class="list__border">
-                            <img src="{{asset('/img/icon/list-3.svg')}}">
+                            <img src="{{asset('/img/icon/list-3.svg')}}" alt="">
                         </div>
                     </div>
                     <div class="list__desc">
@@ -187,7 +187,7 @@
                 <div class="list__item">
                     <div class="list__icon">
                         <div class="list__border">
-                            <img src="{{asset('/img/icon/list-2.svg')}}">
+                            <img src="{{asset('/img/icon/list-2.svg')}}" alt="">
                         </div>
                     </div>
                     <div class="list__desc">
@@ -202,7 +202,7 @@
                 <div class="list__item">
                     <div class="list__icon">
                         <div class="list__border">
-                            <img src="{{asset('/img/icon/list-4.svg')}}">
+                            <img src="{{asset('/img/icon/list-4.svg')}}" alt="">
                         </div>
                     </div>
                     <div class="list__desc">

@@ -1,10 +1,9 @@
 <?php
 
-use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\BladeController;
 use App\Http\Controllers\MessageController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\PostController;
 
 
@@ -31,8 +30,6 @@ Route::view('bastion2','bastion2')->name('bastion2');
 
 
 # Solutions
-//Route::get('/solution', [BladeController::class, 'solution'])->name('solution');
-//Route::get('/solution/{solution}', [App\Http\Controllers\BladeController::class, 'show'])->name('solution-item');
 Route::view('/solutions/1','solutions.solution1')->name('solution1');
 Route::get('/solutions/2', [App\Http\Controllers\SolutionController::class, 'audit'])->name('solution2');
 Route::view('/solutions/3','solutions.solution3')->name('solution3');

@@ -21,16 +21,20 @@ class ProductController extends Controller {
 
         $data = Product::best(0);
         $data['img'] = $product->img;
-        $data['description'] = $product->text;
+        $data['text'] = $product->text;
         $data['heading'] = $product->title;
+        $data['title'] = $product->title;
         return view('products.product')
             ->with($data);
     }
 
 
     public function create() {
-        $categories=Categories::all();
-        return view('admin.product.create')->with('categories',$categories);
+        $action = route('admin.product.store');
+        return view('admin.product.form', [
+            'action' => $action,
+            'product' => new Product()
+        ]);
     }
 
 
@@ -38,16 +42,15 @@ class ProductController extends Controller {
         $request->validate([
             'title' => 'required',
             'text' => 'required',
-            'category_id' => 'required',
-            'img' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:16000',
+            'img' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:16000'
         ]);
         $uuid = Str::uuid()->toString();
         $fileName = $uuid . '-' . time() . '.' . $request->img->extension();
         $request->img->move(public_path('../storage/app/public/product'), $fileName);
+
         Product::create([
             'title' => $request->title,
             'text' => $request->text,
-            'category_id'=>$request->category_id,
             'img' => $fileName,
         ]);
 
@@ -63,7 +66,10 @@ class ProductController extends Controller {
 
     public function edit(Product $product) {
         $cat = Categories::all();
-        return view('admin.product.edit', compact('product','cat'));
+        $action = route('admin.product.update', $product->id);
+        return view('admin.product.form',
+            compact('product','cat', 'action')
+        );
     }
 
 
@@ -71,8 +77,7 @@ class ProductController extends Controller {
         $request->validate([
             'title' => 'required',
             'text' => 'required',
-            'img' => '',
-            'category_id' => 'required',
+            'img' => []
         ]);
 
         if ($request->hasFile('img')) {
@@ -82,8 +87,7 @@ class ProductController extends Controller {
             $product->update([
                 'title' => $request->title,
                 'text' => $request->text,
-                'category_id'=>$request->category_id,
-                'img' => $fileName,
+                'img' => $fileName
             ]);
         } else {
             $product->update($request->all());

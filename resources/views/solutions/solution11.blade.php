@@ -30,6 +30,8 @@
 
             <div class="desc__line line"></div>
         </div>
+        </div>
+    </section>
 
 
 
@@ -41,7 +43,8 @@
     @if($i%2==1)
                         <a href="{{route('solution-item',$cats->id)}}">
         <div class="zero__row row">
-            <img src="{{asset('storage/solutions/'.$cats->img)}}" style="width: 80%" />
+            <img src="{{asset('storage/solutions/'.$cats->img)}}"
+                 style="width: 80%" alt="img" />
             <div class="zero__desc">
                 <div class="zero__subtitle subtitle">
                     {{$cats->title}}
@@ -63,7 +66,7 @@
                     {{$cats->text}}
                 </div>
             </div>
-            <img src="{{asset('storage/solutions/'.$cats->img)}}" style="width: 80%" />
+            <img src="{{asset('storage/solutions/'.$cats->img)}}" alt="img" style="width: 80%" />
         </div>
                         </a>
                 @endif
@@ -87,7 +90,7 @@
             <div class="list__item">
                 <div class="list__icon">
                     <div class="list__border">
-                        <img src="{{asset('img/icon/list-10.svg')}}">
+                        <img src="{{asset('img/icon/list-10.svg')}}" alt="img">
                     </div>
                 </div>
                 <div class="list__desc">
@@ -105,7 +108,7 @@
             <div class="list__item">
                 <div class="list__icon">
                     <div class="list__border">
-                        <img src="{{asset('img/icon/list-11.svg')}}">
+                        <img src="{{asset('img/icon/list-11.svg')}}" alt="img">
                     </div>
                 </div>
                 <div class="list__desc">
@@ -123,7 +126,7 @@
             <div class="list__item">
                 <div class="list__icon">
                     <div class="list__border">
-                        <img src="{{asset('img/icon/list-12.svg')}}">
+                        <img src="{{asset('img/icon/list-12.svg')}}" alt="img">
                     </div>
                 </div>
                 <div class="list__desc">
@@ -142,8 +145,7 @@
 
     </div>
 </section>
-<x-footer>
 
-</x-footer>
+<x-footer></x-footer>
 <script src="js/script.min.js"></script>
-</x-layout>
+@endsection
