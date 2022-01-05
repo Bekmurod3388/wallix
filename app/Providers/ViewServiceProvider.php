@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use App\Models\Post;
 use App\Models\Product;
+use App\Models\Solution;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
 use Illuminate\View\View as Blade;
@@ -33,6 +34,9 @@ class ViewServiceProvider extends ServiceProvider {
         View::composer(['components.header'], function(Blade $view) {
             $products = Product::query()->get();
             $view->with(['products' => $products]);
+
+            $solutions = Solution::query()->get();
+            $view->with(['solutions' => $solutions]);
         });
     }
 }

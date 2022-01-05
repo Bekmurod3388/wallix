@@ -6,15 +6,18 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * @method static orderBy(string $string, string $string1)
- * @method static create(array $array)
- * @method static where(string $string)
- * @property mixed category_id
+ * @property int $template_id
+ * @property string $template
  */
+
 class Solution extends Model {
     use HasFactory;
 
-    protected $fillable = ['title', 'text', 'img', 'category_id'];
+    protected $fillable = ['title', 'text', 'img', 'template_id'];
+
+    public function getTemplateAttribute() {
+        return "template_" . $this->template_id;
+    }
 
     public static function data($type) {
         switch ($type) {

@@ -18,7 +18,8 @@ class CreateSolutionsTable extends Migration
             $table->string('title');
             $table->string('text');
             $table->string('img');
-            $table->string('category_id');
+            $table->tinyInteger('template_id');
+//            $table->string('category_id');
             $table->timestamps();
         });
     }

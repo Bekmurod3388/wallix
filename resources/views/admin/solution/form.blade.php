@@ -4,13 +4,15 @@
         <div class="card">
             <div class="card-header">
                 <div class="row">
-                    <div class="col-10"><h1 class="card-title">Обновлять решение</h1></div>
+                    <div class="col-10">
+                        <h1 class="card-title">@if($solution->id){{'Обновлять решение'}}@else{{'Добавить решение'}}@endif</h1>
+                    </div>
                 </div>
                 <hr>
                 <div class="card-body">
                     @if ($errors->any())
                         <div class="alert alert-danger">
-                            <strong>Whoops!</strong> There were some problems with your input.<br><br>
+                            <strong>Ой!</strong>С вашим вводом возникли некоторые проблемы.<br><br>
                             <ul>
                                 @foreach ($errors->all() as $error)
                                     <li>{{ $error }}</li>
@@ -20,9 +22,11 @@
                     @endif
 
 
-                    <form action="{{route('admin.solution.update',$solution->id)}}" method="POST" accept-charset="UTF-8" enctype="multipart/form-data">
+                    <form action="{{$action}}" method="POST" enctype="multipart/form-data">
                         @csrf
+                    @if($solution->id)
                         @method('PUT')
+                    @endif
                         <div class="form-group">
                             <label for="title">Титул(Ру)</label>
                             <input type="text" name="title" class="form-control" id="title" placeholder="Титул" value="{{$solution->title}}">
@@ -39,14 +43,11 @@
                         </div>
                         <div class="form-group">
                             <label for="category">Выберите категория</label>
-                            <select class="form-control" name="category_id">
-                                <option></option>
-                                @foreach($cat as $category)
-                                    <option value="{{$category->id}}"
-                                        @if($solution->category_id == $category->id){{'selected'}}@endif>
-                                        {{$category->name}}
-                                    </option>
-                                @endforeach
+                            <select class="form-control" name="template_id" required>
+                                <option value="">Выберите объект в списке</option>
+                                <option value="1" @if($solution->template_id == 1){{'selected'}}@endif>Шаблон 1</option>
+                                <option value="2" @if($solution->template_id == 2){{'selected'}}@endif>Шаблон 2</option>
+                                <option value="3" @if($solution->template_id == 3){{'selected'}}@endif>Шаблон 3</option>
                             </select>
                         </div>
                         <button type="submit" class="btn btn-primary">Сохранить</button>

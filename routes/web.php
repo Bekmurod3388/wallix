@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SolutionController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MessageController;
@@ -30,8 +31,9 @@ Route::view('bastion2','bastion2')->name('bastion2');
 
 
 # Solutions
+Route::get('/solution/{solution?}', [SolutionController::class, 'solution'])->name('solution');
 Route::view('/solutions/1','solutions.solution1')->name('solution1');
-Route::get('/solutions/2', [App\Http\Controllers\SolutionController::class, 'audit'])->name('solution2');
+Route::get('/solutions/2', [SolutionController::class, 'audit'])->name('solution2');
 Route::view('/solutions/3','solutions.solution3')->name('solution3');
 Route::view('/solutions/4','solutions.solution4')->name('solution4');
 Route::view('/solutions/5','solutions.solution5')->name('solution5');

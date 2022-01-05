@@ -54,6 +54,11 @@
                             <li class="header__drapdown-item">
                                 <a href="{{route('solution5')}}" class="header__drapdown-link">Решения по отраслям</a>
                             </li>
+                        @foreach($solutions as $solution)
+                            <li class="header__drapdown-item">
+                                <a href="{{route('solution', $solution)}}" class="header__drapdown-link">{{$solution->title}}</a>
+                            </li>
+                        @endforeach
                         </ul>
                     </li>
                     <li class="header__item">

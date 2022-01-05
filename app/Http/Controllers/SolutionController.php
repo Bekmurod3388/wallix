@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
-use App\Models\Categories;
 use App\Models\Solution;
 
 class SolutionController extends Controller {
@@ -15,31 +14,38 @@ class SolutionController extends Controller {
         return view('admin.solution.index')->with('solution', $solution);
     }
 
+    public function solution(Solution $solution = null) {
+        if ($solution)
+            return view("solutions.$solution->template")
+                ->with('solution', $solution);
+
+        return $solution;
+    }
+
     public function create() {
-        $categories = Categories::all();
-        return view('admin.solution.create')->with('categories', $categories);
+        $action = route('admin.solution.store');
+
+        return view('admin.solution.form')
+            ->with('action', $action)
+            ->with('solution', new Solution());
     }
 
 
     public function store(Request $request) {
-        $request->validate([
+        $data = $request->validate([
             'title' => 'required',
             'text' => 'required',
-            'category_id' => 'required',
             'img' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:16000',
+            'template_id' => 'required'
         ]);
+
         $uuid = Str::uuid()->toString();
         $fileName = $uuid . '-' . time() . '.' . $request->img->extension();
         $request->img->move(public_path('../storage/app/public/solutions'), $fileName);
-        Solution::create([
-            'title' => $request->title,
-            'text' => $request->text,
-            'category_id' => $request->category_id,
-            'img' => $fileName,
 
+        $data['img'] = $fileName;
+        Solution::create($data);
 
-        ]);
-        //addalert('success');
         return redirect()->route('admin.solution.index')->with('success', 'Решение успешно созданы.');
     }
 
@@ -52,8 +58,9 @@ class SolutionController extends Controller {
 
 
     public function edit(Solution $solution) {
-        $cat = Categories::all();
-        return view('admin.solution.edit', compact('solution', 'cat'));
+        $action = route('admin.solution.update',$solution->id);
+        return view('admin.solution.form',
+            compact('action', 'solution'));
     }
 
 
@@ -62,22 +69,17 @@ class SolutionController extends Controller {
             'title' => 'required',
             'text' => 'required',
             'img' => '',
-            'category_id' => 'required',
+            'template_id' => 'required'
         ]);
+
         if ($request->hasFile('img')) {
             $uuid = Str::uuid()->toString();
             $fileName = $uuid . '-' . time() . '.' . $request->img->extension();
             $request->img->move(public_path('../storage/app/public/solutions'), $fileName);
-            $solution->update([
-                'title' => $request->title,
-                'text' => $request->text,
-                'category_id' => $request->category_id,
-                'img' => $fileName,
-            ]);
-        } else {
-            $solution->update($request->all());
+            $data['img'] = $fileName;
         }
 
+        $solution->update($data);
 
         return redirect()->route('admin.solution.index')
             ->with('success', 'Решение solution обновлено');
