@@ -24,22 +24,23 @@
                             <th scope="col">Титул</th>
                             <th scope="col">Текст</th>
                             <th scope="col">Фото</th>
+                            <th scope="col">Шаблон</th>
                             <th scope="col">Действие</th>
                         </tr>
                         </thead>
                         <tbody>
-                        @foreach($solution as $solutions)
+                        @foreach($solutions as $solution)
                             <tr>
-                                <th scope="row" class="col-1">{{$solutions->id}}</th>
-                                <td>{{$solutions->title}}</td>
-                                <td>{{$solutions->text}}</td>
-                                <td>
-                                    <img src="{{asset('storage/solutions/'.$solutions->img)}}" style="width:30%" alt="">
+                                <th scope="row">{{$solution->id}}</th>
+                                <td>{{$solution->title}}</td>
+                                <td>{{$solution->text}}</td>
+                                <td class="text-center">
+                                    <img src="{{asset('storage/solutions/'.$solution->img)}}" style="width:30%" alt="">
                                 </td>
-
-                                <td class="col-2">
-                                    <form action="{{ route('admin.solution.destroy',$solutions->id) }}" method="POST">
-                                        <a class="btn btn-warning btn-sm" href="{{ route('admin.solution.edit',$solutions->id) }}">
+                                <td>{{$solution->template_id}}</td>
+                                <td>
+                                    <form action="{{ route('admin.solution.destroy',$solution->id) }}" method="POST">
+                                        <a class="btn btn-warning btn-sm" href="{{ route('admin.solution.edit',$solution->id) }}">
                                     <span class="btn-label">
                                         <i class="fa fa-pen"></i>
                                     </span>

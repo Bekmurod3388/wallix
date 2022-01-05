@@ -9,10 +9,10 @@
                 <div class="container">
                     <div class="preview__body">
                         <h1 class="preview__title">
-                            Аудит и cоответствие
+                            {{$solution->title}}
                         </h1>
                         <div class="preview__desc">
-                            Упрощение аудита и соблюдение требований безопасности с помощью сквозного управления доступом
+{{--                            Упрощение аудита и соблюдение требований безопасности с помощью сквозного управления доступом--}}
                         </div>
                     </div>
                 </div>
@@ -69,7 +69,7 @@
 {{--        <div class="security__orange orange"></div>--}}
         <div class="container">
             <div class="management__title">
-                Упрощенный аудит и соответствие
+                {{$solution->title}}
             </div>
             <div class="security__body row content-div">
                 <div class="d-flex">

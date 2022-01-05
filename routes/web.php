@@ -73,6 +73,6 @@ Route::prefix('admin')->name('admin.')->middleware(['web', 'auth'])->group(funct
     Route::resource('posts', PostController::class);
     Route::resource('office',App\Http\Controllers\OfficeController::class);
     Route::resource('solution',App\Http\Controllers\SolutionController::class);
-    Route::resource('category',App\Http\Controllers\CategoreController::class);
+    Route::resource('category',App\Http\Controllers\CategoryController::class);
     Route::resource('product',App\Http\Controllers\ProductController::class);
 });

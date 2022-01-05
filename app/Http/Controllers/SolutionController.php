@@ -10,8 +10,8 @@ use App\Models\Solution;
 class SolutionController extends Controller {
 
     public function index() {
-        $solution = Solution::orderBy('id', 'desc')->paginate(10);
-        return view('admin.solution.index')->with('solution', $solution);
+        $solutions = Solution::orderBy('id', 'desc')->paginate(10);
+        return view('admin.solution.index')->with('solutions', $solutions);
     }
 
     public function solution(Solution $solution = null) {

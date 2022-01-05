@@ -22,15 +22,21 @@
                         <thead>
                         <tr>
                             <th scope="col">#</th>
-                            <th scope="col">Наименование</th>
+                            <th scope="col">Титул</th>
+                            <th scope="col">Текст</th>
+                            <th scope="col">Фото</th>
                             <th scope="col">Действие</th>
                         </tr>
                         </thead>
                         <tbody>
                         @foreach($categories as $category)
                             <tr>
-                                <th scope="row" class="col-1">{{$category->id}}</th>
-                                <td>{{$category->name}}</td>
+                                <td class="col-1">{{$category->id}}</td>
+                                <td>{{$category->title}}</td>
+                                <td>{{$category->text}}</td>
+                                <td>
+                                    <img src="{{asset('/storage/categories/' . $category->img)}}" style="width: 30%" alt="">
+                                </td>
                                 <td class="col-2">
                                     <form action="{{ route('admin.category.destroy',$category->id) }}" method="POST">
                                     <a class="btn btn-warning btn-sm" href="{{ route('admin.category.edit',$category->id) }}">

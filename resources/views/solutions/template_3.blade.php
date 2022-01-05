@@ -9,10 +9,10 @@
                 <div class="container">
                     <div class="preview__body">
                         <h1 class="preview__title">
-                            Wallix Inside
+                            {{$solution->title}}
                         </h1>
                         <div class="preview__desc">
-                            Встроенные технологии. Кибербезопасность по дизайну для ваших решений
+{{--                            Встроенные технологии. Кибербезопасность по дизайну для ваших решений--}}
                         </div>
                     </div>
                 </div>

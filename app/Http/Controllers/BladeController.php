@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\DB;
-use App\Models\Categories;
+use App\Models\Category;
 use App\Models\Post;
 use App\Models\Product;
 use App\Models\Solution;
@@ -36,7 +36,7 @@ class BladeController extends Controller {
     public function show(Solution $solution) {
         $cat=Solution::all()->where('category_id', $solution->category_id );
         $count=count($cat);
-        $category=Categories::all()->where('id',$solution->category_id);
+        $category=Category::all()->where('id',$solution->category_id);
         return view('solutions.solution1', compact('solution','cat', 'count', 'category'));
     }
 
@@ -44,7 +44,7 @@ class BladeController extends Controller {
 //    public function product(Product $product) {
 //        $cat=Product::all()->where('category_id', $product->category_id);
 //        $count=count($cat);
-//        $category=Categories::all()->where('id',$product->category_id);
+//        $category=Category::all()->where('id',$product->category_id);
 //        return view('product-item',compact('product','cat', 'count', 'category'));
 //    }
 }

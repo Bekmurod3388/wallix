@@ -29,7 +29,7 @@
                         <tbody>
                         @foreach($products as $product)
                             <tr>
-                                <th scope="row" class="col-1">{{$product->id}}</th>
+                                <td class="col-1">{{$product->id}}</td>
                                 <td>{{$product->title}}</td>
                                 <td>{{$product->text}}</td>
                                 <td>

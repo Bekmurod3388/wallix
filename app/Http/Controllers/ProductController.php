@@ -3,12 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Str;
-use App\Models\Categories;
+use App\Models\Category;
 use App\Models\Product;
+use App\Http\Service\FileHandler;
 
 
 class ProductController extends Controller {
+
+    use FileHandler;
+    private $folder = "products";
 
     public function index() {
         $products = Product::orderBy('id','desc')->get();
@@ -44,17 +47,16 @@ class ProductController extends Controller {
             'text' => 'required',
             'img' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:16000'
         ]);
-        $uuid = Str::uuid()->toString();
-        $fileName = $uuid . '-' . time() . '.' . $request->img->extension();
-        $request->img->move(public_path('../storage/app/public/product'), $fileName);
 
+        $filename = $this->createFile($request->img, $this->folder);
         Product::create([
             'title' => $request->title,
             'text' => $request->text,
-            'img' => $fileName,
+            'img' => $filename,
         ]);
 
-        return redirect()->route('admin.product.index')->with('success', 'Продукты успешно созданы.');
+        return redirect()->route('admin.product.index')
+            ->with('success', 'Продукты успешно созданы.');
     }
 
 
@@ -65,7 +67,7 @@ class ProductController extends Controller {
 
 
     public function edit(Product $product) {
-        $cat = Categories::all();
+        $cat = Category::all();
         $action = route('admin.product.update', $product->id);
         return view('admin.product.form',
             compact('product','cat', 'action')
@@ -74,28 +76,18 @@ class ProductController extends Controller {
 
 
     public function update(Request $request, Product $product) {
-        $request->validate([
+        $data = $request->validate([
             'title' => 'required',
             'text' => 'required',
             'img' => []
         ]);
 
-        if ($request->hasFile('img')) {
-            $uuid = Str::uuid()->toString();
-            $fileName = $uuid . '-' . time() . '.' . $request->img->extension();
-            $request->img->move(public_path('../storage/app/public/product'), $fileName);
-            $product->update([
-                'title' => $request->title,
-                'text' => $request->text,
-                'img' => $fileName
-            ]);
-        } else {
-            $product->update($request->all());
-        }
+        if ($request->hasFile('img'))
+            $data['img'] = $this->createFile($request->img, $this->folder);
 
-
+        $product->update($data);
         return redirect()->route('admin.product.index')
-            ->with('success', 'Продукты solution обновлено');
+            ->with('success', 'Продукт успешно обновлено');
     }
 
 
@@ -103,7 +95,7 @@ class ProductController extends Controller {
         $product->delete();
 
         return redirect()->route('admin.product.index')
-            ->with('success', 'Продукты solution удалено');
+            ->with('success', 'Продукты успешно удалено');
     }
 
 
