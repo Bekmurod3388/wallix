@@ -1,7 +1,6 @@
 @extends('admin.master')
 
 @section('content')
-
     <div class="col-md-12">
         <div class="card">
             <div class="card-header">
@@ -31,13 +30,13 @@
                         <tbody>
                         @foreach($categories as $category)
                             <tr>
-                                <td class="col-1">{{$category->id}}</td>
+                                <td>{{$category->id}}</td>
                                 <td>{{$category->title}}</td>
                                 <td>{{$category->text}}</td>
                                 <td>
                                     <img src="{{asset('/storage/categories/' . $category->img)}}" style="width: 30%" alt="">
                                 </td>
-                                <td class="col-2">
+                                <td>
                                     <form action="{{ route('admin.category.destroy',$category->id) }}" method="POST">
                                     <a class="btn btn-warning btn-sm" href="{{ route('admin.category.edit',$category->id) }}">
                                         <i class="fa fa-pen"></i>
@@ -57,6 +56,4 @@
             </div>
         </div>
     </div>
-
-
 @endsection

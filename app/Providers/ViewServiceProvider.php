@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Models\Category;
 use App\Models\Post;
 use App\Models\Product;
 use App\Models\Solution;
@@ -37,6 +38,11 @@ class ViewServiceProvider extends ServiceProvider {
 
             $solutions = Solution::query()->get();
             $view->with(['solutions' => $solutions]);
+        });
+
+        View::composer(['components.categories'], function(Blade $view) {
+            $categories = Category::all();
+            $view->with('categories', $categories);
         });
     }
 }

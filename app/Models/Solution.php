@@ -79,7 +79,7 @@ class Solution extends Model {
 
         return [
             'title' => $title,
-            'img' => $img,
+            'img' => "/img/solutions/$img",
             'text' => $text
         ];
     }

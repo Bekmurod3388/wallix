@@ -73,7 +73,7 @@
             </div>
             <div class="security__body row content-div">
                 <div class="d-flex">
-                    <img src="{{asset("/img/solutions/$solution->img")}}" alt="img" class="audit-img">
+                    <img src="{{asset("/storage/solutions/$solution->img")}}" alt="img" class="audit-img">
                 </div>
                 <div class="security__desc">
                     <div class="security__subtitle subtitle">{{$solution->title}}</div>
@@ -143,6 +143,7 @@
                         </a>
                     </div>
                 </div>
+                <x-categories></x-categories>
             </div>
             <div class="news__line line"></div>
         </div>

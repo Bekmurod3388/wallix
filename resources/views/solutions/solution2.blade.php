@@ -69,11 +69,11 @@
 {{--        <div class="security__orange orange"></div>--}}
         <div class="container">
             <div class="management__title">
-                Упрощенный аудит и соответствие
+                {{$title}}
             </div>
             <div class="security__body row content-div">
                 <div class="d-flex">
-                    <img src="{{asset("/img/solutions/$img")}}" alt="img" class="audit-img">
+                    <img src="{{asset("$img")}}" alt="img" class="audit-img">
                 </div>
                 <div class="security__desc">
                     <div class="security__subtitle subtitle">{{$title}}</div>
@@ -143,6 +143,8 @@
                         </a>
                     </div>
                 </div>
+
+                <x-categories></x-categories>
             </div>
             <div class="news__line line"></div>
         </div>
