@@ -3,15 +3,19 @@
 namespace App\Http\Controllers;
 
 
+use Illuminate\Http\Request;
 use App\Http\Service\FileHandler;
 use App\Models\Category;
-use Illuminate\Http\Request;
-use Illuminate\Support\Str;
 use App\Models\Solution;
 
 class SolutionController extends Controller {
     use FileHandler;
     private $folder = "solutions";
+
+    public function index() {
+        $solutions = Solution::orderBy('id', 'desc')->paginate(10);
+        return view('admin.solution.index')->with('solutions', $solutions);
+    }
 
     public function solution(Solution $solution = null) {
         if ($solution)
