@@ -27,7 +27,7 @@ class ViewServiceProvider extends ServiceProvider {
      */
     public function boot() {
         View::composer(['components.news'], function(Blade $view) {
-            $news = Post::query()->orderBy('id', 'desc')->limit(3)->get();
+            $news = Post::query()->orderBy('id', 'desc')->limit(2)->get();
 
             $view->with(['news' => $news]);
         });
