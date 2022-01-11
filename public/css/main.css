@@ -279,9 +279,13 @@
 .preview .preview--left img {
     /*transform: rotate(4deg);*/
     /*height: 120%;*/
-    width: 180%;
-    transform: translateX(-30%);
+    width: 300%;
+    transform: translateX(-20%);
     /*left: 180%;*/
+}
+
+.preview .preview--center {
+    margin-left: 10%;
 }
 
 /*.preview .preview--left {*/
