@@ -276,6 +276,20 @@
 }
 
 /* Header image */
-.preview img {
-    /*height: 0;*/
+.preview .preview--left img {
+    /*transform: rotate(4deg);*/
+    /*height: 120%;*/
+    width: 180%;
+    transform: translateX(-30%);
+    /*left: 180%;*/
+}
+
+/*.preview .preview--left {*/
+/*    height: 50000px;*/
+/*    background-repeat: no-repeat;*/
+/*}*/
+
+.preview .preview--right {
+    /*background-size: contain;*/
+    /*background-repeat: no-repeat;*/
 }

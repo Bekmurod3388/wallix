@@ -2,8 +2,9 @@
 @section('content')
     <section class="preview">
         <div class="preview__wrapper">
-            <div class="preview--left">
-                <img src="{{asset('img/background/preview-bg.png')}}" alt="">
+            <div class="preview--left"
+                style="background-image: url('{{asset('img/background/preview-bg.png')}}')">
+{{--                <img src="" alt="">--}}
             </div>
             <div class="preview--center">
                 <div class="container">
@@ -21,7 +22,7 @@
             </div>
             <div class="preview--right"
                     style="background-image: url('{{'/img/background/preview-2.png'}}')">
-                <img src="{{asset('img/background/preview-2.png')}}" alt="">
+{{--                <img src="{{asset('img/background/preview-2.png')}}" alt="">--}}
             </div>
         </div>
     </section>
