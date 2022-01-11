@@ -46,7 +46,6 @@
             <div class="security__body row">
                 <img src="{{"/img/products/$img"}}" alt="img">
                 <div class="security__desc">
-                    <div class="security__subtitle subtitle">{{$title}}</div>
                     <div class="security__text text">
                         {!! $text !!}
                     </div>
