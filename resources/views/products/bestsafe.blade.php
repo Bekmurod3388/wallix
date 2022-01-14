@@ -49,7 +49,6 @@
                         class="content-img @if(request()->get('type') == 2){{'parol'}}@endif">
                 </div>
                 <div class="security__desc">
-                    <div class="security__subtitle subtitle"{{$title}}</div>
                     <div class="security__text text">
                         {!! $text !!}
                     </div>

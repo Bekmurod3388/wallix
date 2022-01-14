@@ -68,7 +68,7 @@
     <section class="security bg-orange">
 {{--        <div class="security__orange orange"></div>--}}
         <div class="container">
-            <div class="management__title">
+            <div class="management__title text-uppercase">
                 {{$title}}
             </div>
             <div class="security__body row content-div">
@@ -76,7 +76,6 @@
                     <img src="{{asset("$img")}}" alt="img" class="audit-img">
                 </div>
                 <div class="security__desc">
-                    <div class="security__subtitle subtitle">{{$title}}</div>
                     <div class="security__text text">
                         {!! $text !!}
                     </div>

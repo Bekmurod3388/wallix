@@ -279,8 +279,8 @@
 .preview .preview--left img {
     /*transform: rotate(4deg);*/
     /*height: 120%;*/
-    width: 300%;
-    transform: translateX(-20%);
+    /*width: 300%;*/
+    /*transform: translateX(-20%);*/
     /*left: 180%;*/
 }
 
@@ -296,4 +296,8 @@
 .preview .preview--right {
     /*background-size: contain;*/
     /*background-repeat: no-repeat;*/
+}
+
+.text-uppercase {
+    text-transform: uppercase;
 }
