@@ -87,62 +87,23 @@
     <section class="news just-align">
         <div class="container">
             <div class="news__row news__row--four">
-                <div class="news__item">
-                    <div class="news__subtitle">
-                        ISO 27001
+                @foreach($categories as $key => $category)
+                    <div class="news__item">
+                        <div class="news__subtitle">
+                            {{$category['title']}}
+                        </div>
+                        <div class="news__text">
+                            {{ strLimit($category['text']) }}
+                        </div>
+                        <div class="news__xz">
+                            <img src="{{asset("${category['img']}")}}">
+                            <a href="{{route('solution2', ['type' => $key])}}" class="news__link">
+                                Читать
+                            </a>
+                        </div>
                     </div>
-                    <div class="news__text">
-                        Достижение международно признанных уровней...
-                    </div>
-                    <div class="news__xz">
-                        <img src="{{'/img/solutions/sol-1.png'}}" alt="img">
-                        <a href="{{route('solution2', ['type' => 1])}}" class="news__link">
-                            Читать
-                        </a>
-                    </div>
-                </div>
-                <div class="news__item">
-                    <div class="news__subtitle w">
-                        Директива НИС
-                    </div>
-                    <div class="news__text">
-                        Операторы основных услуг (OESs) и поставщики цифровых услуг...
-                    </div>
-                    <div class="news__xz">
-                        <img src="{{'/img/solutions/sol-2.png'}}" alt="img">
-                        <a href="{{route('solution2', ['type' => 2])}}" class="news__link">
-                            Читать
-                        </a>
-                    </div>
-                </div>
-                <div class="news__item">
-                    <div class="news__subtitle w">
-                        PCI DSS
-                    </div>
-                    <div class="news__text">
-                        Контролируйте весь доступ к конфиденциальным данным...
-                    </div>
-                    <div class="news__xz">
-                        <img src="{{'/img/solutions/sol-3.png'}}" alt="img">
-                        <a href="{{route('solution2', ['type' => 3])}}" class="news__link">
-                            Читать
-                        </a>
-                    </div>
-                </div>
-                <div class="news__item">
-                    <div class="news__subtitle w">
-                        HIPAA
-                    </div>
-                    <div class="news__text">
-                        Главный приоритет медицинской организации-безопасность...
-                    </div>
-                    <div class="news__xz">
-                        <img src="{{'/img/solutions/sol-4.png'}}" alt="img">
-                        <a href="{{route('solution2', ['type' => 4])}}" class="news__link">
-                            Читать
-                        </a>
-                    </div>
-                </div>
+                @endforeach
+
                 <x-categories></x-categories>
             </div>
             <div class="news__line line"></div>

@@ -23,4 +23,10 @@ class Solution extends Model {
         $type = abs($type) < 5 ? abs($type) : 0;
         return Data::solution()[$type];
     }
+
+    public static function filtered($type) {
+        return array_filter(Data::solution(), function($index) use ($type) {
+            return $index != $type;
+        }, ARRAY_FILTER_USE_KEY);
+    }
 }

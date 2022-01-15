@@ -20,7 +20,8 @@ class SolutionController extends Controller {
     public function solution(Solution $solution = null) {
         if ($solution)
             return view("solutions.$solution->template")
-                ->with('solution', $solution);
+                ->with('solution', $solution)
+                ->with('categories', Solution::filtered(''));
 
         return $solution;
     }
@@ -84,7 +85,8 @@ class SolutionController extends Controller {
 
 
     public function audit(Request $request) {
-        $data = Solution::data($request->get('type'));
+        $type = $request->get('type');
+        $data = Solution::data($type);
         if ($request->has('category')) {
             $category = Category::query()->find($request->get('category'));
             $data['img'] = "/storage/categories/$category->img";
@@ -92,6 +94,7 @@ class SolutionController extends Controller {
             $data['text'] = $category->text;
         }
 
-        return view('solutions.solution2', $data);
+        return view('solutions.solution2', $data)
+            ->with('categories', Solution::filtered($type));
     }
 }
