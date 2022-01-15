@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Data;
 use Illuminate\Http\Request;
 use App\Models\Category;
 use App\Models\Product;
@@ -28,7 +29,8 @@ class ProductController extends Controller {
         $data['heading'] = $product->title;
         $data['title'] = $product->title;
         return view('products.product')
-            ->with($data);
+            ->with($data)
+            ->with('categories', Product::filtered('best', ''));
     }
 
 
@@ -100,10 +102,20 @@ class ProductController extends Controller {
 
 
     public function bestsafe(Request $request) {
-        return view('products.bestsafe', Product::best($request->get('type')));
+        $type = abs($request->get('type'));
+        $type = $type < 5 ? $type : 0;
+
+        return view('products.bestsafe')
+            ->with(Product::best($type))
+            ->with('categories', Product::filtered('best', $type));
     }
 
     public function trustelem(Request $request) {
-        return view('products.trust-elem', Product::trust($request->get('type')));
+        $type = abs($request->get('type'));
+        $type = $type < 5 ? $type : 0;
+
+        return view('products.trust-elem')
+            ->with(Product::trust($type))
+            ->with('categories', Product::filtered('trust', $type));
     }
 }

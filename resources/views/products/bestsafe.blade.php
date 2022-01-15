@@ -59,65 +59,22 @@
     <section class="news just-align">
         <div class="container">
             <div class="news__row news__row--four">
-                <div class="news__item">
-                    <div class="news__subtitle">
-                        Членство в
-                        локальной группе
+                @foreach($categories as $key => $category)
+                    <div class="news__item">
+                        <div class="news__subtitle">
+                            {{$category['title']}}
+                        </div>
+                        <div class="news__text">
+                            {{ strLimit($category['text']) }}
+                        </div>
+                        <div class="news__xz">
+                            <img src="{{asset("img/products/${category['img']}")}}">
+                            <a href="{{route('bestsafe', ['type' => $key])}}" class="news__link">
+                                Читать
+                            </a>
+                        </div>
                     </div>
-                    <div class="news__text">
-                        Используйте проактивный подход к endpoint security...
-                    </div>
-                    <div class="news__xz">
-                        <img src="{{asset('img/products/pro-1.png')}}">
-                        <a href="{{route('bestsafe', ['type' => 1])}}" class="news__link">
-                            Читать
-                        </a>
-                    </div>
-                </div>
-                <div class="news__item">
-                    <div class="news__subtitle w">
-                        Ротация
-                        пароля
-                    </div>
-                    <div class="news__text">
-                        Положите конец общим паролям, используемым на бесчисленных...
-                    </div>
-                    <div class="news__xz">
-                        <img src="{{asset('img/products/pro-2.png')}}">
-                        <a href="{{route('bestsafe', ['type' => 2])}}" class="news__link">
-                            Читать
-                        </a>
-                    </div>
-                </div>
-                <div class="news__item">
-                    <div class="news__subtitle w">
-                        Управление
-                        вымогателями
-                    </div>
-                    <div class="news__text">
-                        Обнаружение попыток шифрования в режиме...
-                    </div>
-                    <div class="news__xz">
-                        <img src="{{asset('img/products/pro-3.png')}}">
-                        <a href="{{route('bestsafe', ['type' => 3])}}" class="news__link">
-                            Читать
-                        </a>
-                    </div>
-                </div>
-                <div class="news__item">
-                    <div class="news__subtitle w">
-                        Управление приложениями
-                    </div>
-                    <div class="news__text">
-                        Управляйте и контролируйте все ключевые бизнес-приложения...
-                    </div>
-                    <div class="news__xz">
-                        <img src="{{asset('img/products/pro-4.png')}}">
-                        <a href="{{route('bestsafe', ['type' => 4])}}" class="news__link">
-                            Читать
-                        </a>
-                    </div>
-                </div>
+                @endforeach
             </div>
             <div class="news__line line"></div>
         </div>

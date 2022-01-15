@@ -56,48 +56,22 @@
     <section class="news just-align">
         <div class="container">
             <div class="news__row news__row--three">
-                <div class="news__item">
-                    <div class="news__subtitle">
-                        SSO
+                @foreach($categories as $key => $category)
+                    <div class="news__item">
+                        <div class="news__subtitle">
+                            {{$category['title']}}
+                        </div>
+                        <div class="news__text">
+                            {{ strLimit($category['text']) }}
+                        </div>
+                        <div class="news__xz">
+                            <img src="{{asset("img/products/${category['img']}")}}">
+                            <a href="{{route('trustelem', ['type' => $key])}}" class="news__link">
+                                Читать
+                            </a>
+                        </div>
                     </div>
-                    <div class="news__text">
-                        Предоставьте пользователям возможность единого входа...
-                    </div>
-                    <div class="news__xz">
-                        <img src="{{'/img/products/pro-5.png'}}" alt="img">
-                        <a href="{{route('trustelem', ['type' => 1])}}" class="news__link">
-                            Читать
-                        </a>
-                    </div>
-                </div>
-                <div class="news__item">
-                    <div class="news__subtitle w">
-                        Мид
-                    </div>
-                    <div class="news__text">
-                        Выберите один из множества механизмов многофакторной...
-                    </div>
-                    <div class="news__xz">
-                        <img src="{{'/img/products/pro-6.png'}}" alt="img">
-                        <a href="{{route('trustelem', ['type' => 2])}}" class="news__link">
-                            Читать
-                        </a>
-                    </div>
-                </div>
-                <div class="news__item">
-                    <div class="news__subtitle w">
-                        Самообслуживание
-                    </div>
-                    <div class="news__text">
-                        Предложите пользователям решение самообслуживания...
-                    </div>
-                    <div class="news__xz">
-                        <img src="{{'/img/products/pro-7.png'}}" alt="img">
-                        <a href="{{route('trustelem', ['type' => 3])}}" class="news__link">
-                            Читать
-                        </a>
-                    </div>
-                </div>
+                @endforeach
             </div>
             <div class="news__line line"></div>
         </div>
