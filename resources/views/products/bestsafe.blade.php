@@ -37,7 +37,7 @@
             </div>
         </div>
     </section>
-    <section class="security bg-orange just-align">
+    <section id="orange" class="security bg-orange just-align">
 {{--        <div class="security__orange orange"></div>--}}
         <div class="container">
             <div class="management__title">
@@ -69,7 +69,7 @@
                         </div>
                         <div class="news__xz">
                             <img src="{{asset("img/products/${category['img']}")}}">
-                            <a href="{{route('bestsafe', ['type' => $key])}}" class="news__link">
+                            <a href="{{route('bestsafe', ['type' => $key, '#orange'])}}" class="news__link">
                                 Читать
                             </a>
                         </div>

@@ -37,7 +37,7 @@
             </div>
         </div>
     </section>
-    <section class="security just-align">
+    <section id="orange" class="security just-align">
         <div class="security__orange orange bast-{{request()->get('type')}}"></div>
         <div class="container">
             <div class="management__title">
@@ -66,7 +66,7 @@
                         </div>
                         <div class="news__xz">
                             <img src="{{asset("img/products/${category['img']}")}}">
-                            <a href="{{route('trustelem', ['type' => $key])}}" class="news__link">
+                            <a href="{{route('trustelem', ['type' => $key, '#orange'])}}" class="news__link">
                                 Читать
                             </a>
                         </div>

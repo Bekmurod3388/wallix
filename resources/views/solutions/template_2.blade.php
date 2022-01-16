@@ -65,7 +65,7 @@
             </div>
         </div>
     </section>
-    <section class="security bg-orange">
+    <section id="orange" class="security bg-orange">
 {{--        <div class="security__orange orange"></div>--}}
         <div class="container">
             <div class="management__title">

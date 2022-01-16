@@ -65,7 +65,7 @@
             </div>
         </div>
     </section>
-    <section class="security bg-orange">
+    <section id="orange" class="security bg-orange">
 {{--        <div class="security__orange orange"></div>--}}
         <div class="container">
             <div class="management__title text-uppercase">
@@ -96,7 +96,7 @@
                         </div>
                         <div class="news__xz">
                             <img src="{{asset("${category['img']}")}}">
-                            <a href="{{route('solution2', ['type' => $key])}}" class="news__link">
+                            <a href="{{route('solution2', ['type' => $key, '#orange'])}}" class="news__link">
                                 Читать
                             </a>
                         </div>
