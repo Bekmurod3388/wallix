@@ -37,18 +37,15 @@
             </div>
         </div>
     </section>
-    <section id="orange" class="security just-align">
+    <section class="security just-align" id="centerCatalog">
         <div class="security__orange orange bast-{{request()->get('type')}}"></div>
         <div class="container">
             <div class="management__title">
-                Функции управления идентификацией
+                {{$title}}
             </div>
             <div class="security__body row">
                 <img src="{{"/img/products/$img"}}" alt="img">
                 <div class="security__desc">
-                    <div class="security__subtitle subtitle">
-                        {{$title}}
-                    </div>
                     <div class="security__text text">
                         {!! $text !!}
                     </div>
@@ -59,22 +56,48 @@
     <section class="news just-align">
         <div class="container">
             <div class="news__row news__row--three">
-                @foreach($categories as $key => $category)
-                    <div class="news__item">
-                        <div class="news__subtitle">
-                            {{$category['title']}}
-                        </div>
-                        <div class="news__text">
-                            {{ strLimit($category['text']) }}
-                        </div>
-                        <div class="news__xz">
-                            <img src="{{asset("img/products/${category['img']}")}}">
-                            <a href="{{route('trustelem', ['type' => $key, '#orange'])}}" class="news__link">
-                                Читать
-                            </a>
-                        </div>
+                <div class="news__item">
+                    <div class="news__subtitle">
+                        SSO
                     </div>
-                @endforeach
+                    <div class="news__text">
+                        Предоставьте пользователям возможность единого входа...
+                    </div>
+                    <div class="news__xz">
+                        <img src="{{'/img/products/pro-5.png'}}" alt="img">
+                        <a href="{{route('trustelem', ['type' => 1])}}" class="news__link">
+                            Читать
+                        </a>
+                    </div>
+                </div>
+                <div class="news__item">
+                    <div class="news__subtitle w">
+                        Мид
+                    </div>
+                    <div class="news__text">
+                        Выберите один из множества механизмов многофакторной...
+                    </div>
+                    <div class="news__xz">
+                        <img src="{{'/img/products/pro-6.png'}}" alt="img">
+                        <a href="{{route('trustelem', ['type' => 2])}}" class="news__link">
+                            Читать
+                        </a>
+                    </div>
+                </div>
+                <div class="news__item">
+                    <div class="news__subtitle w">
+                        Самообслуживание
+                    </div>
+                    <div class="news__text">
+                        Предложите пользователям решение самообслуживания...
+                    </div>
+                    <div class="news__xz">
+                        <img src="{{'/img/products/pro-7.png'}}" alt="img">
+                        <a href="{{route('trustelem', ['type' => 3, '#centerCatalog'])}}" class="news__link">
+                            Читать
+                        </a>
+                    </div>
+                </div>
             </div>
             <div class="news__line line"></div>
         </div>

@@ -17,8 +17,7 @@
                     </div>
                 </div>
             </div>
-            <div class="preview--right"
-                    style="background-image: url('{{'/img/background/preview-12.png'}}')">
+            <div class="preview--right">
                 <img src="{{asset('img/background/preview-15.png')}}" alt="">
             </div>
         </div>
