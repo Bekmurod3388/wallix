@@ -41,11 +41,14 @@
         <div class="security__orange orange bast-{{request()->get('type')}}"></div>
         <div class="container">
             <div class="management__title">
-                {{$title}}
+                Функции управления идентификацией
             </div>
             <div class="security__body row">
                 <img src="{{"/img/products/$img"}}" alt="img">
                 <div class="security__desc">
+                    <div class="security__subtitle subtitle">
+                        {{$title}}
+                    </div>
                     <div class="security__text text">
                         {!! $text !!}
                     </div>
