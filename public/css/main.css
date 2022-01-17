@@ -277,6 +277,7 @@
 
 /* Header image */
 .preview .preview--left img {
+    transform: translateY(-15px);
     /*transform: rotate(4deg);*/
     /*height: 120%;*/
     /*width: 300%;*/
