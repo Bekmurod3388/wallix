@@ -52,7 +52,7 @@
 {{--                        </select>--}}
                     </div>
                     <div class="form__right">
-                        <textarea name="text" id="text" placeholder="Сообщение" style="resize: none"></textarea>
+                        <textarea name="text" id="text" required placeholder="Сообщение" style="resize: none"></textarea>
                         <div class="form__agree">
                             Ознакомьтесь с <a href="https://www.wallix.com/en/privacy-policy/" class="text-orange">Политикой конфиденциальности</a>
                         </div>

@@ -36,7 +36,7 @@
                         @endforeach
                         </ul>
                     </li>
-                    <li class="header__item">
+                    <!-- <li class="header__item">
                         <a href="#" class="header__link">Решения</a>
                         <ul class="header__drapdown">
                             <li class="header__drapdown-item">
@@ -60,7 +60,7 @@
                             </li>
                         @endforeach
                         </ul>
-                    </li>
+                    </li> -->
                     <li class="header__item">
                         <a href="#" class="header__link">О нас</a>
                         <ul class="header__drapdown">

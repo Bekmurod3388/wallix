@@ -25,11 +25,15 @@
             </div>
         </div>
     </section>
-    <section class="desc just-align">
+    <section class="desc">
         <div class="container">
+            <div class="desc__title">
+                    Европейский лидер в области управления привилегированным доступом
+            </div>
+            <div class="line2"></div>
             <div class="desc__row">
                 <div class="desc__title">
-                    Европейский лидер в области управления привилегированным доступом
+                    
                 </div>
                 <div class="desc__text">
                     Простое в использовании и развертывании решение WALLIX Bastion PAM
@@ -39,9 +43,10 @@
                     соответствия с упрощенным управлением привилегированным доступом.
                 </div>
             </div>
+            <div class="line2"></div>
         </div>
     </section>
-    <section class="security just-align">
+    <!-- <section class="security just-align">
         <div class="security__orange orange"></div>
         <div class="container">
             <div class="management__title">
@@ -68,8 +73,44 @@
             </div>
             <div class="management__line line"></div>
         </div>
-    </section>
-    <section class="zero just-align">
+    </section> -->
+    <div class="new-zero row">
+        <div class="new-zero--left"></div>
+        <div class="new-zero--center">
+            <div class="border__title">
+                <div class="border__pifagor"></div>
+                <div class="new-zero__title title">
+                Комплексные функции безопасности доступа
+                </div>
+            </div>
+            <div class="new-zero__subtitle subtitle">
+            Масштабируемая PAM
+            </div>
+            <div class="new-zero__text text">
+                Испытайте масштабируемое развёртывание с наилучшей общей стоимостью владения (TCO), как локально, так и в облаке.
+                <br>
+                <br>
+                <div class="new-zero--grey">Развёртывание решения PAM.</div>
+                WALLIX Bastion — это не разовый проект, а модульное решение, позволяющее организациям развёртывать решение в соответствии с потребностями макроуровня, запуская функции по одной за раз, чтобы облегчить долгосрочный и устойчивый подход к обеспечению безопасности доступа к привилегиям. Покажите результаты и быстро запустите WALLIX Bastion, а также добавьте дополнительные компоненты в градуированный процесс для удобства управления изменениями.
+                <br>
+                <br>
+                <div class="new-zero--grey">Значительная экономия.</div>
+                Испытайте масштабируемое развёртывание с наилучшей общей стоимостью владения (TCO), как локально, так и в облаке.
+            </div>
+            <div class="new-zero__btns">
+                <div class="new-zero__btns--top">
+                    <div class="new-zero__btn btn">Менеджер сеансов</div>
+                    <div class="new-zero__btn btn">Безопасный удаленный доступ</div>
+                </div>
+                <div class="new-zero__btns--top">
+                    <div class="new-zero__btn btn">Постоянные привилегии</div>
+                    <div class="new-zero__btn btn">RPA</div>
+                </div>
+            </div>
+        </div>
+        <img class='not-border' src="{{asset('assets/img/new-zero-1.jpg')}}" alt="title">
+    </div>
+    <!-- <section class="zero just-align">
         <div class="container">
             <div class="zero__row row">
                 <img src="{{asset('assets/img/zero-1.jpg')}}" alt="title">
@@ -161,7 +202,9 @@
                 <img src="{{asset('assets/img/zero-4.jpg')}}" alt="img">
             </div>
         </div>
-    </section>
+    </section> -->
+
+   
     <section class="management just-align">
         <div class="management__orange orange"></div>
         <div class="container">
@@ -171,18 +214,22 @@
                     <img src="{{asset('img/products/bast-1.png')}}" alt="management" />
                     <div class="management__subtitle">Гибкое лицензирование</div>
                     <div class="management__desc">
-                        Годовая подписка с подпиской на обслуживание от 12 до 36 месяцев;
-                        Бессрочная лицензия с обслуживанием от 12 до 36 месяцев; По
-                        требованию на основе ежемесячной подписки плюс ежемесячное
-                        использование накладных расходов для минимального 12-месячного
-                        контракта, обслуживание от 12 до 36 месяцев
+                        <ul class='management__ul'>
+                            <li>Годовая подписка с подпиской на обслуживание от 12 до 36 месяцев;</li>
+                            <li> Бессрочная лицензия с обслуживанием от 12 до 36 месяцев;</li>
+                            <li> По
+                            требованию на основе ежемесячной подписки плюс ежемесячное
+                            использование накладных расходов для минимального 12-месячного
+                            контракта, обслуживание от 12 до 36 месяцев</li>
+                        </ul>
                     </div>
-{{--                    <a href="{{route('contact')}}" class="management__link"> Свзаться </a>--}}
+                <a href="{{route('contact')}}" class="management__link"> Свзаться </a>
                 </div>
                 <div class="management__item">
                     <img src="{{asset('img/products/bast-2.png')}}" alt="management" />
                     <div class="management__subtitle">Управляемые службы</div>
                     <div class="management__desc">
+                        
                         Экономьте время и ресурсы благодаря привилегированному доступу,
                         управляемому как услуга командой WALLIX & Abris. WALLIX Bastion
                         как Управляемые службы может быть размещен либо WALLIX & Abris,
@@ -190,7 +237,7 @@
                         Требуется минимальная подписка на 36 месяцев. Техническое
                         обслуживание на золотом уровне входит в стоимость проживания.
                     </div>
-{{--                    <a href="https://www.wallix.com/privileged-access-management/bastion-managed-services/" class="management__link"> Узнать больше </a>--}}
+                <a href="https://www.wallix.com/privileged-access-management/bastion-managed-services/" class="management__link"> Узнать больше </a>
                 </div>
                 <div class="management__item">
                     <img src="{{asset('img/products/bast-3.png')}}" alt="management" />
@@ -199,7 +246,7 @@
                         WALLIX Bastion доступен на нескольких облачных маркетплейсах для
                         различных технических сред, включая:<br />
                         AWS
-                        <ul>
+                        <ul class='management__ul'>
                             <li>Lasure</li>
                             <li>GCP</li>
                             <li>KVM/OpenStack</li>
@@ -207,91 +254,73 @@
                             <li>VMware</li>
                         </ul>
                     </div>
-{{--                    <a href="#" class="management__link"> Wallix Bastion </a>--}}
+          <a href="#" class="management__link"> Wallix Bastion </a>
                 </div>
             </div>
             <div class="management__line line"></div>
         </div>
     </section>
-    <section class="pack just-align">
+    <section class="desc">
         <div class="container">
-            <div class="pack__title title">Пакеты Wallix Bastion</div>
-            <div class="pack__desc">
-                Пакеты WALLIX Bastion удовлетворяют все потребности организаций, от
-                малых и средних предприятий до крупных счетов
+            <div class="desc__title">
+            Пакеты Wallix Bastion
             </div>
-            <div class="pack__row row">
-                <img src="{{asset('assets/img/pack-1.jpg')}}" alt="img">
-                <div class="pack__item">
-                    <div class="pack__subtitle subtitle">
-                        Платформа Bastion (Бастион) предлагает следующие функциональные
-                        возможности PAM:
-                    </div>
-                    <div class="pack__text text">
-                        <ul>
-                            <li>Контроль доступа</li>
-                            <li>Хранилище паролей</li>
-                            <li>Управление привилегированными сеансами</li>
-                            <li>Управление паролями и SSH-ключами</li>
-                        </ul>
-                    </div>
-                    <div class="pack__subtitle subtitle">Варианты Bastion:</div>
-                    <div class="pack__text text">
-                        <ul>
-                            <li>Менеджер доступа (AM)</li>
-                            <li>Управление паролями приложений (AAPM)</li>
-                            <li>Универсальное туннелирование (UT)</li>
-                            <li>
-                                Повышение привилегий и управление делегированием полномочий
-                                (PEDM, BestSafe)
-                            </li>
-                            <li>
-                                Кластеризация HA 3+ (HA с 3 или более узлами на кластер)
-                            </li>
-                            <li>Академия Wallix & Abris</li>
-                            <li>Профессиональные услуги Wallix & Abris</li>
-                        </ul>
-                    </div>
+            <div class="line2"></div>
+            <div class="desc__row">
+                <div class="paket-block">
+                    <img class="paket-block__icon" src="{{asset('assets/paket-block-svg-2.svg')}}"/>
+                    <div class="paket-block__title subtitle">Стандартный пакет</div>
+                    <div class="paket-block__text text">Предлагает функции PAM, необходимые для обеспечения оптимального контроля привилегированного доступа.</div>
+                </div>
+                <div class="paket-block">
+                <img class="paket-block__icon" src="{{asset('assets/paket-block-svg-1.svg')}}"/>
+                    <div class="paket-block__title subtitle">Премиум пакет</div>
+                    <div class="paket-block__text text">Содержит функциональность стандартного пакета, а также функциональность для расширенной защиты PAM.</div>
                 </div>
             </div>
-            <div class="pack__subtext">Функциональные пакеты Bastion</div>
-            <div class="list__body pack__body">
-                <div class="list__item">
-                    <div class="list__icon">
-                        <div class="list__border">
-                            <img src="{{asset('img/icon/icon-6.svg')}}" alt="img">
-                        </div>
-                    </div>
-                    <div class="list__desc">
-                        <div class="list__title">Стандартный пакет</div>
-                        <div class="list__text">
-                            Предлагает функции PAM, необходимые для обеспечения оптимального
-                            контроля привилегированного доступа.
-                        </div>
-                    </div>
-                </div>
-                <div class="list__item">
-                    <div class="list__icon">
-                        <div class="list__border">
-                            <img src="{{asset('img/icon/icon-5.svg')}}" alt="img">
-                        </div>
-                    </div>
-                    <div class="list__desc">
-                        <div class="list__title">Премиум пакет</div>
-                        <div class="list__text">
-                            Содержит функциональность стандартного пакета, а также
-                            функциональность для расширенной защиты PAM.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="pack__line line"></div>
-            <div class="pack__images">
-                <img src="{{asset('assets/img/pack-2.png')}}" alt="img">
-                <img src="{{ asset('assets/img/pack-3.png')}}" alt="img">
-            </div>
+            <div class="line2"></div>
         </div>
     </section>
-
+    <div class="new-zero row mtz">
+        <div class="new-zero--left"></div>
+        <div class="new-zero--center">
+            <div class="border__title">
+                <div class="border__pifagor"></div>
+                <div class="new-zero__title title">
+                    Функциональные возможности РАМ
+                </div>
+            </div>
+            <div class="pack__text text">
+                <ul>
+                    <li>Контроль доступа</li>
+                    <li>Хранилище паролей</li>
+                    <li>Управление привилегированными сеансами</li>
+                    <li>Управление паролями и SSH-ключами</li>
+                </ul>
+            </div>
+            <div class="pack__subtitle subtitle">Варианты Bastion:</div>
+            <div class="pack__text text">
+                <ul>
+                    <li>Менеджер доступа (AM)</li>
+                    <li>Управление паролями приложений (AAPM)</li>
+                    <li>Универсальное туннелирование (UT)</li>
+                    <li>
+                        Повышение привилегий и управление делегированием полномочий
+                        (PEDM, BestSafe)
+                    </li>
+                    <li>
+                        Кластеризация HA 3+ (HA с 3 или более узлами на кластер)
+                    </li>
+                    <li>Академия Wallix & Abris</li>
+                    <li>Профессиональные услуги Wallix & Abris</li>
+                </ul>
+            </div>
+            <div class="new-zero__imgs">
+                <img class='new-zero__logo' src="{{asset('assets/img/pack-2.png')}}" alt="img">
+                <img class='new-zero__logo' src="{{ asset('assets/img/pack-3.png')}}" alt="img">
+            </div>
+        </div>
+        <img class='not-border' src="{{asset('assets/img/new-zero-2.jpg')}}" alt="title">
+    </div>
     <x-message></x-message>
 @endsection

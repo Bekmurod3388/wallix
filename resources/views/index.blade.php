@@ -124,7 +124,7 @@
                     <div class="management__desc">
                         Защита от угрозы со стороны привилегированных пользователей
                     </div>
-                    <a href="{{route('bastion')}}" class="management__link">
+                    <a href="https://www.wallix.com/free-trial/bastion" class="management__link">
                         Wallix Bastion
                     </a>
                 </div>
@@ -137,7 +137,7 @@
                     <div class="management__desc">
                         Установите права локального администратора и остановите вымогателей
                     </div>
-                    <a href="{{route('bestsafe')}}" class="management__link">
+                    <a href="https://www.wallix.com/endpoint-privilege-management/" class="management__link">
                         Wallix BestSafe
                     </a>
                 </div>
@@ -150,7 +150,7 @@
                     <div class="management__desc">Упрощение доступа пользователей к
                         корпоративным приложениям (iDaaS)
                     </div>
-                    <a href="{{route('trustelem')}}" class="management__link">
+                    <a href="https://www.wallix.com/identity-as-a-service/  " class="management__link">
                         Wallix Trustelem
                     </a>
                 </div>
