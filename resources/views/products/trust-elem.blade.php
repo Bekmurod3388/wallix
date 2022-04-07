@@ -24,7 +24,7 @@
             </div>
         </div>
     </section>
-    <section class="desc just-align">
+    <!-- <section class="desc just-align">
         <div class="container">
             <div class="desc__row">
                 <div class="desc__title">
@@ -36,8 +36,144 @@
                 </div>
             </div>
         </div>
+    </section> -->
+
+    <section class="desc">
+        <div class="container">
+            <div class="desc__title">
+            Унификация, безопасность и упрощение доступа пользователей
+            </div>
+            <div class="line2"></div>
+            <div class="desc__row">
+                <div class="desc__title">
+                    
+                </div>
+                <div class="desc__text">
+                Защита стратегических активов, повышение эффективности и производительности и улучшение пользовательского опыта для пользователей приложений и администраторов.
+                <br>
+                <br>
+                Упрощение и безопасность доступа к ключевым бизнес-приложениям с централизованной платформы.
+                </div>
+            </div>
+            <div class="line2"></div>
+        </div>
     </section>
-    <section id="orange" class="security just-align">
+    <div class="new-zero row ">
+        <div class="new-zero--left"></div>
+        <div class="new-zero--center not-between">
+            <div class="border__title">
+                <div class="border__pifagor"></div>
+                <div class="new-zero__title title">
+                Функции управления идентификацией
+                </div>
+            </div>
+            <div class="new-zero__subtitle subtitle">
+            Центральный каталог
+            </div>
+            <div class="new-zero__text text">
+            Соберите свои источники идентичности в единую ссылку на идентичность, чтобы легко управлять правами доступа в одном централизованном месте.
+            </div>
+            <div class="pack__text text">
+            
+
+
+
+                <ul>
+                    <li>Поддержка каталогов Active Directory, Azure AD, LDAP и Google G Suite directory</li>
+                    <li>Импортируйте столько каталогов сколько необходимо в вашу платформу WALLIX Trustelem</li>
+                    <li>Полный или частичный импорт каталога на основе членства в группе и фильтрации атрибутов</li>
+                    <li>
+                    Импорт членства в группах и атрибутов пользователей для определения надлежащих политик управления доступом
+                    </li>
+                </ul>
+            </div>
+            <div class="new-zero__btns">
+                <div class="new-zero__btns--top">
+                    <div class="new-zero__btn btn">SSO</div>
+                    <div class="new-zero__btn btn">Мид</div>
+                    <div class="new-zero__btn btn">Самообслуживание</div>
+
+                </div>
+            </div>
+        </div>
+        <img class='not-border' src="{{asset('assets/img/new-zero-6.jpg')}}" alt="title">
+    </div>
+
+    <div class="new-pack row">
+        <img class='not-border' src="{{asset('assets/img/new-zero-7.jpg')}}" alt="title">
+        <div class="new-pack--center">
+            <div class="border__title">
+                <div class="border__pifagor"></div>
+                <div class="new-pack__title title">
+                Простая интеграция приложений
+                </div>
+            </div>
+            <div class="new-pack__text">
+            WALLIX Trustelem предварительно интегрировала широкий выбор бизнес-приложений, включая Office 365, G Suite, Salesforce, Box, Dropbox, ownCloud и NextCloud, Wordpress и многие другие, чтобы упростить реализацию Trustelem. Получите доступ к подробной документации для каждого приложения, чтобы упростить настройку.
+            </div>
+        </div>
+    </div>
+    <div class="new-zero row mtz alignz">
+        <div class="new-zero--left"></div>
+        <div class="new-pack--center">
+            <div class="border__title">
+                <div class="border__pifagor"></div>
+                <div class="new-pack__title title">
+                Быстро и легко
+                </div>
+            </div>
+            <div class="new-pack__text">
+            WALLIX Trustelem разработан для того, чтобы сделать администрирование простым и интуитивно понятным. Веб-консоль администрирования позволяет ИТ-персоналу легко настраивать синхронизацию каталогов, управлять жизненными циклами внешних учетных записей пользователей и приложений, создавать и адаптировать правила доступа, контролировать активность и проверять безопасность доступа.
+            </div>
+        </div>
+        <img class='not-border' src="{{asset('assets/img/new-zero-8.jpg')}}" alt="title">
+    </div>
+    <div class="new-pack row">
+        <img class='not-border' src="{{asset('assets/img/new-zero-9.jpg')}}" alt="title">
+        <div class="new-pack--center">
+            <div class="border__title">
+                <div class="border__pifagor"></div>
+                <div class="new-pack__title title">
+                Безопасность – ваша главная забота
+                </div>
+            </div>
+            <div class="new-pack__text">
+            Сохраняйте контроль над своими личностями и данными! Платформа WALLIX Trustelem размещается и управляется надёжным европейским облачным провайдером. Суверенитет и безопасность ваших данных необходимы для обеспечения качества обслуживания и защиты активов вашей компании.
+            </div>
+        </div>
+    </div>
+
+    <section class="desc">
+        <div class="container">
+            <div class="desc__title">
+            Ультрасовременное управление конечными точками
+            </div>
+            <div class="line2"></div>
+            <div class="desc__row">
+                <div class="paket-block">
+                    <img class="paket-block__icon" src="{{asset('assets/paket-block-svg-7.svg')}}"/>
+                    <div class="paket-block__title subtitle">Простой</div>
+                    <div class="paket-block__text text">Trustelem предназначен для простоты пользовательского опыта и администрирования как на этапе сборки, так и на этапе запуска</div>
+                </div>
+                <div class="paket-block">
+                    <img class="paket-block__icon" src="{{asset('assets/paket-block-svg-8.svg')}}"/>
+                    <div class="paket-block__title subtitle">Безопасный</div>
+                    <div class="paket-block__text text">Безопасность лежит в основе инфраструктуры, программного обеспечения и операций Trustelem</div>
+                </div>
+                <div class="paket-block">
+                    <img class="paket-block__icon" src="{{asset('assets/paket-block-svg-9.svg')}}"/>
+                    <div class="paket-block__title subtitle">Европейский</div>
+                    <div class="paket-block__text text">WALLIX Trustelem принадлежит, разрабатывается, размещается и эксплуатируется в Европе, чтобы обеспечить нашу приверженность безопасности</div>
+                </div>
+                <div class="paket-block">
+                    <img class="paket-block__icon" src="{{asset('assets/paket-block-svg-10.svg')}}"/>
+                    <div class="paket-block__title subtitle">Экономически эффективный</div>
+                    <div class="paket-block__text text">Повышайте рентабельность инвестиций и экономию затрат благодаря привлекательной ценовой политике WALLIX Trustelem и надёжному предоставлению услуг</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section id="orange" class="security just-align">
         <div class="security__orange orange bast-{{request()->get('type')}}"></div>
         <div class="container">
             <div class="management__title">
@@ -55,8 +191,8 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="news just-align">
+    </section> -->
+    <!-- <section class="news just-align">
         <div class="container">
             <div class="news__row news__row--three">
                 @foreach($categories as $key => $category)
@@ -203,6 +339,6 @@
                 </video>
             </div>
         </div>
-    </section>
+    </section> -->
     <x-message></x-message>
 @endsection

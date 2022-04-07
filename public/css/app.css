@@ -542,7 +542,7 @@ pre code {
 .container-sm {
   width: 100%;
   padding-right: 15px;
-  padding-left: 15px;
+  padding-left: 4% !important;
   margin-right: auto;
   margin-left: auto;
 }
