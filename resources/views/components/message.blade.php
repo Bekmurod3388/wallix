@@ -98,7 +98,7 @@
             success: function (response) {
                 Swal.fire({
                     icon: 'success',
-                    title: 'Успешно отпарвлено!',
+                    title: 'Успешно отправлено!',
                 })
             }
         });
