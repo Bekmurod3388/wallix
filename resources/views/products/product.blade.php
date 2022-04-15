@@ -44,7 +44,7 @@
             </div>
             <div class="security__body row">
                 <div class="d-flex">
-                    <img src="{{asset("/storage/product/$img")}}" alt="img"
+                    <img src="{{asset("/storage/products/$img")}}" alt="img"
                          class="content-img @if(request()->get('type') == 2){{'parol'}}@endif">
                 </div>
                 <div class="security__desc">

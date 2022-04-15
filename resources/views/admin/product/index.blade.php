@@ -33,7 +33,7 @@
                                 <td>{{$product->title}}</td>
                                 <td>{{$product->text}}</td>
                                 <td>
-                                    <img src="{{asset('/storage/product/' . $product->img)}}" style="width: 30%" alt="">
+                                    <img src="{{asset('/storage/products/' . $product->img)}}" style="width: 100%" alt="">
                                 </td>
 
                                 <td class="col-2">

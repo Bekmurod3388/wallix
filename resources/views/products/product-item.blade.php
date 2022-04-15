@@ -41,7 +41,7 @@
                                 @if($i%2==1)
                                     <a href="{{route('product-item',$cats->id)}}">
                                         <div class="zero__row row">
-                                            <img src="{{asset('storage/produkt/'.$cats->img)}}" style="width: 80%" />
+                                            <img src="{{asset('storage/products/'.$cats->img)}}" style="width: 80%" />
                                             <div class="zero__desc">
                                                 <div class="zero__subtitle subtitle">
                                                     {{$cats->title}}
@@ -63,7 +63,7 @@
                                                     {{$cats->text}}
                                                 </div>
                                             </div>
-                                            <img src="{{asset('storage/produkt/'.$cats->img)}}" style="width: 80%" />
+                                            <img src="{{asset('storage/products/'.$cats->img)}}" style="width: 80%" />
                                         </div>
                                     </a>
                                 @endif
