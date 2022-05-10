@@ -26,7 +26,7 @@
                     <li><a href="{{route('trustelem')}}" class="footer__link">Wallix Trustelem</a></li>
                 </ul>
             </div>
-            <div class="footer__item">
+         {{--   <div class="footer__item">
                 <div class="footer__subtitle">
                     Решения
                 </div>
@@ -37,7 +37,7 @@
                     <li><a href="{{route('solution4')}}" class="footer__link">Wallix inside</a></li>
                     <li><a href="{{route('solution5')}}" class="footer__link">Решения по отраслям</a></li>
                 </ul>
-            </div>
+            </div>--}}
             <div class="footer__item">
                 <div class="footer__subtitle">
                     О нас

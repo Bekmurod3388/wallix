@@ -8,7 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>Wallix</title>
-
+    <meta content="{{asset('img/logo/logo.png')}}" itemprop="image">
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
